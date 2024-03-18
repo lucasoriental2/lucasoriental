@@ -1,0 +1,42 @@
+:root {
+    --RedLight: #E00036;
+    --RedDark: #A90029;
+    --RedErrorMessage: #FF003D;
+    --GreenSuccessMessage: #00CF2E;
+    --DarkGray: #444444;
+    --DeepGray: #262626;
+    --GrayPlaceHolder: #585858;
+    --White: #FFF;
+}
+
+#header-main{
+    background-color: var(--RedLight);
+    color: var(--White);
+    width: 100%;
+}
+
+#header-content-main{
+    //max-width: 1440px;
+
+    display: flex;
+    justify-content: center;
+    padding: 38px 58px;
+}
+
+.navLinks ul{
+    display: flex;
+    flex-direction: row;
+
+
+    li{
+        word-wrap: none;
+        list-style-type: none;
+        margin: 0 30px;
+        font-size: 21px;
+        font-weight: bold;
+    }
+}
+
+.themeIcon, .languageIcon{
+    //padding: 0px 50px;
+}

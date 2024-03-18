@@ -1,3 +1,5 @@
+export default function LanguageIconSvg () {
+    return (
 <svg width="75" height="25" viewBox="0 0 75 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="75" height="25" rx="12.5" fill="white"/>
 <path d="M66 6.22223H48V7.61873H66V6.22223Z" fill="#DC4437"/>
@@ -26,3 +28,4 @@
 <path d="M16.5 12.6165H17V13.1165H16.5V12.6165ZM17.5 13.1165H18V13.6165H17.5V13.1165ZM19.5 14.1165H20V14.6165H19.5V14.1165ZM18 14.6165H18.5V15.1165H18V14.6165ZM19.5 11.6165H20V12.1165H19.5V11.6165Z" fill="#55ACEE"/>
 <path d="M18.5 13.6165H19V14.1165H18.5V13.6165Z" fill="#3B88C3"/>
 </svg>
+    )}
