@@ -48,7 +48,7 @@ const Header = () => {
           <button className="hamburguer" onClick={handleClick}>
             <MenuHamburguer />
           </button>
-          <img alt="logo" />
+          <img alt="logo" src=""/>
         </div>
         <div
           className={`header-mobile-side-bar ${isActive ? "is-active" : ""}`}
