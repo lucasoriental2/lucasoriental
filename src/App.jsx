@@ -13,18 +13,17 @@ import HaveAFun from './components/sections/have-a-fun-page/haveAFun'
 function App() {
   return (
     <>
-    <Header/>
-    {/*
-    <MainPage />
-    <MyProjects/>
-    <EducationAndSkills/>
-    <JobExperiences/>
-    <AboutMe/>
-    <ContactMe/>
-    <HaveAFun/>
-  <Footer/> */}
+      <Header />
+      {/* <MainPage />
+      <MyProjects />
+      <EducationAndSkills />
+      <JobExperiences />
+      <AboutMe />
+      <ContactMe />
+      <HaveAFun />
+      <Footer /> */}
     </>
-  )
+  );
 }
 
 export default App
