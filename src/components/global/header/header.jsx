@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
-import ThemeSvg from '../../../assets/common_elements/theme_icon'
-import LanguageSvg from '../../../assets/common_elements/language_icon'
-import MenuHamburguer from '../../../assets/common_elements/icon_menu_hamburger'
+import React, { useState } from 'react';
 import XIconSvg from '../../../assets/common_elements/icon_X';
+import MenuHamburguer from '../../../assets/common_elements/icon_menu_hamburger';
+import LanguageSvg from '../../../assets/common_elements/language_icon';
+import ThemeSvg from '../../../assets/common_elements/theme_icon';
 
 const Header = () => {
 
@@ -14,9 +14,7 @@ const Header = () => {
 
     btnMenu.classList.toggle("is-active");
     mob_menu.classList.toggle("is-active");
-
-    console.log(btnMenu)
-    console.log(mob_menu)
+    setIsActive(!isActive);
 }
 
   return (
