@@ -1,0 +1,209 @@
+{
+  "certificates": [
+    {
+      "id": 1,
+      "platform": "Udemy - Geek University",
+      "course": "JavaScript do básico ao avançado (c/ Node e Projetos)",
+      "time": "23.5",
+      "credentialURL": "#",
+      "img": "#"
+    },
+    {
+      "id": 2,
+      "platform": "Udemy",
+      "course": "Curso Completo de Design de Interface",
+      "time": "20.5",
+      "credentialURL": "#",
+      "img": "#"
+    },
+    {
+      "id": 3,
+      "platform": "Curso em Vídeo",
+      "course": "JavaScript",
+      "time": "40",
+      "credentialURL": "https://www.cursoemvideo.com/validacao-de-certificado/?codigo=3A615-6C61-9",
+      "img": "#"
+    },
+    {
+      "id": 4,
+      "platform": "Fundação Bradesco",
+      "course": "Introdução a Redes de Computadores",
+      "time": "23",
+      "credentialURL": "#",
+      "img": "#"
+    },
+    {
+      "id": 5,
+      "platform": "Fundação Bradesco",
+      "course": "Design Thinking",
+      "time": "15",
+      "credentialURL": "#",
+      "img": "#"
+    }
+  ],
+  "college": [
+    {
+      "id": 1,
+      "universityName": "Centro Universitário Carioca",
+      "courseTitle": "Bachelor's Computer Science",
+      "time": "2020 - Dec/2024 (expected)",
+      "websiteLink": "#"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "design": false,
+      "title": "React",
+      "level": 7,
+      "img": "#",
+      "professional": true
+    },
+    {
+      "id": 2,
+      "design": false,
+      "title": "JavaScript",
+      "level": 8,
+      "img": "#",
+      "professional": true
+    },
+    {
+      "id": 3,
+      "design": false,
+      "title": "SQL",
+      "level": 6,
+      "img": "#",
+      "professional": true
+    },
+    {
+      "id": 4,
+      "design": false,
+      "title": "HTML",
+      "level": 9,
+      "img": "#",
+      "professional": true
+    },
+    {
+      "id": 5,
+      "design": false,
+      "title": "SASS (CSS)",
+      "level": 7,
+      "img": "#",
+      "professional": true
+    },
+    {
+      "id": 6,
+      "design": false,
+      "title": "Carbon Design (IBM) Components",
+      "level": 5,
+      "img": "#",
+      "professional": true
+    },
+    {
+      "id": 7,
+      "design": false,
+      "title": "Jest",
+      "level": 5,
+      "img": "#",
+      "professional": true
+    },
+    {
+      "id": 8,
+      "design": false,
+      "title": "Node",
+      "level": 5,
+      "img": "#",
+      "professional": true
+    },
+    {
+      "id": 9,
+      "design": false,
+      "title": "Selenium",
+      "level": 3,
+      "img": "#",
+      "professional": true
+    },
+    {
+      "id": 10,
+      "design": true,
+      "title": "Figma",
+      "level": 9,
+      "img": "#",
+      "professional": false
+    },
+    {
+      "id": 11,
+      "design": true,
+      "title": "Adobe XD",
+      "level": 7,
+      "img": "#",
+      "professional": false
+    },
+    {
+      "id": 12,
+      "design": true,
+      "title": "Photoshop",
+      "level": 7,
+      "img": "#",
+      "professional": false
+    },
+    {
+      "id": 13,
+      "design": true,
+      "title": "Graphic Design",
+      "level": 9,
+      "img": "#",
+      "professional": false
+    },
+    {
+      "id": 14,
+      "design": true,
+      "title": "UX/UI Design",
+      "level": 9,
+      "img": "#",
+      "professional": false
+    },
+    {
+      "id": 15,
+      "design": true,
+      "title": "Icon Maker",
+      "level": 6,
+      "img": "#",
+      "professional": false
+    },
+    {
+      "id": 16,
+      "design": true,
+      "title": "Video/Image Editor",
+      "level": 9,
+      "img": "#",
+      "professional": false
+    }
+  ],
+  "jobExperiences": [
+    {
+      "id": 1,
+      "image": "#",
+      "jobTitle": "Software Developer Intern",
+      "companyName": "IBM",
+      "time": "03.2022 - 03.2024",
+      "responsibilities": "At IBM, I’ve honed my front-end development skills, with a strong focus on React. My work involves creating dynamic and responsive user interfaces, seamlessly integrating front-end and back-end systems through API requests using React Hooks. Additionally, I’ve contributed to project designs, leveraging SCSS to craft visually appealing styles and layouts. In terms of testing, I’ve authored comprehensive test cases using Jest, ensuring the reliability and stability of our applications. My responsibilities extend beyond development; I’ve been actively involved in fixing vulnerabilities using SonarQube, conducting performance testing with tools like LogDNA and Cloud IBM, and modernizing designs using Carbon (Design) within the G.A.P.T.S team. Furthermore, I’ve worked with DB2 for data manipulation from the back-end database, ensuring seamless data flow and efficient system functionality. Throughout my tenure at IBM, I’ve consistently received positive feedback from both superiors and colleagues, underscoring my unwavering dedication, attention to detail, and commitment to delivering high-quality solutions."
+    },
+    {
+      "id": 2,
+      "image": "#",
+      "jobTitle": "IT Support Young Apprentice",
+      "companyName": "Medgrupo",
+      "time": "2021 - 2022",
+      "responsibilities": "In my previous role, I handled diverse responsibilities, including manual VPN configuration for Windows, Linux, and Apple environments, remote access via RDP/VNC, and user reset/configuration in systems like Active Directory and Google Admin. I utilized Zabbix for monitoring, addressing issues like overheating and data security. This experience honed my analytical skills and adaptability. Reflecting on this experience, I am eager to bring my honed skills and insights to new projects, fostering growth and success."
+    },
+    {
+      "id": 3,
+      "image": "#",
+      "jobTitle": "UX/UI & Graphic Designer",
+      "companyName": "Self-Employed",
+      "time": "2019 - 2021",
+      "responsibilities": "In this role, I provided a comprehensive suite of audiovisual design and production services. This included creating logos, resumes, flyers, banners, and various other design assets. My expertise extended to video and audio editing, where I specialized in crafting engaging intros for YouTubers and web influencers, as well as producing reels, posts, and banners tailored for diverse social media platforms, notably Instagram. Furthermore, I actively contributed to UX/UI Design, offering visual services for web pages, pageland creations, and more. This experience has honed my creativity and equipped me with a versatile skill set."
+    }
+  ]
+}
