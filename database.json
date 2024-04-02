@@ -1,23 +1,15 @@
 {
-  "certificates": [
+  "certificatesIT": [
     {
       "id": 1,
       "platform": "Udemy - Geek University",
-      "course": "JavaScript do básico ao avançado (c/ Node e Projetos)",
+      "course": "JS do básico ao avançado (c/ Node e Projetos)",
       "time": "23.5",
       "credentialURL": "#",
       "img": "#"
     },
     {
       "id": 2,
-      "platform": "Udemy",
-      "course": "Curso Completo de Design de Interface",
-      "time": "20.5",
-      "credentialURL": "#",
-      "img": "#"
-    },
-    {
-      "id": 3,
       "platform": "Curso em Vídeo",
       "course": "JavaScript",
       "time": "40",
@@ -25,15 +17,25 @@
       "img": "#"
     },
     {
-      "id": 4,
+      "id": 3,
       "platform": "Fundação Bradesco",
       "course": "Introdução a Redes de Computadores",
       "time": "23",
       "credentialURL": "#",
       "img": "#"
+    }
+  ],
+  "certificatesDesign": [
+    {
+      "id": 1,
+      "platform": "Udemy",
+      "course": "Curso Completo de Design de Interface",
+      "time": "20.5",
+      "credentialURL": "#",
+      "img": "#"
     },
     {
-      "id": 5,
+      "id": 2,
       "platform": "Fundação Bradesco",
       "course": "Design Thinking",
       "time": "15",
@@ -50,10 +52,9 @@
       "websiteLink": "#"
     }
   ],
-  "skills": [
+  "skillsIT": [
     {
       "id": 1,
-      "design": false,
       "title": "React",
       "level": 7,
       "img": "#",
@@ -61,15 +62,13 @@
     },
     {
       "id": 2,
-      "design": false,
       "title": "JavaScript",
-      "level": 8,
+      "level": 6,
       "img": "#",
       "professional": true
     },
     {
       "id": 3,
-      "design": false,
       "title": "SQL",
       "level": 6,
       "img": "#",
@@ -77,31 +76,27 @@
     },
     {
       "id": 4,
-      "design": false,
       "title": "HTML",
-      "level": 9,
+      "level": 8,
       "img": "#",
       "professional": true
     },
     {
       "id": 5,
-      "design": false,
       "title": "SASS (CSS)",
-      "level": 7,
+      "level": 6,
       "img": "#",
       "professional": true
     },
     {
       "id": 6,
-      "design": false,
-      "title": "Carbon Design (IBM) Components",
+      "title": "Carbon Design (IBM - React)",
       "level": 5,
       "img": "#",
       "professional": true
     },
     {
       "id": 7,
-      "design": false,
       "title": "Jest",
       "level": 5,
       "img": "#",
@@ -109,71 +104,64 @@
     },
     {
       "id": 8,
-      "design": false,
       "title": "Node",
-      "level": 5,
+      "level": 4,
       "img": "#",
       "professional": true
     },
     {
       "id": 9,
-      "design": false,
       "title": "Selenium",
       "level": 3,
       "img": "#",
       "professional": true
-    },
+    }
+  ],
+  "skillsDesign": [
     {
-      "id": 10,
-      "design": true,
+      "id": 1,
       "title": "Figma",
       "level": 9,
       "img": "#",
       "professional": false
     },
     {
-      "id": 11,
-      "design": true,
+      "id": 2,
       "title": "Adobe XD",
       "level": 7,
       "img": "#",
       "professional": false
     },
     {
-      "id": 12,
-      "design": true,
+      "id": 3,
       "title": "Photoshop",
       "level": 7,
       "img": "#",
       "professional": false
     },
     {
-      "id": 13,
-      "design": true,
+      "id": 4,
       "title": "Graphic Design",
       "level": 9,
       "img": "#",
       "professional": false
     },
     {
-      "id": 14,
-      "design": true,
+      "id": 5,
       "title": "UX/UI Design",
       "level": 9,
       "img": "#",
       "professional": false
     },
     {
-      "id": 15,
-      "design": true,
+      "id": 6,
       "title": "Icon Maker",
       "level": 6,
       "img": "#",
       "professional": false
     },
     {
-      "id": 16,
-      "design": true,
+      "id": 7,
       "title": "Video/Image Editor",
       "level": 9,
       "img": "#",
@@ -184,7 +172,7 @@
     {
       "id": 1,
       "image": "#",
-      "jobTitle": "Software Developer Intern",
+      "jobTitle": "Software Developer (Intern)",
       "companyName": "IBM",
       "time": "03.2022 - 03.2024",
       "responsibilities": "At IBM, I’ve honed my front-end development skills, with a strong focus on React. My work involves creating dynamic and responsive user interfaces, seamlessly integrating front-end and back-end systems through API requests using React Hooks. Additionally, I’ve contributed to project designs, leveraging SCSS to craft visually appealing styles and layouts. In terms of testing, I’ve authored comprehensive test cases using Jest, ensuring the reliability and stability of our applications. My responsibilities extend beyond development; I’ve been actively involved in fixing vulnerabilities using SonarQube, conducting performance testing with tools like LogDNA and Cloud IBM, and modernizing designs using Carbon (Design) within the G.A.P.T.S team. Furthermore, I’ve worked with DB2 for data manipulation from the back-end database, ensuring seamless data flow and efficient system functionality. Throughout my tenure at IBM, I’ve consistently received positive feedback from both superiors and colleagues, underscoring my unwavering dedication, attention to detail, and commitment to delivering high-quality solutions."
@@ -192,7 +180,7 @@
     {
       "id": 2,
       "image": "#",
-      "jobTitle": "IT Support Young Apprentice",
+      "jobTitle": "IT Support (Young Apprentice)",
       "companyName": "Medgrupo",
       "time": "2021 - 2022",
       "responsibilities": "In my previous role, I handled diverse responsibilities, including manual VPN configuration for Windows, Linux, and Apple environments, remote access via RDP/VNC, and user reset/configuration in systems like Active Directory and Google Admin. I utilized Zabbix for monitoring, addressing issues like overheating and data security. This experience honed my analytical skills and adaptability. Reflecting on this experience, I am eager to bring my honed skills and insights to new projects, fostering growth and success."
