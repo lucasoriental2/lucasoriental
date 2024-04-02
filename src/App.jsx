@@ -6,6 +6,7 @@ import MainPage from "./components/sections/home-page/home";
 import MyProjects from "./components/sections/my-projects-page/myProjects";
 import JobExperiences from "./components/sections/job-experiences-page/jobExperiences";
 import AboutMe from "./components/sections/about-me-page/aboutMe";
+import ContactMe from "./components/sections/contact-me-page/contactMe";
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
       <EducationAndSkills />
       <JobExperiences />
       <AboutMe />
-      {/*<ContactMe />
-      <HaveAFun />
+      <ContactMe />
+      {/*<HaveAFun />
       <Footer /> */}
     </>
   );
