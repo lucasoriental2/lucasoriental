@@ -1,24 +1,49 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import collegePicture from '../../../../assets/pictures/picture_college.png';
 
 export default function College () {
+
+  const [college, setCollege] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/college", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        setCollege(data);
+      })
+      .catch((err) => console.error(err));
+  },[]);
+
   return (
-    <div className="EAS-college">
-      <img
-        alt="College_picture"
-        src={collegePicture}
-        className="EAS-college-picture"
-      />
-      <div className="EAS-college-div">
-        <a href="#" className="EAS-college-title">
-          Bachelor's Computer Science
-        </a>
-        <p className="EAS-college-info">
-          Centro Universitário Carioca (Brazil)
-        </p>
-        <p className="EAS-college-info">2020 - Dez/2024 (expected)</p>
-        <button className="EAS-college-button">University Website</button>
-      </div>
+    <div className="allColeges">
+      {college.map((college) => {
+        return (
+          <div className="EAS-college" key={college.id}>
+            <img
+              alt="College_picture"
+              src={collegePicture}
+              className="EAS-college-picture"
+            />
+            <div className="EAS-college-div">
+              <a href="#" className="EAS-college-title">
+                {college.courseTitle}
+              </a>
+              <p className="EAS-college-info">{college.universityName}</p>
+              <p className="EAS-college-info">{college.time}</p>
+              <a href={college.websiteLink}>
+                <button className="EAS-college-button">
+                  University Website
+                </button>
+              </a>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
