@@ -22,7 +22,7 @@
     width: 100%;
     position: fixed;
     box-shadow: 0px 0px 50px var(--DarkGray);
-    z-index: 1;
+    z-index: 2;
 }
 
 #header-desktop {
@@ -647,11 +647,17 @@
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 
-
-.allSkills, .allCertificates{
+/* .allCertificates{
     display: flex;
     align-items: baseline;
     justify-content: center;
+} */
+
+.allSkills, .allCertificates{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 .EAS-skills{
@@ -697,13 +703,6 @@
     font-weight: 500;    
     color: var(--RedLight)
 }
-
-.button-and-skills{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
 
 .canvas-teste{
     margin: 0 2px;
@@ -1105,3 +1104,33 @@
     }
 }
 
+
+
+
+
+.swiper-button-next, 
+.swiper-button-prev {
+  color: var(--RedLight) !important;
+}
+
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+  font-size: 30px !important;
+
+  @media(max-width: 1000px){
+    font-size: 20px !important;
+  }
+}
+
+.swiper-button-next.swiper-button-disabled, 
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color:var(--RedLight) !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--RedLight) !important;
+}
