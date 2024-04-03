@@ -30,12 +30,12 @@ export default function College () {
               className="EAS-college-picture"
             />
             <div className="EAS-college-div">
-              <a href="#" className="EAS-college-title">
+              <a href={college.websiteLink} target="_blank" className="EAS-college-title">
                 {college.courseTitle}
               </a>
               <p className="EAS-college-info">{college.universityName}</p>
               <p className="EAS-college-info">{college.time}</p>
-              <a href={college.websiteLink}>
+              <a href={college.websiteLink} target="_blank" className="EAS-college-button">
                 <button className="EAS-college-button">
                   University Website
                 </button>
