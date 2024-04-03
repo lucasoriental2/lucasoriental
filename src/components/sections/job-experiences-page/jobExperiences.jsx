@@ -24,24 +24,26 @@ const JobExperiencesPage = () => {
 
     return (
       <div id="job-experiences-container">
-        <div>
-          <p className="title-general">JOB EXPERIENCES</p>
+        <div className="container-general">
+          <div>
+            <p className="title-general">JOB EXPERIENCES</p>
+          </div>
+          {isLoading === true ? (
+            <p
+              style={{
+                textAlign: "center",
+                fontSize: "25px",
+                color: "#FFF",
+                margin: "90px 0px",
+                fontWeight: "500",
+              }}
+            >
+              The data is loading, please wait a moment....
+            </p>
+          ) : (
+            <JobExperience data={jobExperiences} />
+          )}
         </div>
-        {isLoading === true ? (
-          <p
-          style={{
-            textAlign: "center",
-            fontSize: "25px",
-            color: "#FFF",
-            margin: "90px 0px",
-            fontWeight: "500",
-          }}
-        >
-          The data is loading, please wait a moment....
-        </p>
-        ) : (
-          <JobExperience data={jobExperiences} />
-        )}
       </div>
     );
 }

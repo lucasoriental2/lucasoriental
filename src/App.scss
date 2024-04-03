@@ -11,6 +11,11 @@
     --HoverTextColor: #ff9494;
 }
 
+.container-general{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 #header-main {
     background-color: var(--RedLight);
     color: var(--White);
@@ -829,7 +834,7 @@
 
 #about-me-container{
     width: 90vw;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
 
     @media (max-width: 1000px) {
@@ -900,19 +905,8 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 #contact-me-container{
     background-color: var(--RedLight);
-    /* display: flex; */
 }
 
 .contact-me-form-social{

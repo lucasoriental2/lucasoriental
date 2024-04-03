@@ -35,100 +35,118 @@ const contactMePage = () => {
 
     return (
       <div id="contact-me-container">
-        <p className="title-general">CONTACT ME</p>
-        <div className="contact-me-form-social">
-          <div className="contact-me-left-side">
-            <div>
-              <div className="left-side-title-and-canvas">
-                <p className="left-side-form-title">Get in Touch!</p>
-                <canvas className="left-side-form-above-title" />
-              </div>
-              <div className='left-side-all-items'>
-                <div className="left-side-item">
-                  <a href="#" className="left-side-item-a">
-                    <p className='social-media-name'>Rio de Janeiro (RJ) - Brazil</p>
-                    <LocationSVG/>
-                  </a>
+        <div className="container-general">
+          <p className="title-general">CONTACT ME</p>
+          <div className="contact-me-form-social">
+            <div className="contact-me-left-side">
+              <div>
+                <div className="left-side-title-and-canvas">
+                  <p className="left-side-form-title">Get in Touch!</p>
+                  <canvas className="left-side-form-above-title" />
                 </div>
-                <div className="left-side-item">
-                  <a href="#" className="left-side-item-a">
-                    <p className='social-media-name'>lucasoriental@gmail.com</p>
-                    <MailSVG/>
-                  </a>
-                </div>
-                <div className="left-side-item">
-                  <a href="#" className="left-side-item-a">
-                    <p className='social-media-name'>+55 (21) 99525-3580</p>
-                    <NumberSVG/>
-                  </a>
-                </div>
-                <div className="left-side-item">
-                  <a href="#" className="left-side-item-a">
-                    <p className='social-media-name'>@lucas_oriental</p>
-                    <InstagramSVG/>
-                  </a>
-                </div>
-                <div className="left-side-item">
-                  <a href="#" className="left-side-item-a">
-                    <p className='social-media-name'>/lucasoriental</p>
-                    <GitHubSVG/>
-                  </a>
-                </div>
-                <div className="left-side-item">
-                  <a href="#" className="left-side-item-a">
-                    <p className='social-media-name'>Lucas Oriental dos Santos</p>
-                    <LinkedInSVG/>
-                  </a>
-                </div>
-                <div className="left-side-item">
-                  <a href="#" className="left-side-item-a">
-                    <p className='social-media-name'>/lucasoriental</p>
-                    <BehanceSVG/>
-                  </a>
+                <div className="left-side-all-items">
+                  <div className="left-side-item">
+                    <a href="#" className="left-side-item-a">
+                      <p className="social-media-name">
+                        Rio de Janeiro (RJ) - Brazil
+                      </p>
+                      <LocationSVG />
+                    </a>
+                  </div>
+                  <div className="left-side-item">
+                    <a href="#" className="left-side-item-a">
+                      <p className="social-media-name">
+                        lucasoriental@gmail.com
+                      </p>
+                      <MailSVG />
+                    </a>
+                  </div>
+                  <div className="left-side-item">
+                    <a href="#" className="left-side-item-a">
+                      <p className="social-media-name">+55 (21) 99525-3580</p>
+                      <NumberSVG />
+                    </a>
+                  </div>
+                  <div className="left-side-item">
+                    <a href="#" className="left-side-item-a">
+                      <p className="social-media-name">@lucas_oriental</p>
+                      <InstagramSVG />
+                    </a>
+                  </div>
+                  <div className="left-side-item">
+                    <a href="#" className="left-side-item-a">
+                      <p className="social-media-name">/lucasoriental</p>
+                      <GitHubSVG />
+                    </a>
+                  </div>
+                  <div className="left-side-item">
+                    <a href="#" className="left-side-item-a">
+                      <p className="social-media-name">
+                        Lucas Oriental dos Santos
+                      </p>
+                      <LinkedInSVG />
+                    </a>
+                  </div>
+                  <div className="left-side-item">
+                    <a href="#" className="left-side-item-a">
+                      <p className="social-media-name">/lucasoriental</p>
+                      <BehanceSVG />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="contact-me-right-side">
-            <p className="title-form-right-side">SEND ME A MESSAGE</p>
-            <form id="form-contact-me">
-              <label>
-                <input
-                  required
-                  type="text"
-                  id="name-field"
-                  name="nameUser"
-                  placeholder="Name"
-                  onChange={(e) => onChange(e)}
-                />
-                {nameErr.length > 0 && <p className='form-field-error-msg'>{nameErr}</p>}
-              </label>
-              <label>
-                <input
-                  required
-                  type="email"
-                  id="email-field"
-                  name="email"
-                  placeholder="E-mail Address"
-                  onChange={(e) => onChange(e)}
-                />
-                {emailErr.length > 0 && <p className='form-field-error-msg'>{emailErr}</p>}
-              </label>
-              <label>
-                <input
-                  required
-                  type="text"
-                  id="textBox-field"
-                  name="message"
-                  placeholder="Type anything you want..."
-                  maxLength="500"
-                  onChange={(e) => onChange(e)}
-                />
-                {textBoxErr.length > 0 && <p className='form-field-error-msg'>{textBoxErr}</p>}
-              </label>
+            <div className="contact-me-right-side">
+              <p className="title-form-right-side">SEND ME A MESSAGE</p>
+              <form id="form-contact-me">
+                <label>
+                  <input
+                    required
+                    type="text"
+                    id="name-field"
+                    name="nameUser"
+                    placeholder="Name"
+                    onChange={(e) => onChange(e)}
+                  />
+                  {nameErr.length > 0 && (
+                    <p className="form-field-error-msg">{nameErr}</p>
+                  )}
+                </label>
+                <label>
+                  <input
+                    required
+                    type="email"
+                    id="email-field"
+                    name="email"
+                    placeholder="E-mail Address"
+                    onChange={(e) => onChange(e)}
+                  />
+                  {emailErr.length > 0 && (
+                    <p className="form-field-error-msg">{emailErr}</p>
+                  )}
+                </label>
+                <label>
+                  <input
+                    required
+                    type="text"
+                    id="textBox-field"
+                    name="message"
+                    placeholder="Type anything you want..."
+                    maxLength="500"
+                    onChange={(e) => onChange(e)}
+                  />
+                  {textBoxErr.length > 0 && (
+                    <p className="form-field-error-msg">{textBoxErr}</p>
+                  )}
+                </label>
 
-              <input type="submit" className="button-right-side-form" value="Submit" />
-            </form>
+                <input
+                  type="submit"
+                  className="button-right-side-form"
+                  value="Submit"
+                />
+              </form>
+            </div>
           </div>
         </div>
       </div>

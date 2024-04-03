@@ -44,83 +44,85 @@ const EducationAndSkillsPage = () => {
 
   return (
     <div id="education-and-skills-page">
-      <p className="title-general" style={{ color: "#E00036" }}>
-        EDUCATION & SKILLS
-      </p>
-      {isLoading === true ? (
-        <p
-          style={{
-            textAlign: "center",
-            fontSize: "25px",
-            color: "#FF003D",
-            margin: "90px 0px",
-            fontWeight: "500",
-          }}
-        >
-          The data is loading, please wait a moment....
+      <div className="container-general">
+        <p className="title-general" style={{ color: "#E00036" }}>
+          EDUCATION & SKILLS
         </p>
-      ) : (
-        <div>
+        {isLoading === true ? (
+          <p
+            style={{
+              textAlign: "center",
+              fontSize: "25px",
+              color: "#FF003D",
+              margin: "90px 0px",
+              fontWeight: "500",
+            }}
+          >
+            The data is loading, please wait a moment....
+          </p>
+        ) : (
           <div>
-            <div className="title-and-canvas">
-              <div className="column-1-teste">
-                <p className="EAS-title-general">COLLEGE</p>
+            <div>
+              <div className="title-and-canvas">
+                <div className="column-1-teste">
+                  <p className="EAS-title-general">COLLEGE</p>
+                </div>
+                <div className="column-2-teste">
+                  <canvas className="bar-1" />
+                  <canvas className="bar-2" />
+                </div>
               </div>
-              <div className="column-2-teste">
-                <canvas className="bar-1" />
-                <canvas className="bar-2" />
-              </div>
+              <College />
             </div>
-            <College />
+            <div>
+              <div className="title-and-canvas">
+                <div className="column-1-teste">
+                  <p className="EAS-title-general">SKILLS</p>
+                </div>
+                <div className="column-2-teste">
+                  <canvas className="bar-1" />
+                  <canvas className="bar-2" />
+                </div>
+              </div>
+              <div className="subtitle-and-canvas">
+                <canvas className="bar-before" />
+                <p className="EAS-title-section">INFORMATION TECHNOLOGY (IT)</p>
+                <canvas className="bar-after" />
+              </div>
+              <Skills data={skillIT} />
+              <div className="subtitle-and-canvas">
+                <canvas className="bar-before" />
+                <p className="EAS-title-section">DESIGN</p>
+                <canvas className="bar-after" />
+              </div>
+              <Skills data={skillDesign} />
+            </div>
+            <div>
+              <div className="title-and-canvas">
+                <div className="column-1-teste">
+                  <p className="EAS-title-general">CERTIFICATES</p>
+                </div>
+                <div className="column-2-teste">
+                  <canvas className="bar-1" />
+                  <canvas className="bar-2" />
+                </div>
+              </div>
+              <div className="subtitle-and-canvas">
+                <canvas className="bar-before" />
+                <p className="EAS-title-section">INFORMATION TECHNOLOGY (IT)</p>
+                <canvas className="bar-after" />
+              </div>
+              <Certificates data={certificateIT} />
+              <div className="subtitle-and-canvas">
+                <canvas className="bar-before" />
+                <p className="EAS-title-section">DESIGN</p>
+                <canvas className="bar-after" />
+              </div>
+              <Certificates data={certificateDesign} />
+            </div>
           </div>
-          <div>
-            <div className="title-and-canvas">
-              <div className="column-1-teste">
-                <p className="EAS-title-general">SKILLS</p>
-              </div>
-              <div className="column-2-teste">
-                <canvas className="bar-1" />
-                <canvas className="bar-2" />
-              </div>
-            </div>
-            <div className="subtitle-and-canvas">
-              <canvas className="bar-before" />
-              <p className="EAS-title-section">INFORMATION TECHNOLOGY (IT)</p>
-              <canvas className="bar-after" />
-            </div>
-            <Skills data={skillIT} />
-            <div className="subtitle-and-canvas">
-              <canvas className="bar-before" />
-              <p className="EAS-title-section">DESIGN</p>
-              <canvas className="bar-after" />
-            </div>
-            <Skills data={skillDesign} />
-          </div>
-          <div>
-            <div className="title-and-canvas">
-              <div className="column-1-teste">
-                <p className="EAS-title-general">CERTIFICATES</p>
-              </div>
-              <div className="column-2-teste">
-                <canvas className="bar-1" />
-                <canvas className="bar-2" />
-              </div>
-            </div>
-            <div className="subtitle-and-canvas">
-              <canvas className="bar-before" />
-              <p className="EAS-title-section">INFORMATION TECHNOLOGY (IT)</p>
-              <canvas className="bar-after" />
-            </div>
-            <Certificates data={certificateIT} />
-            <div className="subtitle-and-canvas">
-              <canvas className="bar-before" />
-              <p className="EAS-title-section">DESIGN</p>
-              <canvas className="bar-after" />
-            </div>
-            <Certificates data={certificateDesign} />
-          </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import image from "../../../assets/pictures/project_img.png"
 const aboutMePage = () => {
   return (
     <div id="about-me-container">
+      <div className="container-general"></div>
       <p className="title-general" style={{ color: "#E00036" }}>
         ABOUT ME
       </p>
