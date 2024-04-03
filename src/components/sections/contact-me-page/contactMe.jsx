@@ -1,16 +1,27 @@
 import React, {useState} from 'react';
+import InstagramSVG from "../../../assets/light_theme/Instagram"
+import GitHubSVG from "../../../assets/light_theme/GitHub"
+import BehanceSVG from "../../../assets/light_theme/Behance"
+import LocationSVG from "../../../assets/light_theme/locate"
+import MailSVG from "../../../assets/light_theme/mail"
+import NumberSVG from "../../../assets/light_theme/wpp_or_call"
+import LinkedInSVG from "../../../assets/light_theme/LinkedIn"
 
 const contactMePage = () => {
 
-    const [nameErr, setName] = useState("")
-    const [emailErr, setEmail] = useState("")
+    const [nameErr, setNameErr] = useState("")
+    const [emailErr, setEmailErr] = useState("")
+    const [textBoxErr, setTextBoxErr] = useState("")
 
     const onChange = (e) => {
       if (e.target.name === "nameUser") {
-        setName(e.target.value === "" ? "empty is not allowed" : "");
+        setNameErr(e.target.value === "" ? "This field is required" : "");
       }
       if (e.target.name === "email"){
-        setEmail(e.target.value === "" ? "empty is not allowed" : "");
+        setEmailErr(e.target.value === "" ? "This field is also required" : "");
+      }
+      if (e.target.name === "message"){
+        setTextBoxErr(e.target.value === "" ? "This field too :D" : "");
       }
     }
 
@@ -28,51 +39,51 @@ const contactMePage = () => {
         <div className="contact-me-form-social">
           <div className="contact-me-left-side">
             <div>
-              <div>
-                <p>get in touch</p>
-                <canvas></canvas>
+              <div className="left-side-title-and-canvas">
+                <p className="left-side-form-title">Get in Touch!</p>
+                <canvas className="left-side-form-above-title" />
               </div>
-              <div>
-                <div>
-                  <a href="#">
-                    <p>Rio de Janeiro (RJ) - Brazil</p>
-                    <>SVG</>
+              <div className='left-side-all-items'>
+                <div className="left-side-item">
+                  <a href="#" className="left-side-item-a">
+                    <p className='social-media-name'>Rio de Janeiro (RJ) - Brazil</p>
+                    <LocationSVG/>
                   </a>
                 </div>
-                <div>
-                  <a href="#">
-                    <p>lucasoriental@gmail.com</p>
-                    <>SVG</>
+                <div className="left-side-item">
+                  <a href="#" className="left-side-item-a">
+                    <p className='social-media-name'>lucasoriental@gmail.com</p>
+                    <MailSVG/>
                   </a>
                 </div>
-                <div>
-                  <a href="#">
-                    <p>+55 (21) 99525-3580</p>
-                    <>SVG</>
+                <div className="left-side-item">
+                  <a href="#" className="left-side-item-a">
+                    <p className='social-media-name'>+55 (21) 99525-3580</p>
+                    <NumberSVG/>
                   </a>
                 </div>
-                <div>
-                  <a href="#">
-                    <p>@lucas_oriental</p>
-                    <>SVG</>
+                <div className="left-side-item">
+                  <a href="#" className="left-side-item-a">
+                    <p className='social-media-name'>@lucas_oriental</p>
+                    <InstagramSVG/>
                   </a>
                 </div>
-                <div>
-                  <a href="#">
-                    <p>/lucasoriental</p>
-                    <>SVG</>
+                <div className="left-side-item">
+                  <a href="#" className="left-side-item-a">
+                    <p className='social-media-name'>/lucasoriental</p>
+                    <GitHubSVG/>
                   </a>
                 </div>
-                <div>
-                  <a href="#">
-                    <p>Lucas Oriental dos Santos</p>
-                    <>SVG</>
+                <div className="left-side-item">
+                  <a href="#" className="left-side-item-a">
+                    <p className='social-media-name'>Lucas Oriental dos Santos</p>
+                    <LinkedInSVG/>
                   </a>
                 </div>
-                <div>
-                  <a href="#">
-                    <p>/lucasoriental</p>
-                    <>SVG</>
+                <div className="left-side-item">
+                  <a href="#" className="left-side-item-a">
+                    <p className='social-media-name'>/lucasoriental</p>
+                    <BehanceSVG/>
                   </a>
                 </div>
               </div>
@@ -90,11 +101,10 @@ const contactMePage = () => {
                   placeholder="Name"
                   onChange={(e) => onChange(e)}
                 />
-                {nameErr.length > 0 && <p>{nameErr}</p>}
+                {nameErr.length > 0 && <p className='form-field-error-msg'>{nameErr}</p>}
               </label>
               <label>
                 <input
-                  invalid={emailErr.length > 0}
                   required
                   type="email"
                   id="email-field"
@@ -102,7 +112,7 @@ const contactMePage = () => {
                   placeholder="E-mail Address"
                   onChange={(e) => onChange(e)}
                 />
-                {emailErr.length > 0 && <p>{emailErr}</p>}
+                {emailErr.length > 0 && <p className='form-field-error-msg'>{emailErr}</p>}
               </label>
               <label>
                 <input
@@ -114,7 +124,7 @@ const contactMePage = () => {
                   maxLength="500"
                   onChange={(e) => onChange(e)}
                 />
-                {emailErr.length > 0 && <p>{emailErr}</p>}
+                {textBoxErr.length > 0 && <p className='form-field-error-msg'>{textBoxErr}</p>}
               </label>
 
               <input type="submit" className="button-right-side-form" value="Submit" />
