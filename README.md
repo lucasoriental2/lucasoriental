@@ -44,15 +44,15 @@
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin Logo" />
 </a>
 
-<a href="#" target="_blank">
+<a href="https://join.slack.com/t/slack-oke5742/shared_invite/zt-2gurz19tj-GXPlo1k572_oK1VchMHPvw" target="_blank">
 <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" alt="Slack Logo" />
 </a>
 
-<a href="https://linkedin.com/in/lucas-oriental-dos-santos" target="_blank">
+<a href="https://www.behance.net/lucasoriental" target="_blank">
 <img src="https://img.shields.io/badge/-Behance-blue?style=for-the-badge&logo=behance&logoColor=white" alt="Behance Logo" />
 </a>
 
-<a href="#" target="_blank">
+<a href="https://discord.gg/EZEqgNTa5W" target="_blank">
 <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Logo" />
 </a>
 
