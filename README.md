@@ -1,5 +1,7 @@
 # Hi everyone, this is Lucas Oriental! <br/> A Front-end Developer and Designer UX/UI
 
+
+<h2>Get in Touch!</h2>
 <a href="https://linkedin.com/in/lucas-oriental-dos-santos" target="_blank">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin Logo" />
 </a>
