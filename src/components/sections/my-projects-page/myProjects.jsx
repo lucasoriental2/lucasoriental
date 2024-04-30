@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import dataBaseIcon from '../../../assets/common_elements/technologies/database_icon.png'
 import figmaIcon from '../../../assets/common_elements/technologies/figma_icon.png'
 import reactIcon from '../../../assets/common_elements/technologies/react_icon.png'
@@ -6,34 +6,73 @@ import sassIcon from '../../../assets/common_elements/technologies/sass_icon.png
 import projectImage from '../../../assets/pictures/project_img.png'
 
 const MyProjectsPage = () => {
-    let projects = [
-      {
-        image: projectImage,
-        title: "Clínica do Paião",
-        subTitle: "what i used?",
-        technologies: [reactIcon, dataBaseIcon, sassIcon, figmaIcon],
-        id: 1,
-      },
-      /* {
-        image: projectImage,
-        title: "Clínica do Paião",
-        subTitle: "what i used?",
-        technologies: [reactIcon, dataBaseIcon, sassIcon, figmaIcon],
-        id: 2,
-      }, */
-    ];
+  let projects = [
+    {
+      image: projectImage,
+      title: "Clínica do Paião",
+      subTitle: "Web Development",
+      technologies: [
+        {
+          icon: reactIcon,
+          tipName: "React",
+        },
+        {
+          icon: sassIcon,
+          tipName: "Sass",
+        },
+      ],
+      link: "https://clinicadopaiao.com/",
+      id: 1,
+    },
+    {
+      image: projectImage,
+      title: "My Portfolio",
+      subTitle: "Design & Web Development",
+      technologies: [
+        {
+          icon: dataBaseIcon,
+          tipName: "Data Base",
+        },
+        {
+          icon: reactIcon,
+          tipName: "React",
+        },
+        {
+          icon: figmaIcon,
+          tipName: "Figma",
+        },
+        {
+          icon: sassIcon,
+          tipName: "Sass",
+        },
+      ],
+      link: "https://github.com/lucasoriental/lucasoriental",
+      id: 1,
+    },
+  ];
 
     return (
-      <div id="home-my-projects-container">
+      <div id="my-projects-container">
         <div className="container-general">
           <div>
             <p className="title-general">MY PROJECTS</p>
           </div>
           <div className="project-view">
-            {projects.map((project) => {
+            {projects.map((project, index) => {
+              let tecs = [];
+              for (let i = 0; i < project.technologies.length; i++) {
+                tecs.push(
+                  <img
+                    className="img-icon"
+                    key={i}
+                    src={project.technologies[i].icon}
+                    alt={project.technologies[i]}
+                  />
+                );
+              }
               return (
-                <div key={project.id} className="project-container">
-                  <div>
+                <div key={index}>
+                  <div className="div-project-image">
                     <img
                       className="project-image"
                       src={project.image}
@@ -43,11 +82,15 @@ const MyProjectsPage = () => {
                   <div>
                     <p className="project-title">{project.title}</p>
                     <p className="project-sub-title">{project.subTitle}</p>
-                    {/* {project.technologies.map((tec) => {
-                        <img src={tec}/>
-                      })} */}
+                    <div className="my-project-tec-images">{tecs}</div>
                   </div>
-                  <button className="project-button">more details</button>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    className="project-link-button"
+                  >
+                    <button className="project-button">more details</button>
+                  </a>
                 </div>
               );
             })}

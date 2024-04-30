@@ -1,11 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import JobExperience from "../job-experiences-page/common/jobExperience"
 
+import AOS from "aos"
+import 'aos/dist/aos.css'
+
 const JobExperiencesPage = () => {
     const [isLoading, setIsLoading] = useState(true)
     const [jobExperiences, setJobExperiences] = useState(null)
 
     useEffect( () => {
+        AOS.init({duration: 1000})
         const fetchData = async () => {
           try {
             const response = await fetch(
@@ -26,7 +30,8 @@ const JobExperiencesPage = () => {
       <div id="job-experiences-container">
         <div className="container-general">
           <div>
-            <p className="title-general">JOB EXPERIENCES</p>
+            <p className="title-general"  data-aos="fade-right"
+              data-aos-anchor-placement="top-center">JOB EXPERIENCES</p>
           </div>
           {isLoading === true ? (
             <p

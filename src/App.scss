@@ -8,13 +8,34 @@
     --DeepGray: #262626;
     --GrayPlaceHolder: #585858;
     --White: #FFF;
-    --HoverTextColor: #ff9494;
+    --HoverTextColor: #ffc5c5;
 }
 
-.container-general{
+// ------------------------------------
+// General Styles
+// ------------------------------------
+
+.title-general {
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--DeepGray);
+    text-align: center;
+    color: var(--White);
+
+    @media(max-width: 1000px) {
+        font-size: 30px;
+    }
+}
+
+.container-general {
     max-width: 1440px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
+
+// ------------------------------------
+// Header 
+// ------------------------------------
 
 #header-main {
     background-color: var(--RedLight);
@@ -41,6 +62,7 @@
     display: flex;
 
     a {
+        cursor: pointer;
         text-align: center;
         padding: 30px 20px;
         color: var(--White);
@@ -48,7 +70,7 @@
         list-style-type: none;
         font-size: 15px;
         font-weight: 700;
-
+        transition: 0.6s;
 
         @media (max-width: 1280px) {
             font-size: 13px;
@@ -61,7 +83,7 @@
 
     a:hover {
         color: var(--HoverTextColor);
-
+        transition: 0.7s;
     }
 }
 
@@ -78,7 +100,6 @@
 
 #header-mobile {
     display: none;
-
 
     @media (max-width: 1143px) {
         display: contents;
@@ -143,6 +164,7 @@
     a:hover {
         background-color: var(--RedDark);
         color: var(--HoverTextColor);
+        font-weight: 700;
     }
 }
 
@@ -167,12 +189,9 @@
     background-color: blue;
 }
 
-// -----------------------------------------------------------
-// -----------------------------------------------------------
-// -----------------------------------------------------------
-// -----------------------------------------------------------
-// -----------------------------------------------------------
-// -----------------------------------------------------------
+// ------------------------------------
+// Home Page
+// ------------------------------------
 
 #home-main-container {
     max-width: 1440px;
@@ -317,77 +336,42 @@
     @media(max-width: 1000px) {
         display: none;
     }
-
 }
 
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
 
-#home-my-projects-container {
+// ------------------------------------
+// MY PROJECT SECTION
+// ------------------------------------
+
+
+/* #my-projects-container {
     margin-top: 85px;
     background-color: var(--RedLight);
     padding: 102px 0px;
-}
+} */
 
-.title-general {
-    font-size: 70px;
-    font-weight: 700;
-    color: var(--DeepGray);
-    text-align: center;
-    color: var(--White);
-
-    @media(max-width: 1000px) {
-        font-size: 30px;
-    }
-}
-
-.project-view {
-    display: flex;
-    justify-content: center;
-    gap: 19px;
-
-}
-
-.project-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 90px;
-
-    @media(max-width: 1000px) {
-        margin-top: 40px;
-    }
-}
-
-.project-title {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--White);
-
-    @media(max-width: 1000px) {
-        font-size: 27px;
-    }
-}
-
-.project-sub-title {
+/* .project-sub-title {
     text-align: center;
     font-size: 30px;
     font-weight: 500;
     color: var(--White);
-    margin: 15px 0 50px 0;
+    margin: 0px 0 10px 0;
 
     @media(max-width: 1000px) {
         font-size: 20px;
-        margin: 0 0 45px 0;
+        margin: 0 0 0 0;
     }
 }
 
+.project-link-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .project-button {
+    cursor: pointer;
     width: 255px;
     height: 50px;
     color: var(--RedLight);
@@ -402,23 +386,48 @@
         height: 34px;
         font-size: 15px;
     }
-}
+} */
 
-.project-image {
-    margin-bottom: 17px;
+/* .div-project-image{
+    display: flex;
+    align-items: center;
+} */
+
+/* .project-image {
+    margin: 0px auto 17px;
 
     @media(max-width: 1000px) {
         width: 300px;
         height: 320px;
     }
+} */
+
+/* .my-project-tec-img{
+    cursor: pointer;
+    margin: 0 5px;
 }
 
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
+.my-project-tec-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px 13px;
+
+    @media (max-width: 1000px){
+        margin: 5px 5px 10px;
+    }
+}
+
+.img-icon{
+    margin: 0 5px;
+} */
+
+
+
+
+// ------------------------------------
+// Education & Skills
+// ------------------------------------
 
 #education-and-skills-page {
     margin-top: 120px;
@@ -427,54 +436,13 @@
     justify-content: center;
 }
 
-.title-and-canvas {
-    margin: 90px auto 30px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-
-    @media (max-width: 1000px){
-        margin: 40px auto 15px auto;
-    }
-}
-
-.column-1-teste {
-    flex-grow: 0;
-}
-
-.column-2-teste {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.bar-1 {
-    background-color: var(--RedDark);
-    height: 16px;
-    border-radius: 0 5px 0 0;
-
-    @media (max-width: 1000px){
-        height: 8px;
-    }
-}
-
-.bar-2 {
-    background-color: var(--RedLight);
-    height: 16px;
-    border-radius: 0 0 5px 0;
-    @media (max-width: 1000px) {
-        height: 8px;
-    }
-}
-
 .EAS-title-general {
     font-size: 50px;
     font-weight: 700;
     color: var(--RedLight);
     margin-right: 25px;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         font-size: 25px;
     }
 }
@@ -488,7 +456,7 @@
     flex-grow: 0;
     margin: 0 30px 0 30px;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         font-size: 20px;
     }
 }
@@ -509,24 +477,63 @@
     height: 3px;
     flex-grow: 1;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         height: 1px;
     }
 }
 
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
+.title-and-canvas {
+    margin: 90px auto 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+    @media (max-width: 1000px) {
+        margin: 40px auto 15px auto;
+    }
+}
+
+.column-1-teste {
+    flex-grow: 0;
+}
+
+.column-2-teste {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar-1 {
+    background-color: var(--RedDark);
+    height: 16px;
+    border-radius: 0 5px 0 0;
+
+    @media (max-width: 1000px) {
+        height: 8px;
+    }
+}
+
+.bar-2 {
+    background-color: var(--RedLight);
+    height: 16px;
+    border-radius: 0 0 5px 0;
+
+    @media (max-width: 1000px) {
+        height: 8px;
+    }
+}
+
+// ------------------------------------
+// College Section (Education And Skills)
+// ------------------------------------
 
 
-.EAS-college {
+
+.EAS-college-img-and-info {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 29px;
 }
 
 .EAS-college-title {
@@ -534,8 +541,9 @@
     margin-bottom: 16px;
     font-weight: 700;
     color: var(--RedLight);
+    word-wrap: inherit;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         font-size: 22px;
         margin-bottom: 5px;
     }
@@ -553,7 +561,17 @@
     }
 }
 
-.EAS-college-div {
+// ------------------------------------
+// Skills Section (Education And Skills)
+// ------------------------------------
+
+.professional-Skill-star {
+    margin-left: 125px;
+    position: fixed;
+    z-index: 1;
+}
+
+.EAS-college-info-div {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
@@ -588,16 +606,79 @@
     flex-direction: column;
 }
 
-.EAS-skills-picture,
+.EAS-skills-picture {
+    width: 125px;
+    height: 125px;
+    margin-top: 5px;
+
+    @media (max-width: 1000px) {
+        width: 60px;
+        height: 60px;
+    }
+}
+
 .EAS-certificates-picture {
     width: 125px;
     height: 125px;
+
+    @media (max-width: 1000px) {
+        width: 85px;
+        height: 85px;
+    }
 }
 
-
-.EAS-skills-level {
-    width: 200px;
+.canvas-teste {
+    margin: 0 2px;
+    background-color: var(--RedLight);
     height: 20px;
+    width: 18px;
+    z-index: -1;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+    @media (max-width: 1000px) {
+        width: 14px;
+        height: 15px;
+        margin: 0 1px;
+    }
+}
+
+.canvas-teste2 {
+    margin: 0 2px;
+    background-color: var(--LightGray);
+    height: 20px;
+    width: 18px;
+    z-index: -1;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+    @media (max-width: 1000px) {
+        width: 14px;
+        height: 15px;
+        margin: 0 1px;
+    }
+}
+
+.swipe-view-skills {
+    height: 300px;
+    padding: 0 10%;
+    max-width: 95vw;
+
+    @media(max-width: 1000px) {
+        height: 200px;
+    }
+}
+
+.swipe-view-certificate {
+    height: 240px;
+    padding: 0 10%;
+    max-width: 95vw;
+
+    @media(max-width: 1096px) {
+        height: 200px;
+    }
+
+    @media(max-width: 853px) {
+        height: 160px;
+    }
 }
 
 .EAS-certificates-div-icon-text {
@@ -610,6 +691,11 @@
     color: var(--RedLight);
     font-size: 15px;
     font-weight: 700;
+
+    @media (max-width: 1000px) {
+        font-size: 12px;
+        margin-left: 5px;
+    }
 }
 
 .EAS-certificates-button {
@@ -623,51 +709,45 @@
     border: none;
     border-radius: 2px;
     cursor: pointer;
+
+    @media (max-width: 1000px) {
+        width: 115px;
+        height: 20px;
+        font-size: 10px;
+        margin-top: 4px;
+    }
 }
 
 .EAS-certificates-div {
     margin-left: 15px;
 }
 
-
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 
-/* .allCertificates{
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-} */
 
-.allSkills, .allCertificates{
+.allCertificates {
     justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: row;
 }
 
-.EAS-skills{
+.allSkills {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    max-width: 95vw;
+    margin: 0 auto;
+}
+
+.EAS-skills {
     display: flex;
     margin: 0 20px;
     align-items: center;
 }
 
-
-.EAS-skills-title{
+.EAS-skills-title {
     word-wrap: break-word;
     text-align: center;
     width: 200px;
@@ -675,121 +755,98 @@
     font-weight: 700;
     color: var(--RedLight);
     margin: 10px 0px;
-}
 
-.level-skill{
-    display: flex;
+    @media (max-width: 1000px) {
+        font-size: 20px;
+    }
 }
 
 .EAS-certificates-title {
     font-size: 22px;
     font-weight: 700;
     color: var(--RedLight);
-    max-width: 300px;
+
+    @media (max-width: 1000px) {
+        font-size: 20px;
+    }
 }
 
-.EAS-certificates{
+.EAS-certificates {
     display: flex;
-    margin: 0 30px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 70vw;
 }
 
-.next-and-previous-button{
-    height: 50px;
-    width: 50px;
-    border: none;
-    background-color: #00cf2d00;
-    border-radius: 50%;
-    font-size: 20px;
-    font-weight: 500;    
-    color: var(--RedLight)
-}
-
-.canvas-teste{
-    margin: 0 2px;
-    background-color: var(--RedLight);
-    height: 20px;
-    width: 18px;
-    z-index: -1;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
-
-.canvas-teste2{
-    margin: 0 2px;
-    background-color: var(--LightGray);
-    height: 20px;
-    width: 18px;
-    z-index: -1;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
-
-
-.job-title{
+.job-title {
     font-weight: 700;
     color: var(--White);
     font-size: 35px;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         font-size: 21px;
     }
 }
 
-.job-company-name, .job-time{
+.job-company-name,
+.job-time {
     font-size: 25px;
     font-weight: 500;
     color: var(--White);
     margin: 10px 0px;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         font-size: 15px;
         margin: 3px 0px;
     }
 }
 
-.job-responsibilities{
+.job-responsibilities {
     font-size: 20px;
     font-weight: 500;
     color: var(--White);
     text-align: justify;
     line-height: 27px;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         display: none;
     }
 }
 
-.job-image{
+.job-image {
     width: 335px;
     height: 335px;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         width: 81px;
         height: 98px;
     }
 }
 
-.job-entire-item{
+.job-entire-item {
     display: flex;
     margin: 70px 0px;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         margin: 25px 0px;
         align-items: center;
     }
 }
 
-.job-entire-item-paragraph{
+.job-entire-item-paragraph {
     margin-left: 30px;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         margin-left: 10px;
     }
 }
 
-.block-of-jobs{
+.block-of-jobs {
     margin: 90px auto;
     width: 90%;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         margin: 40px auto 0px auto;
         display: flex;
         flex-direction: column;
@@ -798,18 +855,19 @@
     }
 }
 
-#job-experiences-container{
+#job-experiences-container {
     margin: 85px 0px;
     background-color: var(--RedLight);
     padding: 170px 0px;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         padding: 90px 0px;
         margin: 60px 0px;
     }
 }
 
-.job-button, .job-button-link{
+.job-button,
+.job-button-link {
     cursor: pointer;
     display: none;
     margin-top: 7px;
@@ -823,15 +881,12 @@
     border: none;
     text-decoration: none;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         display: block;
     }
 }
 
-
-
-
-#about-me-container{
+#about-me-container {
     width: 90vw;
     max-width: 1000px;
     margin: 0 auto;
@@ -842,7 +897,7 @@
     }
 }
 
-.about-me-image{
+.about-me-image {
     height: 300px;
     width: 300px;
 
@@ -852,7 +907,7 @@
     }
 }
 
-.img-and-text{
+.img-and-text {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -863,77 +918,78 @@
     }
 }
 
-.about-me-text-aside{
+.about-me-text-aside {
     margin-left: 30px;
     flex: 1;
     text-align: justify;
 
-    @media(max-width: 1000px){
+    @media(max-width: 1000px) {
         margin: 40px 0 0px 0px;
     }
 }
 
-.about-me-text, .about-me-text-aside{
+.about-me-text,
+.about-me-text-aside {
     color: var(--RedLight);
     font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
     text-align: justify;
 
-    @media(max-width: 1000px){
+    @media(max-width: 1000px) {
         font-size: 15px;
         font-weight: 500;
         line-height: 1;
     }
 }
 
-.about-me-text{
+.about-me-text {
     text-align: justify;
     margin-top: 30px;
 
-    @media(max-width: 1000px){
+    @media(max-width: 1000px) {
         margin-top: 15px;
     }
 }
 
-.about-me-container-items{
+.about-me-container-items {
     margin: 90px 0px;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         margin: 40px
     }
 }
 
-#contact-me-container{
+#contact-me-container {
     background-color: var(--RedLight);
 }
 
-.contact-me-form-social{
+.contact-me-form-social {
     margin-top: 90px;
     display: flex;
     justify-content: center;
 
-    @media(max-width: 1000px){
+    @media(max-width: 1000px) {
         flex-direction: column-reverse;
         align-items: center;
         margin-top: 40px
     }
 }
 
-.contact-me-left-side{
+.contact-me-left-side {
     background-color: var(--White);
     width: 378px;
     height: 618px;
     border-radius: 10px 0 0 10px;
 
-    @media(max-width: 1000px){
+    @media(max-width: 1000px) {
         width: 361px;
         border-radius: 0 0 10px 10px;
         height: 567px;
     }
 }
 
-.contact-me-right-side{
+.contact-me-right-side {
     background-color: var(--DarkGray);
     height: 618px;
     width: 500px;
@@ -943,20 +999,24 @@
     align-items: center;
     z-index: 0;
 
-    @media(max-width: 1000px){
+    @media(max-width: 1000px) {
         width: 361px;
         border-radius: 10px 10px 0 0;
         height: 551px;
     }
 }
 
-#form-contact-me{
+#form-contact-me {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#name-field, #email-field, #name-field::placeholder, #email-field::placeholder, #email-field:focus{
+#name-field,
+#email-field,
+#name-field::placeholder,
+#email-field::placeholder,
+#email-field:focus {
     margin-top: 30px;
     width: 390px;
     height: 70px;
@@ -968,13 +1028,14 @@
     font-weight: 700;
     padding-left: 5px;
 
-    @media(max-width: 1000px){
+    @media(max-width: 1000px) {
         width: 323px;
         height: 55px;
     }
 }
 
-#textBox-field, #textBox-field::placeholder{
+#textBox-field,
+#textBox-field::placeholder {
     margin-top: 30px;
     width: 390px;
     height: 200px;
@@ -987,26 +1048,26 @@
     padding: 5px;
 
 
-    @media(max-width: 1000px){
+    @media(max-width: 1000px) {
         width: 323px;
         height: 170px;
     }
 }
 
 
-.title-form-right-side{
+.title-form-right-side {
     margin: 30px 0px 5px 0px;
     color: var(--White);
     font-size: 30px;
     font-weight: 700;
 
-    @media(max-width: 1000px){
+    @media(max-width: 1000px) {
         font-size: 23px;
-        margin-bottom: 3px; 
+        margin-bottom: 3px;
     }
 }
 
-.button-right-side-form{
+.button-right-side-form {
     width: 250px;
     height: 45px;
     background-color: var(--RedLight);
@@ -1015,63 +1076,62 @@
     border-radius: 5px;
     margin-top: 40px;
     font-weight: 700;
-    
-    @media(max-width: 1000px){
+
+    @media(max-width: 1000px) {
         height: 40px;
         width: 230px;
         margin-top: 30px
     }
 }
 
-.form-field-error-msg{
+.form-field-error-msg {
     color: var(--RedLight);
     text-align: center;
     margin-top: 5px;
-    /*  */
     z-index: 0;
     position: absolute;
 }
 
-.left-side-item-a{
+.left-side-item-a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    
-    @media (max-width: 1000px){
+
+    @media (max-width: 1000px) {
         flex-direction: row-reverse;
     }
 }
 
-.left-side-item{
+.left-side-item {
     margin: 25px 35px 0px 0px;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         margin: 26px 26px 0px 26px;
     }
 }
 
-.social-media-name{
+.social-media-name {
     margin-right: 15px;
     color: var(--RedLight);
     font-size: 20px;
     font-weight: 500;
 
-    @media(max-width: 1000px){
+    @media(max-width: 1000px) {
         margin: 0 0 0 15px;
     }
 }
 
-.left-side-all-items{
+.left-side-all-items {
     display: flex;
     flex-direction: column;
     align-items: end;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         align-items: start;
     }
 }
 
-.left-side-form-above-title{
+.left-side-form-above-title {
     height: 1px;
     width: 230px;
     margin-top: 20px;
@@ -1079,62 +1139,31 @@
     border-radius: 2px;
 }
 
-.left-side-form-title{
+.left-side-form-title {
     font-size: 30px;
     color: var(--RedLight);
     font-weight: 700;
     margin-top: 55px;
 
-    @media(max-width: 1000px){
+    @media(max-width: 1000px) {
         margin-top: 25px;
     }
 }
 
-.left-side-title-and-canvas{
+.left-side-title-and-canvas {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#contact-me-container{
+#contact-me-container {
     padding: 174px 0px;
 
-    @media(max-width: 1000px){
+    @media(max-width: 1000px) {
         padding: 100px 0 57px 0;
     }
 }
 
-
-
-
-
-.swiper-button-next, 
-.swiper-button-prev {
-  color: var(--RedLight) !important;
-}
-
-.swiper-button-next:after, 
-.swiper-button-prev:after {
-  font-size: 30px !important;
-
-  @media(max-width: 1000px){
-    font-size: 20px !important;
-  }
-}
-
-.swiper-button-next.swiper-button-disabled, 
-.swiper-button-prev.swiper-button-disabled {
-    opacity: 0 !important;
-}
-
-.swiper-pagination-bullet-active {
-  background-color:var(--RedLight) !important;
-}
-
-.swiper-pagination-bullet {
-  background-color: var(--RedLight) !important;
-}
-
-.EAS-college-button{
+.EAS-college-button {
     cursor: pointer;
 }

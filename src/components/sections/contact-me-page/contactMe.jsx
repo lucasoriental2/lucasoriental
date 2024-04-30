@@ -36,12 +36,14 @@ const contactMePage = () => {
     return (
       <div id="contact-me-container">
         <div className="container-general">
-          <p className="title-general">CONTACT ME</p>
-          <div className="contact-me-form-social">
+          <p className="title-general" data-aos="fade-left"
+            data-aos-anchor-placement="top-center">CONTACT ME</p>
+          <div className="contact-me-form-social" data-aos="fade-right"
+            data-aos-anchor-placement="top-center">
             <div className="contact-me-left-side">
               <div>
                 <div className="left-side-title-and-canvas">
-                  <p className="left-side-form-title">Get in Touch!</p>
+                  <p className="left-side-form-title" >Get in Touch!</p>
                   <canvas className="left-side-form-above-title" />
                 </div>
                 <div className="left-side-all-items">
@@ -96,7 +98,7 @@ const contactMePage = () => {
                 </div>
               </div>
             </div>
-            <div className="contact-me-right-side">
+            {/* <div className="contact-me-right-side">
               <p className="title-form-right-side">SEND ME A MESSAGE</p>
               <form id="form-contact-me">
                 <label>
@@ -146,7 +148,7 @@ const contactMePage = () => {
                   value="Submit"
                 />
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
