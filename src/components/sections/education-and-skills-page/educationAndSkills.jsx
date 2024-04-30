@@ -3,9 +3,6 @@ import Certificates from "./common/certificates";
 import College from "./common/college";
 import Skills from "./common/skills";
 
-import AOS from "aos"
-import 'aos/dist/aos.css'
-
 const EducationAndSkillsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -16,7 +13,6 @@ const EducationAndSkillsPage = () => {
   const [college, setCollege] = useState(null);
 
   useEffect(() => {
-    AOS.init({duration: 1000})
     const fetchData = async () => {
       try {
         const response1 = await fetch("http://localhost:5000/certificatesIT");
@@ -52,9 +48,6 @@ const EducationAndSkillsPage = () => {
         <p
           className="title-general"
           style={{ color: "#E00036" }}
-          data-aos="fade-right"
-          data-aos-offset="150"
-          data-aos-easing="ease-in-sine"
         >
           EDUCATION & SKILLS
         </p>
@@ -75,9 +68,6 @@ const EducationAndSkillsPage = () => {
             <div>
               <div
                 className="title-and-canvas"
-                data-aos="fade-right"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-sine"
               >
                 <div className="column-1-teste">
                   <p className="EAS-title-general">COLLEGE</p>
@@ -92,9 +82,6 @@ const EducationAndSkillsPage = () => {
             <div>
               <div
                 className="title-and-canvas"
-                data-aos="fade-right"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-sine"
               >
                 <div className="column-1-teste">
                   <p className="EAS-title-general">SKILLS</p>
@@ -106,9 +93,6 @@ const EducationAndSkillsPage = () => {
               </div>
               <div
                 className="subtitle-and-canvas"
-                data-aos="fade-left"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-sine"
               >
                 <canvas className="bar-before" />
                 <p className="EAS-title-section">INFORMATION TECHNOLOGY (IT)</p>
@@ -117,9 +101,6 @@ const EducationAndSkillsPage = () => {
               <Skills data={skillIT} />
               <div
                 className="subtitle-and-canvas"
-                data-aos="fade-left"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-sine"
               >
                 <canvas className="bar-before" />
                 <p className="EAS-title-section">DESIGN</p>
@@ -130,9 +111,6 @@ const EducationAndSkillsPage = () => {
             <div>
               <div
                 className="title-and-canvas"
-                data-aos="fade-right"
-                data-aos-offset="150"
-                data-aos-easing="ease-in-sine"
               >
                 <div className="column-1-teste">
                   <p className="EAS-title-general">CERTIFICATES</p>
@@ -144,9 +122,6 @@ const EducationAndSkillsPage = () => {
               </div>
               <div
                 className="subtitle-and-canvas"
-                data-aos="fade-left"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-sine"
               >
                 <canvas className="bar-before" />
                 <p className="EAS-title-section">INFORMATION TECHNOLOGY (IT)</p>
@@ -155,9 +130,6 @@ const EducationAndSkillsPage = () => {
               <Certificates data={certificateIT} />
               <div
                 className="subtitle-and-canvas"
-                data-aos="fade-left"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-sine"
               >
                 <canvas className="bar-before" />
                 <p className="EAS-title-section">DESIGN</p>

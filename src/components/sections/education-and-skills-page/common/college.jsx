@@ -1,15 +1,10 @@
-import React, {useEffect, useState} from "react";
-import collegePicture from '../../../../assets/pictures/picture_college.png';
+import React, { useEffect, useState } from "react";
+import collegePicture from "../../../../assets/pictures/picture_college.png";
 
-import AOS from "aos"
-import 'aos/dist/aos.css'
-
-export default function College () {
-
+export default function College() {
   const [college, setCollege] = useState([]);
 
   useEffect(() => {
-    AOS.init({duration: 850})
     fetch("http://localhost:5000/college", {
       method: "GET",
       headers: {
@@ -21,19 +16,13 @@ export default function College () {
         setCollege(data);
       })
       .catch((err) => console.error(err));
-  },[]);
+  }, []);
 
   return (
     <div className="allColeges">
       {college.map((college) => {
         return (
-          <div
-            className="EAS-college"
-            key={college.id}
-            data-aos="fade-left"
-            data-aos-offset="250"
-            data-aos-easing="ease-in-sine"
-          >
+          <div className="EAS-college" key={college.id}>
             <div className="EAS-college-img-and-info">
               <img
                 alt="College_picture"

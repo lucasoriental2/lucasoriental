@@ -1,34 +1,29 @@
-import React, {useState, useEffect} from "react";
-import CapCourseLightSVG from '../../../../assets/light_theme/cap_course_SVG';
-import ClockLightSVG from '../../../../assets/light_theme/clock_SVG';
-import certificatePicture from '../../../../assets/pictures/picture_certificate.png';
+import React, { useState, useEffect } from "react";
+import CapCourseLightSVG from "../../../../assets/light_theme/cap_course_SVG";
+import ClockLightSVG from "../../../../assets/light_theme/clock_SVG";
+import certificatePicture from "../../../../assets/pictures/picture_certificate.png";
 
 import { Navigation, Pagination } from "swiper/modules";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import CertModal from "./modals/certModal";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/navigation";
 
-import AOS from "aos"
-import 'aos/dist/aos.css'
-
-export default function Certificates (props) {
-
+export default function Certificates(props) {
   const [itemsPerPage, setItemsPerPage] = useState(4);
 
   useEffect(() => {
-    AOS.init({duration: 850})
     const updateItemsPerPage = () => {
       const width = window.innerWidth;
       if (width < 854) {
         setItemsPerPage(1);
-      }else if (width < 1100) {
+      } else if (width < 1100) {
         setItemsPerPage(1);
-      }else if (width < 1450) {
+      } else if (width < 1450) {
         setItemsPerPage(2);
       } else {
         setItemsPerPage(props.data.length);
@@ -52,19 +47,11 @@ export default function Certificates (props) {
         pagination={{ clickable: true }}
         modules={[Navigation, Pagination]}
         className="swipe-view-certificate"
-        data-aos="fade-right"
-        data-aos-offset="250"
-        data-aos-easing="ease-in-sine"
       >
         {props.data.map((certificate, index) => {
           return (
             <SwiperSlide key={index}>
-              <div
-                className="EAS-certificates"
-                data-aos="fade-right"
-                data-aos-offset="250"
-                data-aos-easing="ease-in-sine"
-              >
+              <div className="EAS-certificates">
                 <img
                   alt="credential_img"
                   src={certificatePicture}

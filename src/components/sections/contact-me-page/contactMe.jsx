@@ -36,10 +36,8 @@ const contactMePage = () => {
     return (
       <div id="contact-me-container">
         <div className="container-general">
-          <p className="title-general" data-aos="fade-left"
-            data-aos-anchor-placement="top-center">CONTACT ME</p>
-          <div className="contact-me-form-social" data-aos="fade-right"
-            data-aos-anchor-placement="top-center">
+          <p className="title-general">CONTACT ME</p>
+          <div className="contact-me-form-social">
             <div className="contact-me-left-side">
               <div>
                 <div className="left-side-title-and-canvas">

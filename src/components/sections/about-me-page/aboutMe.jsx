@@ -8,16 +8,12 @@ const aboutMePage = () => {
       <p
         className="title-general"
         style={{ color: "#E00036" }}
-        data-aos="fade-right"
-        data-aos-anchor-placement="top-center"
       >
         ABOUT ME
       </p>
       <div className="about-me-container-items">
         <div
           className="img-and-text"
-          data-aos="fade-left"
-          data-aos-anchor-placement="top-center"
         >
           <img alt="imagem" src={image} className="about-me-image" />
           <p className="about-me-text-aside">
@@ -30,7 +26,7 @@ const aboutMePage = () => {
             theaHere is theaHere is the.
           </p>
         </div>
-        <div data-aos="fade-right" data-aos-anchor-placement="top-center">
+        <div>
           <p className="about-me-text">
             Here is the place that will contains all the text about me...Here is
             the place that will contains all the text about me...Here is the

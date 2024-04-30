@@ -1,16 +1,11 @@
-import React, {useEffect} from 'react'
-import MouseSrollSvg from '../../../assets/light_theme/mouse_arrow_down'
-import main_picture from '../../../assets/pictures/profile_photo.png'
+import React, { useEffect } from "react";
+import MouseSrollSvg from "../../../assets/light_theme/mouse_arrow_down";
+import main_picture from "../../../assets/pictures/profile_photo.png";
 
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 const MainPage = () => {
-
-/*   useEffect(() => {
-    AOS.init({duration: 1000})
-   }) */
-
-    const headerHeight = 120;
+  const headerHeight = 120;
 
   return (
     <div id="home-main-container">
@@ -61,6 +56,6 @@ const MainPage = () => {
       </div>
     </div>
   );
-}
+};
 
 export default MainPage;

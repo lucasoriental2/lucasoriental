@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import XIconSvg from '../../../assets/common_elements/icon_X';
-import MenuHamburguer from '../../../assets/common_elements/icon_menu_hamburger';
-import LanguageSvg from '../../../assets/common_elements/language_icon';
-import ThemeSvg from '../../../assets/common_elements/theme_icon';
+import React, { useState } from "react";
+import XIconSvg from "../../../assets/common_elements/icon_X";
+import MenuHamburguer from "../../../assets/common_elements/icon_menu_hamburger";
+import LanguageSvg from "../../../assets/common_elements/language_icon";
+import ThemeSvg from "../../../assets/common_elements/theme_icon";
 
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 const Header = () => {
   const headerHeight = 120;
@@ -27,12 +27,11 @@ const Header = () => {
   return (
     <header id="header-main">
       <div id="header-desktop">
-        {/* <div className="header-desktop-theme">
-          <div className="header-theme-selected" />
-          <ThemeSvg />
-        </div> */}
-
         <nav className="header-desktop-nav">
+          {/* <div className="header-desktop-theme">
+            <div className="header-theme-selected" />
+            <ThemeSvg />
+          </div> */}
           <Link
             activeClass="active"
             to="home-main-container"
@@ -103,12 +102,11 @@ const Header = () => {
           >
             Have a Fun😊
           </Link> */}
+          {/* <div className="header-desktop-language">
+            <div className="header-language-selected" />
+            <LanguageSvg />
+          </div> */}
         </nav>
-
-        {/* <div className="header-desktop-language">
-          <div className="header-language-selected" />
-          <LanguageSvg />
-        </div> */}
       </div>
 
       <div id="header-mobile">
@@ -152,7 +150,7 @@ const Header = () => {
             </Link>
             <Link
               activeClass="active"
-              to="home-my-projects-container"
+              to="my-projects-container"
               spy={true}
               smooth={true}
               offset={-headerHeight}
