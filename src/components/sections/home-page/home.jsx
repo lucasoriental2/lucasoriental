@@ -31,10 +31,7 @@ const MainPage = () => {
               </p>
             </div>
             <p className="home-paragraph-3">
-              A <span>Software Developer Jr</span> (Front-End)
-            </p>
-            <p className="home-paragraph-3">
-              And <span>UX/UI Designer</span>
+              A <span>WEB Developer Jr</span> And <span>UX/UI Designer</span>
             </p>
           </div>
           <div className="home-line2">
