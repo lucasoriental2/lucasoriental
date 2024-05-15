@@ -1,11 +1,15 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import dataBaseIcon from '../../../assets/common_elements/technologies/database_icon.png'
 import figmaIcon from '../../../assets/common_elements/technologies/figma_icon.png'
 import reactIcon from '../../../assets/common_elements/technologies/react_icon.png'
 import sassIcon from '../../../assets/common_elements/technologies/sass_icon.png'
 import projectImage from '../../../assets/pictures/project_img.png'
+import ClinicaDoPaiao from './each-project/clinicaDoPaiao.jsx'
 
 const MyProjectsPage = () => {
+
+  const [modalOpen, setModalOpen] = useState(false);
+
   let projects = [
     {
       image: projectImage,
@@ -51,53 +55,53 @@ const MyProjectsPage = () => {
     },
   ];
 
-    return (
-      <div id="my-projects-container">
-        <div className="container-general">
-          <div>
-            <p className="title-general">MY PROJECTS</p>
-          </div>
-          <div className="project-view">
-            {projects.map((project, index) => {
-              let tecs = [];
-              for (let i = 0; i < project.technologies.length; i++) {
-                tecs.push(
-                  <img
-                    className="img-icon"
-                    key={i}
-                    src={project.technologies[i].icon}
-                    alt={project.technologies[i]}
-                  />
-                );
-              }
-              return (
-                <div key={index}>
-                  <div className="div-project-image">
-                    <img
-                      className="project-image"
-                      src={project.image}
-                      alt="Project_image"
-                    />
-                  </div>
-                  <div>
-                    <p className="project-title">{project.title}</p>
-                    <p className="project-sub-title">{project.subTitle}</p>
-                    <div className="my-project-tec-images">{tecs}</div>
-                  </div>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    className="project-link-button"
-                  >
-                    <button className="project-button">more details</button>
-                  </a>
-                </div>
+  return (
+    <div id="my-projects-container">
+      <div className="container-general">
+        <div>
+          <p className="title-general">MY PROJECTS</p>
+        </div>
+        <div className="project-view">
+          {projects.map((project, index) => {
+            let tecs = [];
+            for (let i = 0; i < project.technologies.length; i++) {
+              tecs.push(
+                <img
+                  className="img-icon"
+                  key={i}
+                  src={project.technologies[i].icon}
+                  alt={project.technologies[i]}
+                />
               );
-            })}
-          </div>
+            }
+            return (
+              <div key={index} className='teste'>
+                <div className="div-project-image">
+                  <img
+                    className="project-image"
+                    src={project.image}
+                    alt="Project_image"
+                  />
+                </div>
+                <div>
+                  <p className="project-title">{project.title}</p>
+                  <p className="project-sub-title">{project.subTitle}</p>
+                  <div className="my-project-tec-images">{tecs}</div>
+                </div>
+                <a
+                  target="_blank"
+                  className="project-link-button"
+                >
+                  <button onClick={() => setModalOpen(true)} className="project-button">more details</button>
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
-    );
+      {modalOpen && <ClinicaDoPaiao setOpenModal={setModalOpen} />}
+    </div>
+  );
 }
 
 export default MyProjectsPage;

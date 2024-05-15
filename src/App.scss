@@ -48,9 +48,7 @@
   z-index: 2;
 }
 
-
 //Header Desktop
-
 
 #header-desktop {
   display: flex;
@@ -345,87 +343,102 @@
 // MY PROJECT SECTION
 // ------------------------------------
 
-<<<<<<< Updated upstream
-/* #my-projects-container {
-=======
-
 #my-projects-container {
->>>>>>> Stashed changes
-    margin-top: 85px;
-    background-color: var(--RedLight);
-    padding: 102px 0px;
+  margin-top: 85px;
+  background-color: var(--RedLight);
+  padding: 102px 0px;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--White);
+
+  @media (max-width: 1000px) {
+    font-size: 27px;
+  }
 }
 
 .project-sub-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-    color: var(--White);
-    margin: 0px 0 10px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--White);
+  margin: 0px 0 10px 0;
 
-    @media(max-width: 1000px) {
-        font-size: 20px;
-        margin: 0 0 0 0;
-    }
+  @media (max-width: 1000px) {
+    font-size: 20px;
+    margin: 0 0 0 0;
+  }
 }
 
-.project-link-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+.project-link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .project-button {
-    cursor: pointer;
-    width: 255px;
-    height: 50px;
-    color: var(--RedLight);
-    font-size: 20px;
-    font-weight: 700;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--White);
+  cursor: pointer;
+  width: 255px;
+  height: 50px;
+  color: var(--RedLight);
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--White);
 
-    @media(max-width: 1000px) {
-        width: 182px;
-        height: 34px;
-        font-size: 15px;
-    }
+  @media (max-width: 1000px) {
+    width: 182px;
+    height: 34px;
+    font-size: 15px;
+  }
 }
 
-.div-project-image{
-    display: flex;
-    align-items: center;
+.div-project-image {
+  display: flex;
+  align-items: center;
 }
 
 .project-image {
-    margin: 0px auto 17px;
+  margin: 0px auto 17px;
 
-    @media(max-width: 1000px) {
-        width: 300px;
-        height: 320px;
-    }
+  @media (max-width: 1000px) {
+    width: 300px;
+    height: 320px;
+  }
 }
 
-.my-project-tec-img{
-    cursor: pointer;
-    margin: 0 5px;
+.my-project-tec-img {
+  cursor: pointer;
+  margin: 0 5px;
 }
 
-.my-project-tec-images{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 5px 13px;
+.my-project-tec-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 5px 13px;
 
-    @media (max-width: 1000px){
-        margin: 5px 5px 10px;
-    }
+  @media (max-width: 1000px) {
+    margin: 5px 5px 10px;
+  }
 }
 
-.img-icon{
-    margin: 0 5px;
+.img-icon {
+  margin: 0 5px;
+}
+
+.project-view {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 // ------------------------------------
@@ -1164,4 +1177,30 @@
 
 .EAS-college-button {
   cursor: pointer;
+}
+
+// Modal settings
+// Modal settings
+// Modal settings
+// Modal settings
+
+.modal-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.modal-container {
+  width: 350px;
+  height: 350px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
 }
