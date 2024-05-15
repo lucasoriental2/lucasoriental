@@ -1,8 +1,6 @@
 import React from "react";
-import Header from "../src/components/global/header/header";
-/* import 'bootstrap/dist/css/bootstrap.min.css'; */
 import "./App.scss";
-/* import 'animate.css'; */
+import Header from "../src/components/global/header/header";
 import EducationAndSkills from "./components/sections/education-and-skills-page/educationAndSkills";
 import MainPage from "./components/sections/home-page/home";
 import MyProjects from "./components/sections/my-projects-page/myProjects";
