@@ -5,8 +5,11 @@ import reactIcon from '../../../assets/common_elements/technologies/react_icon.p
 import sassIcon from '../../../assets/common_elements/technologies/sass_icon.png'
 import projectImage from '../../../assets/pictures/project_img.png'
 import ClinicaDoPaiao from './each-project/clinicaDoPaiao.jsx'
+import MyPortfolio from './each-project/myPortfolio.jsx'
 
 const MyProjectsPage = () => {
+
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -26,7 +29,8 @@ const MyProjectsPage = () => {
         },
       ],
       link: "https://clinicadopaiao.com/",
-      id: 1,
+      id: 0,
+      modal: <ClinicaDoPaiao setOpenModal={setModalOpen} />
     },
     {
       image: projectImage,
@@ -52,6 +56,7 @@ const MyProjectsPage = () => {
       ],
       link: "https://github.com/lucasoriental/lucasoriental",
       id: 1,
+      modal: <MyPortfolio setOpenModal={setModalOpen} />
     },
   ];
 
@@ -75,7 +80,7 @@ const MyProjectsPage = () => {
               );
             }
             return (
-              <div key={index} className='teste'>
+              <div key={project.id} className="teste">
                 <div className="div-project-image">
                   <img
                     className="project-image"
@@ -88,18 +93,23 @@ const MyProjectsPage = () => {
                   <p className="project-sub-title">{project.subTitle}</p>
                   <div className="my-project-tec-images">{tecs}</div>
                 </div>
-                <a
-                  target="_blank"
-                  className="project-link-button"
-                >
-                  <button onClick={() => setModalOpen(true)} className="project-button">more details</button>
+                <a className="project-link-button">
+                  <button
+                    onClick={() => {
+                      setSelectedProject(index);
+                      setModalOpen(true);
+                    }}
+                    className="project-button"
+                  >
+                    more details
+                  </button>
                 </a>
+                {modalOpen && selectedProject === index && project.modal}
               </div>
             );
           })}
         </div>
       </div>
-      {modalOpen && <ClinicaDoPaiao setOpenModal={setModalOpen} />}
     </div>
   );
 }

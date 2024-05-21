@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import XIconSvg from "../../../../assets/common_elements/icon_X"
 
-export default function clinicaDoPaiao({ setOpenModal, information }) {
+export default function myPortfolio({ setOpenModal }) {
 
     useEffect(() => {
         document.body.classList.add('modal-open');
@@ -28,19 +28,30 @@ export default function clinicaDoPaiao({ setOpenModal, information }) {
             <div className="modal-body">
               <canvas className="modal-img" src="#" alt="#" />
               <div className="modal-body-text-area">
-                <p className="modal-body-title"></p>
+                <p className="modal-body-title">My Portfolio</p>
                 <p className="modal-body-sub-title">Web Development</p>
-                <p className="modal-text">
-                  Clinica Do Paião is a medical clinic situated on Paião in
-                  Portugal, that offers medical services! Like General Clinic,
-                  Psycology, Physioterapy, acupunture and other ones!
-                </p>
+                <p className="modal-text"></p>
               </div>
             </div>
             <div className="modal-footer">
-              <button className="modal-button-project">GitHub</button>
-              <button className="modal-button-project">Website</button>
-              <button className="modal-button-project">behance</button>
+              <div>
+                <a
+                  href="https://github.com/lucasoriental/lucasoriental"
+                  target="_blank"
+                >
+                  <button className="modal-button-project">GitHub</button>
+                </a>
+              </div>
+              <div>
+                <a href="https://lucasoriental.com" target="_blank">
+                  <button className="modal-button-project">Website</button>
+                </a>
+              </div>
+              <div>
+                <a href="https://behance.net/lucasoriental" target="_blank">
+                  <button className="modal-button-project">Behance</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
