@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import CapCourseLightSVG from "../../../../assets/light_theme/cap_course_SVG";
 import ClockLightSVG from "../../../../assets/light_theme/clock_SVG";
 import certificatePicture from "../../../../assets/pictures/picture_certificate.png";
@@ -15,6 +15,10 @@ import "swiper/css/navigation";
 
 export default function Certificates(props) {
   const [itemsPerPage, setItemsPerPage] = useState(4);
+
+  const [selectedCourse, setSelectedCourse] = useState(null);
+
+  const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     const updateItemsPerPage = () => {
@@ -71,16 +75,18 @@ export default function Certificates(props) {
                       {certificate.time} h
                     </p>
                   </div>
-                  <a href={certificate.credentialUrl}>
-                    <button className="EAS-certificates-button">
-                      Show Credential
-                    </button>
-                  </a>
+                  <button className="EAS-certificates-button" onClick={() => {
+                    setModalOpen(true)
+                    setSelectedCourse(index);
+                  }}>
+                    Show Credential
+                  </button>
                 </div>
               </div>
             </SwiperSlide>
           );
         })}
+        {modalOpen && selectedCourse === index && <CertModal setOpenModal={setModalOpen} />}
       </Swiper>
     </div>
   );

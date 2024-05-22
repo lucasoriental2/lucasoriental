@@ -76,7 +76,7 @@ const contactMePage = () => {
                   <div className="left-side-item">
                     <a href="#" className="left-side-item-a">
                       <p className="social-media-name">/lucasoriental</p>
-                      <GitHubSVG />
+                      <GitHubSVG width={40} height={40} color={"#E00036"}/>
                     </a>
                   </div>
                   <div className="left-side-item">
@@ -90,7 +90,7 @@ const contactMePage = () => {
                   <div className="left-side-item">
                     <a href="#" className="left-side-item-a">
                       <p className="social-media-name">/lucasoriental</p>
-                      <BehanceSVG />
+                      <BehanceSVG width={40} height={40} color={"#E00036"}/>
                     </a>
                   </div>
                 </div>

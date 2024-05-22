@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
 import dataBaseIcon from '../../../assets/common_elements/technologies/database_icon.png'
 import figmaIcon from '../../../assets/common_elements/technologies/figma_icon.png'
 import reactIcon from '../../../assets/common_elements/technologies/react_icon.png'
@@ -17,7 +17,7 @@ const MyProjectsPage = () => {
     {
       image: projectImage,
       title: "Clínica do Paião",
-      subTitle: "Web Development",
+      subTitle: "Web Development & Design",
       technologies: [
         {
           icon: reactIcon,
@@ -35,7 +35,7 @@ const MyProjectsPage = () => {
     {
       image: projectImage,
       title: "My Portfolio",
-      subTitle: "Design & Web Development",
+      subTitle: "Web Development & Design",
       technologies: [
         {
           icon: dataBaseIcon,

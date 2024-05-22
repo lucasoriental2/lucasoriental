@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import "./App.scss";
 import Header from "../src/components/global/header/header";
 import EducationAndSkills from "./components/sections/education-and-skills-page/educationAndSkills";

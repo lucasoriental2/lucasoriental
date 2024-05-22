@@ -5,7 +5,8 @@
       "platform": "Udemy - Geek University",
       "course": "JS do básico ao avançado (c/ Node e Projetos)",
       "time": "23.5",
-      "credentialURL": "#",
+      "credentialCode": "#",
+      "credentialLink": "#",
       "img": "#"
     },
     {
@@ -14,6 +15,8 @@
       "course": "JavaScript",
       "time": "40",
       "credentialURL": "https://www.cursoemvideo.com/validacao-de-certificado/?codigo=3A615-6C61-9",
+      "credentialCode": "#",
+      "credentialLink": "#",
       "img": "#"
     },
     {
@@ -21,7 +24,8 @@
       "platform": "Fundação Bradesco",
       "course": "Introdução a Redes de Computadores",
       "time": "23",
-      "credentialURL": "#",
+      "credentialCode": "#",
+      "credentialLink": "#",
       "img": "#"
     }
   ],
@@ -31,7 +35,8 @@
       "platform": "Udemy",
       "course": "Curso Completo de Design de Interface",
       "time": "20.5",
-      "credentialURL": "#",
+      "credentialCode": "#",
+      "credentialLink": "#",
       "img": "#"
     },
     {
@@ -39,7 +44,8 @@
       "platform": "Fundação Bradesco",
       "course": "Design Thinking",
       "time": "15",
-      "credentialURL": "#",
+      "credentialCode": "#",
+      "credentialLink": "#",
       "img": "#"
     }
   ],
