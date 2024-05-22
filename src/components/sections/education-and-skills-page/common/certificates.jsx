@@ -3,6 +3,8 @@ import CapCourseLightSVG from "../../../../assets/light_theme/cap_course_SVG";
 import ClockLightSVG from "../../../../assets/light_theme/clock_SVG";
 import certificatePicture from "../../../../assets/pictures/picture_certificate.png";
 
+import { Tooltip } from 'react-tooltip'
+
 /* import { Navigation, Pagination } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react"; */
@@ -62,15 +64,19 @@ export default function Certificates(props) {
                 className="EAS-certificates-picture"
               />
               <div className="EAS-certificates-div">
-                <button
-                  className="EAS-certificates-title-link"
-                  onClick={() => {
-                    setModalOpen(true);
-                    setSelectedCourse(index);
-                  }}
-                >
-                  <p className="EAS-certificates-title">{certificate.course}</p>
-                </button>
+                  <button
+                    className="EAS-certificates-title-link"
+                    onClick={() => {
+                      setModalOpen(true);
+                      setSelectedCourse(index);
+                    }}
+                  >
+                      <Tooltip id="my-tooltip-cert" />
+                    <p
+                      data-tooltip-id="my-tooltip-cert" 
+                      data-tooltip-content="Click to see the credential" 
+                      className="EAS-certificates-title">{certificate.course}</p>
+                  </button>
                 <div className="EAS-certificates-div-icon-text">
                   <CapCourseLightSVG />
                   <p className="EAS-certificates-div-text">

@@ -4,7 +4,6 @@ import skillPicture from "../../../../assets/pictures/picture_skill.png";
 
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { motion } from "framer-motion";
 
 // Import Swiper styles
 import "swiper/css";
@@ -67,9 +66,11 @@ export default function Skills(props) {
           }
           return (
             <SwiperSlide key={index}>
-              <div className="EAS-skills">
+               <div className="EAS-skills"> 
                 {skill.professional === true ? (
-                  <ProfessionalStarIconSvg className="star-skill" />
+                     <ProfessionalStarIconSvg
+                      height={20} width={20} outColor="#E00036" inColor="white"
+                      className="star-skill" />
                 ) : null}
                 <img
                   alt="skill_img"

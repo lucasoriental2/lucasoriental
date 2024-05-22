@@ -8,7 +8,7 @@ import JobExperiences from "./components/sections/job-experiences-page/jobExperi
 import AboutMe from "./components/sections/about-me-page/aboutMe";
 import ContactMe from "./components/sections/contact-me-page/contactMe";
 import Footer from './components/global/footer/footer'
-
+import 'react-tooltip/dist/react-tooltip.css'
 
 
 function App() {
