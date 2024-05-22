@@ -1,26 +1,26 @@
-import { useState, useEffect } from "react";
+import { useState, /* useEffect */ } from "react";
 import CapCourseLightSVG from "../../../../assets/light_theme/cap_course_SVG";
 import ClockLightSVG from "../../../../assets/light_theme/clock_SVG";
 import certificatePicture from "../../../../assets/pictures/picture_certificate.png";
 
-import { Navigation, Pagination } from "swiper/modules";
+/* import { Navigation, Pagination } from "swiper/modules";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react"; */
 
 import CertModal from "./modals/certModal";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
+/* import "swiper/css";
+import "swiper/css/navigation"; */
 
 export default function Certificates(props) {
-  const [itemsPerPage, setItemsPerPage] = useState(4);
+  /* const [itemsPerPage, setItemsPerPage] = useState(4); */
 
   const [selectedCourse, setSelectedCourse] = useState(null);
 
   const [modalOpen, setModalOpen] = useState(false);
 
-  useEffect(() => {
+  /* useEffect(() => {
     const updateItemsPerPage = () => {
       const width = window.innerWidth;
       if (width < 854) {
@@ -39,11 +39,12 @@ export default function Certificates(props) {
     return () => {
       window.removeEventListener("resize", updateItemsPerPage);
     };
-  }, []);
+  }, []); */
 
   return (
-    <div className="allCertificates">
-      <Swiper
+    <div className="container-certificates">
+      <div className="allCertificates">
+        {/* <Swiper
         navigation={true}
         slidesPerView={itemsPerPage}
         spaceBetween={20}
@@ -51,43 +52,46 @@ export default function Certificates(props) {
         pagination={{ clickable: true }}
         modules={[Navigation, Pagination]}
         className="swipe-view-certificate"
-      >
+      > */}
         {props.data.map((certificate, index) => {
           return (
-            <SwiperSlide key={index}>
-              <div className="EAS-certificates">
-                <img
-                  alt="credential_img"
-                  src={certificatePicture}
-                  className="EAS-certificates-picture"
-                />
-                <div className="EAS-certificates-div">
-                  <p className="EAS-certificates-title">{certificate.course}</p>
-                  <div className="EAS-certificates-div-icon-text">
-                    <CapCourseLightSVG />
-                    <p className="EAS-certificates-div-text">
-                      {certificate.platform}
-                    </p>
-                  </div>
-                  <div className="EAS-certificates-div-icon-text">
-                    <ClockLightSVG />
-                    <p className="EAS-certificates-div-text">
-                      {certificate.time} h
-                    </p>
-                  </div>
-                  <button className="EAS-certificates-button" onClick={() => {
-                    setModalOpen(true)
+            <div className="EAS-certificates" key={certificate.id}>
+              <img
+                alt="credential_img"
+                src={certificatePicture}
+                className="EAS-certificates-picture"
+              />
+              <div className="EAS-certificates-div">
+                <button
+                  className="EAS-certificates-title-link"
+                  onClick={() => {
+                    setModalOpen(true);
                     setSelectedCourse(index);
-                  }}>
-                    Show Credential
-                  </button>
+                  }}
+                >
+                  <p className="EAS-certificates-title">{certificate.course}</p>
+                </button>
+                <div className="EAS-certificates-div-icon-text">
+                  <CapCourseLightSVG />
+                  <p className="EAS-certificates-div-text">
+                    {certificate.platform}
+                  </p>
+                </div>
+                <div className="EAS-certificates-div-icon-text">
+                  <ClockLightSVG />
+                  <p className="EAS-certificates-div-text">
+                    {certificate.time} h
+                  </p>
                 </div>
               </div>
-            </SwiperSlide>
+              {modalOpen && selectedCourse === index && (
+                <CertModal setOpenModal={setModalOpen} />
+              )}
+            </div>
           );
         })}
-        {modalOpen && selectedCourse === index && <CertModal setOpenModal={setModalOpen} />}
-      </Swiper>
+        {/* </Swiper> */}
+      </div>
     </div>
   );
 }
