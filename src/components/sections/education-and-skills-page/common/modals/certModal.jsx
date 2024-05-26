@@ -2,16 +2,15 @@ import { useEffect } from "react";
 import XIconSvg from "../../../../../assets/common_elements/icon_X";
 
 export default function CertModal({ setOpenModal, information }) {
-
   useEffect(() => {
-    document.body.classList.add('modal-open');
+    document.body.classList.add("modal-open");
     return () => {
       document.body.classList.remove("modal-open");
     };
   }, []);
 
-  console.log(information.credentialCode)
-  console.log(information.credentialLink)
+  console.log(information.credentialCode);
+  console.log(information.credentialLink);
 
   return (
     <div className="modal-background">
@@ -34,8 +33,16 @@ export default function CertModal({ setOpenModal, information }) {
               <p className="modal-cert-value">{information.credentialCode}</p>
             </div>
             <div className="modal-block-info-cert">
-              <p className="modal-cert-title">Website to validate the certification</p>
-              <a className="modal-cert-value" href={information.credentialLink} target="_blank">{information.credentialLink}</a>
+              <p className="modal-cert-title">
+                Website to validate the certification
+              </p>
+              <a
+                className="modal-cert-value"
+                href={information.credentialLink}
+                target="_blank"
+              >
+                {information.credentialLink}
+              </a>
             </div>
           </div>
         </div>

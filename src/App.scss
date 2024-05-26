@@ -440,7 +440,7 @@
   margin-top: 90px;
   flex-wrap: wrap;
 
-  @media(max-width: 1000px){
+  @media (max-width: 1000px) {
     margin-top: 40px;
   }
 }
@@ -620,7 +620,6 @@
   }
 }
 
-
 .EAS-skills-picture {
   width: 125px;
   height: 125px;
@@ -632,7 +631,7 @@
   }
 }
 
-.container-certificates{
+.container-certificates {
   padding: 0 auto;
 }
 
@@ -722,7 +721,7 @@
   }
 }
 
-.EAS-certificates-title-link{
+.EAS-certificates-title-link {
   border: none;
   background: none;
 }
@@ -782,10 +781,6 @@
     font-size: 20px;
   }
 }
-
-
-
-
 
 .job-title {
   font-weight: 700;
@@ -1302,38 +1297,39 @@ body.modal-open {
   padding-right: 40px;
 }
 
-.modal-button-project-icon{
+.modal-button-project-icon {
   margin: 0px 10px;
 }
 
-.modal-link-a{
+.modal-link-a {
   text-decoration: none;
 }
 
-.modal-block-info-cert-all{
+.modal-block-info-cert-all {
   display: flex;
   flex-direction: column;
   padding: 20px 0px 0px 30px;
 }
 
-.modal-block-info-cert{
+.modal-block-info-cert {
   margin-bottom: 20px;
 }
 
-.modal-cert-title{
+.modal-cert-title {
   font-size: 20px;
   font-weight: bold;
   color: var(--RedLight);
   margin-bottom: 10px;
 }
 
-.modal-cert-value{
+.modal-cert-value {
   font-size: 17px;
   font-weight: 500;
   color: var(--RedLight);
   margin-left: 10px;
 }
 
-.swiper-button-prev, .swiper-button-next{
+.swiper-button-prev,
+.swiper-button-next {
   color: var(--RedLight) !important;
 }

@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
-import InstagramSVG from "../../../assets/light_theme/Instagram"
-import GitHubSVG from "../../../assets/light_theme/GitHub"
-import BehanceSVG from "../../../assets/light_theme/Behance"
-import LocationSVG from "../../../assets/light_theme/locate"
-import MailSVG from "../../../assets/light_theme/mail"
-import NumberSVG from "../../../assets/light_theme/wpp_or_call"
-import LinkedInSVG from "../../../assets/light_theme/LinkedIn"
+import React, { useState } from 'react';
+import BehanceSVG from "../../../assets/light_theme/Behance";
+import GitHubSVG from "../../../assets/light_theme/GitHub";
+import InstagramSVG from "../../../assets/light_theme/Instagram";
+import LinkedInSVG from "../../../assets/light_theme/LinkedIn";
+import LocationSVG from "../../../assets/light_theme/locate";
+import MailSVG from "../../../assets/light_theme/mail";
+import NumberSVG from "../../../assets/light_theme/wpp_or_call";
 
 const contactMePage = () => {
 

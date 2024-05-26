@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ProfessionalStarIconSvg from "../../../../assets/common_elements/professional_star";
 import skillPicture from "../../../../assets/pictures/picture_skill.png";
 
@@ -7,10 +7,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import "swiper/css/effect-fade";
 
 export default function Skills(props) {
   const [itemsPerPage, setItemsPerPage] = useState(4);

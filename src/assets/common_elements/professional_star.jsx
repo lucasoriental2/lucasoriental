@@ -1,4 +1,4 @@
-import { Tooltip } from 'react-tooltip'
+import { Tooltip } from 'react-tooltip';
 
 export default function ProfessionalStarIconSvg({height, width, outColor, inColor}) {
   return (

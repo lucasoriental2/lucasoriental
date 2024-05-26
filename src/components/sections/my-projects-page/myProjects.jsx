@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import dataBaseIcon from '../../../assets/common_elements/technologies/database_icon.png'
-import figmaIcon from '../../../assets/common_elements/technologies/figma_icon.png'
-import reactIcon from '../../../assets/common_elements/technologies/react_icon.png'
-import sassIcon from '../../../assets/common_elements/technologies/sass_icon.png'
-import projectImage from '../../../assets/pictures/project_img.png'
-import ClinicaDoPaiao from './each-project/clinicaDoPaiao.jsx'
-import MyPortfolio from './each-project/myPortfolio.jsx'
+import { useState } from "react";
+import dataBaseIcon from "../../../assets/common_elements/technologies/database_icon.png";
+import figmaIcon from "../../../assets/common_elements/technologies/figma_icon.png";
+import reactIcon from "../../../assets/common_elements/technologies/react_icon.png";
+import sassIcon from "../../../assets/common_elements/technologies/sass_icon.png";
+import projectImage from "../../../assets/pictures/project_img.png";
+import ClinicaDoPaiao from "./each-project/clinicaDoPaiao.jsx";
+import MyPortfolio from "./each-project/myPortfolio.jsx";
 
 const MyProjectsPage = () => {
-
   const [selectedProject, setSelectedProject] = useState(null);
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -30,7 +29,7 @@ const MyProjectsPage = () => {
       ],
       link: "https://clinicadopaiao.com/",
       id: 0,
-      modal: <ClinicaDoPaiao setOpenModal={setModalOpen} />
+      modal: <ClinicaDoPaiao setOpenModal={setModalOpen} />,
     },
     {
       image: projectImage,
@@ -56,7 +55,7 @@ const MyProjectsPage = () => {
       ],
       link: "https://github.com/lucasoriental/lucasoriental",
       id: 1,
-      modal: <MyPortfolio setOpenModal={setModalOpen} />
+      modal: <MyPortfolio setOpenModal={setModalOpen} />,
     },
   ];
 
@@ -66,7 +65,7 @@ const MyProjectsPage = () => {
         <div>
           <p className="title-general">MY PROJECTS</p>
         </div>
-        <div className="project-view" >
+        <div className="project-view">
           {projects.map((project, index) => {
             let tecs = [];
             for (let i = 0; i < project.technologies.length; i++) {
@@ -112,6 +111,6 @@ const MyProjectsPage = () => {
       </div>
     </div>
   );
-}
+};
 
 export default MyProjectsPage;

@@ -1,4 +1,4 @@
-export default function GitHubLightSvg( { width, height, color}) {
+export default function GitHubLightSvg({ width, height, color }) {
   return (
     <svg
       width={width}

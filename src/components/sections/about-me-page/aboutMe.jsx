@@ -1,5 +1,5 @@
 import React from 'react';
-import image from "../../../assets/pictures/project_img.png"
+import image from "../../../assets/pictures/project_img.png";
 
 const aboutMePage = () => {
   return (
@@ -12,11 +12,12 @@ const aboutMePage = () => {
         <div className="img-and-text">
           <img alt="imagem" src={image} className="about-me-image" />
           <p className="about-me-text-aside">
-            My name is Lucas, and I work as a WEB developer, with professional
-            experience in designing and implementing dynamic web applications,
-            encompassing a wide range of essential technologies for React web
-            development. This includes application security, automated testing,
-            agile development, performance analysis, and bug fixing.
+            Hey there, this is Lucas, a WEB Developer and UX/UI Designer, with
+            professional experience in designing and implementing dynamic web
+            applications, encompassing a wide range of essential technologies
+            for React web development. This includes application security,
+            automated testing, agile development, performance analysis, and bug
+            fixing.
           </p>
         </div>
         <div>
@@ -24,9 +25,10 @@ const aboutMePage = () => {
             In the field of WEB development, I highlight the following skills:
             API manipulation; use of tools like Postman and Webpack; knowledge
             of frameworks and libraries such as React and Angular; development
-            of responsive interfaces with modern CSS and preprocessors like
-            SASS; programming in JavaScript ES6+; unit and integration testing
-            with Jest; version control with Git and GitHub; optimization of web
+            of responsive interfaces with modern CSS (Bootstrap, Carbon Design,
+            Material UI, Reveal Js and other) and preprocessors like SASS;
+            programming in JavaScript ES6+; unit and integration testing with
+            Jest; version control with Git and GitHub; optimization of web
             application performance; SEO and web accessibility; use of database
             management systems like MySQL; agile development practices and
             Scrum; good communication and teamwork.

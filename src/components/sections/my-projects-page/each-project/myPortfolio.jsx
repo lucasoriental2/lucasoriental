@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import XIconSvg from "../../../../assets/common_elements/icon_X"
-import GitHubIcon from "../../../../assets/light_theme/GitHub"
-import BrowserIcon from "../../../../assets/light_theme/browser"
-import BehanceIcon from "../../../../assets/light_theme/Behance"
+import XIconSvg from "../../../../assets/common_elements/icon_X";
+import BehanceIcon from "../../../../assets/light_theme/Behance";
+import GitHubIcon from "../../../../assets/light_theme/GitHub";
+import BrowserIcon from "../../../../assets/light_theme/browser";
 
 
 export default function MyPortfolio({ setOpenModal }) {

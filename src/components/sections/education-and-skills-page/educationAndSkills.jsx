@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Certificates from "./common/certificates";
 import College from "./common/college";
 import Skills from "./common/skills";

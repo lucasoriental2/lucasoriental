@@ -1,5 +1,4 @@
 const XIconSvg = ({ width, height, strokeWidth, color }) => {
-
   return (
     <svg
       width={width}
@@ -24,4 +23,4 @@ const XIconSvg = ({ width, height, strokeWidth, color }) => {
   );
 };
 
-export default XIconSvg
+export default XIconSvg;
