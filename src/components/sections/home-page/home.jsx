@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import MouseSrollSvg from "../../../assets/light_theme/mouse_arrow_down";
-import main_picture from "../../../assets/pictures/profile_photo.png";
+import main_picture from "../../../assets/pictures/profile_photo_1.jpg";
 
 import { Link } from "react-scroll";
 
@@ -48,9 +48,18 @@ const MainPage = () => {
           </div>
         </div>
       </div>
-      <div className="home-main-container-2">
-        <MouseSrollSvg />
-      </div>
+      <Link
+        activeClass="active"
+        to="home-my-projects-container"
+        spy={true}
+        smooth={true}
+        offset={-headerHeight}
+        duration={1000}
+      >
+        <div className="home-main-container-2">
+          <MouseSrollSvg />
+        </div>
+      </Link>
     </div>
   );
 };

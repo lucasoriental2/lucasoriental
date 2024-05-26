@@ -48,9 +48,9 @@ export default function Skills(props) {
         slidesPerView={itemsPerPage}
         spaceBetween={-100}
         loop={true}
-        pagination={{
+        /* pagination={{
           clickable: true,
-        }}
+        }} */
         navigation={true}
         modules={[Pagination, Navigation]}
         className="swipe-view-skills"

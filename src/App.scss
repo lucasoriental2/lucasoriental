@@ -217,17 +217,17 @@
 }
 
 .home-profile-picture {
-  width: 420px;
+  width: 500px;
   height: 500px;
 
   @media (max-width: 1000px) {
-    width: 320px;
+    width: 400px;
     height: 400px;
     margin-bottom: 5px;
   }
 
   @media (max-width: 430px) {
-    width: 250px;
+    width: 320px;
     height: 320px;
   }
 }
@@ -437,8 +437,12 @@
   display: flex;
   justify-content: center;
   max-width: 1440px;
-  margin: 0 auto;
+  margin-top: 90px;
   flex-wrap: wrap;
+
+  @media(max-width: 1000px){
+    margin-top: 40px;
+  }
 }
 
 // ------------------------------------
@@ -1195,7 +1199,17 @@
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  width: 900px;
+  width: 750px;
+  position: relative;
+  z-index: 1001;
+}
+
+.modal-container-cert {
+  margin: 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 550px;
   position: relative;
   z-index: 1001;
 }
@@ -1294,4 +1308,32 @@ body.modal-open {
 
 .modal-link-a{
   text-decoration: none;
+}
+
+.modal-block-info-cert-all{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 0px 30px;
+}
+
+.modal-block-info-cert{
+  margin-bottom: 20px;
+}
+
+.modal-cert-title{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--RedLight);
+  margin-bottom: 10px;
+}
+
+.modal-cert-value{
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--RedLight);
+  margin-left: 10px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  color: var(--RedLight) !important;
 }

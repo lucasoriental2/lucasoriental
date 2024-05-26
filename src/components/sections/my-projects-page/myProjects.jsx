@@ -66,7 +66,7 @@ const MyProjectsPage = () => {
         <div>
           <p className="title-general">MY PROJECTS</p>
         </div>
-        <div className="project-view">
+        <div className="project-view" >
           {projects.map((project, index) => {
             let tecs = [];
             for (let i = 0; i < project.technologies.length; i++) {

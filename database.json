@@ -35,7 +35,7 @@
       "platform": "Udemy",
       "course": "Curso Completo de Design de Interface",
       "time": "20.5",
-      "credentialCode": "#",
+      "credentialCode": "testando curso design completo",
       "credentialLink": "#",
       "img": "#"
     },
@@ -44,7 +44,7 @@
       "platform": "Fundação Bradesco",
       "course": "Design Thinking",
       "time": "15",
-      "credentialCode": "#",
+      "credentialCode": "design thinking",
       "credentialLink": "#",
       "img": "#"
     }
@@ -181,7 +181,7 @@
       "jobTitle": "Software Developer (Intern)",
       "companyName": "IBM",
       "time": "03.2022 - 03.2024",
-      "responsibilities": "At IBM, I’ve honed my front-end development skills, with a strong focus on React. My work involves creating dynamic and responsive user interfaces, seamlessly integrating front-end and back-end systems through API requests using React Hooks. Additionally, I’ve contributed to project designs, leveraging SCSS to craft visually appealing styles and layouts. In terms of testing, I’ve authored comprehensive test cases using Jest, ensuring the reliability and stability of our applications. My responsibilities extend beyond development; I’ve been actively involved in fixing vulnerabilities using SonarQube, conducting performance testing with tools like LogDNA and Cloud IBM, and modernizing designs using Carbon (Design) within the G.A.P.T.S team. Furthermore, I’ve worked with DB2 for data manipulation from the back-end database, ensuring seamless data flow and efficient system functionality. Throughout my tenure at IBM, I’ve consistently received positive feedback from both superiors and colleagues, underscoring my unwavering dedication, attention to detail, and commitment to delivering high-quality solutions."
+      "responsibilities": "<p>I participated in the migration of the “System Admin” system from RPGLE Modules to the WEB using React and contributed to the improvement of the company’s payment systems (GAPTS and MISC).</p></br> I contributed to the improvement of the performance of requests to the Back-end through the analysis of the CloudIBM and Cirrus platforms. I worked on the analysis and correction of vulnerabilities related to Cookies, CORS, and PseudoRandom Number using SonarQube. I used React (Hooks, Redux, NextJS, Router, Axios, Context) as the main development tool. I built unit tests using Jest and performed test automation with Selenium. I prepared reports and test results in .Docx, .pdf, and .xls formats for presentation during meetings. I modernized the design of the web application using Carbon Design components. I was recognized for my effort, dedication, and commitment to work, as I did a good teamwork and solved tasks efficiently. I worked on the analysis and approval of Pull Requests (GitHub) in DEV, UAT, and PROD environments."
     },
     {
       "id": 2,
