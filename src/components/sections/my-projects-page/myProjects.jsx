@@ -1,60 +1,116 @@
-import React from 'react'
-import dataBaseIcon from '../../../assets/common_elements/technologies/database_icon.png'
-import figmaIcon from '../../../assets/common_elements/technologies/figma_icon.png'
-import reactIcon from '../../../assets/common_elements/technologies/react_icon.png'
-import sassIcon from '../../../assets/common_elements/technologies/sass_icon.png'
-import projectImage from '../../../assets/pictures/project_img.png'
+import { useState } from "react";
+import dataBaseIcon from "../../../assets/common_elements/technologies/database_icon.png";
+import figmaIcon from "../../../assets/common_elements/technologies/figma_icon.png";
+import reactIcon from "../../../assets/common_elements/technologies/react_icon.png";
+import sassIcon from "../../../assets/common_elements/technologies/sass_icon.png";
+import projectImage from "../../../assets/pictures/project_img.png";
+import ClinicaDoPaiao from "./each-project/clinicaDoPaiao.jsx";
+import MyPortfolio from "./each-project/myPortfolio.jsx";
 
 const MyProjectsPage = () => {
-    let projects = [
-      {
-        image: projectImage,
-        title: "Clínica do Paião",
-        subTitle: "what i used?",
-        technologies: [reactIcon, dataBaseIcon, sassIcon, figmaIcon],
-        id: 1,
-      },
-      /* {
-        image: projectImage,
-        title: "Clínica do Paião",
-        subTitle: "what i used?",
-        technologies: [reactIcon, dataBaseIcon, sassIcon, figmaIcon],
-        id: 2,
-      }, */
-    ];
+  const [selectedProject, setSelectedProject] = useState(null);
 
-    return (
-      <div id="home-my-projects-container">
-        <div className="container-general">
-          <div>
-            <p className="title-general">MY PROJECTS</p>
-          </div>
-          <div className="project-view">
-            {projects.map((project) => {
-              return (
-                <div key={project.id} className="project-container">
-                  <div>
-                    <img
-                      className="project-image"
-                      src={project.image}
-                      alt="Project_image"
-                    />
-                  </div>
-                  <div>
-                    <p className="project-title">{project.title}</p>
-                    <p className="project-sub-title">{project.subTitle}</p>
-                    {/* {project.technologies.map((tec) => {
-                        <img src={tec}/>
-                      })} */}
-                  </div>
-                  <button className="project-button">more details</button>
-                </div>
+  const [modalOpen, setModalOpen] = useState(false);
+
+  let projects = [
+    {
+      image: projectImage,
+      title: "Clínica do Paião",
+      subTitle: "Web Development & Design",
+      technologies: [
+        {
+          icon: reactIcon,
+          tipName: "React",
+        },
+        {
+          icon: sassIcon,
+          tipName: "Sass",
+        },
+      ],
+      link: "https://clinicadopaiao.com/",
+      id: 0,
+      modal: <ClinicaDoPaiao setOpenModal={setModalOpen} />,
+    },
+    {
+      image: projectImage,
+      title: "My Portfolio",
+      subTitle: "Web Development & Design",
+      technologies: [
+        {
+          icon: dataBaseIcon,
+          tipName: "Data Base",
+        },
+        {
+          icon: reactIcon,
+          tipName: "React",
+        },
+        {
+          icon: figmaIcon,
+          tipName: "Figma",
+        },
+        {
+          icon: sassIcon,
+          tipName: "Sass",
+        },
+      ],
+      link: "https://github.com/lucasoriental/lucasoriental",
+      id: 1,
+      modal: <MyPortfolio setOpenModal={setModalOpen} />,
+    },
+  ];
+
+  return (
+    <div id="my-projects-container">
+      <div className="container-general">
+        <div>
+          <p className="title-general">MY PROJECTS</p>
+        </div>
+        <div className="project-view">
+          {projects.map((project, index) => {
+            let tecs = [];
+            for (let i = 0; i < project.technologies.length; i++) {
+              tecs.push(
+                <img
+                  className="img-icon"
+                  key={i}
+                  src={project.technologies[i].icon}
+                  alt={project.technologies[i]}
+                />
               );
-            })}
-          </div>
+            }
+            return (
+              <div key={project.id} className="teste">
+                <div className="div-project-image">
+                  <img
+                    className="project-image"
+                    src={project.image}
+                    alt="Project_image"
+                  />
+                </div>
+                <div>
+                  <p className="project-title">{project.title}</p>
+                  <p className="project-sub-title">{project.subTitle}</p>
+                  <div className="my-project-tec-images">{tecs}</div>
+                </div>
+                <a className="project-link-button">
+                  <button
+                    onClick={() => {
+                      setSelectedProject(index);
+                      setModalOpen(true);
+                    }}
+                    className="project-button"
+                  >
+                    more details
+                  </button>
+                </a>
+                {modalOpen && selectedProject === index && project.modal}
+              </div>
+            );
+          })}
         </div>
       </div>
-    );
-}
+    </div>
+  );
+};
 
 export default MyProjectsPage;

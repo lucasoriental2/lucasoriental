@@ -1,35 +1,37 @@
-import React,{useState, useEffect} from "react";
-import ProfessionalStarIconSvg from '../../../../assets/common_elements/professional_star';
-import skillPicture from '../../../../assets/pictures/picture_skill.png';
+import React, { useEffect, useState } from "react";
+import ProfessionalStarIconSvg from "../../../../assets/common_elements/professional_star";
+import skillPicture from "../../../../assets/pictures/picture_skill.png";
 
 import { Navigation, Pagination } from "swiper/modules";
-import { EffectCube } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/effect-fade';
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
-export default function Skills( props ) {
-
-  const [itemsPerPage, setItemsPerPage] = useState(5);
+export default function Skills(props) {
+  const [itemsPerPage, setItemsPerPage] = useState(4);
 
   useEffect(() => {
     const updateItemsPerPage = () => {
       const width = window.innerWidth;
-      if (width < 750) {
+      if (width < 500) {
         setItemsPerPage(1);
-      } else if (width < 853) {
+      } else if (width < 750) {
         setItemsPerPage(2);
-      }else if (width < 1098) {
+      } else if (width < 853) {
         setItemsPerPage(3);
-      }else if (width < 1450) {
+      } else if (width < 1000) {
+        setItemsPerPage(4);
+      } else if (width < 1096) {
+        setItemsPerPage(3);
+      } else if (width < 1450) {
         setItemsPerPage(4);
       } else {
-        setItemsPerPage(5);
+        setItemsPerPage(4);
       }
     };
 
@@ -40,46 +42,18 @@ export default function Skills( props ) {
     };
   }, []);
 
-  /* 
-
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = props.data.slice(indexOfFirstItem, indexOfLastItem);
-
-  const totalPages = Math.ceil(props.data.length / itemsPerPage);
-
-  function nextPage() {
-    setCurrentPage((prevPage) => {
-      if (currentPage < totalPages) {
-        return prevPage + 1;
-      } else {
-        return 1;
-      }
-    })
-  }
-
-  function prevPage() {
-    setCurrentPage((prevPage) => {
-      if (prevPage > 1) {
-        return prevPage - 1;
-      } else {
-        return totalPages; // Retorna para o último item da lista
-      }
-    });
-  } */
-
   return (
     <div className="allSkills">
       <Swiper
         slidesPerView={itemsPerPage}
-        spaceBetween={0}
+        spaceBetween={-100}
         loop={true}
-        pagination={{
-          clickable: true
-        }}
+        /* pagination={{
+          clickable: true,
+        }} */
         navigation={true}
         modules={[Pagination, Navigation]}
-        style={{height: "300px", padding: "0 20px", maxWidth: "90vw"}}
+        className="swipe-view-skills"
       >
         {props.data.map((skill, index) => {
           const levelElements = [];
@@ -92,9 +66,11 @@ export default function Skills( props ) {
           }
           return (
             <SwiperSlide key={index}>
-              <div className="EAS-skills">
+               <div className="EAS-skills"> 
                 {skill.professional === true ? (
-                  <ProfessionalStarIconSvg />
+                     <ProfessionalStarIconSvg
+                      height={20} width={20} outColor="#E00036" inColor="white"
+                      className="star-skill" />
                 ) : null}
                 <img
                   alt="skill_img"

@@ -1,69 +1,20 @@
-import React, {useState, useEffect} from "react";
-import CapCourseLightSVG from '../../../../assets/light_theme/cap_course_SVG';
-import ClockLightSVG from '../../../../assets/light_theme/clock_SVG';
-import certificatePicture from '../../../../assets/pictures/picture_certificate.png';
+import { useState, /* useEffect */ } from "react";
+import { Tooltip } from 'react-tooltip';
+import CapCourseLightSVG from "../../../../assets/light_theme/cap_course_SVG";
+import ClockLightSVG from "../../../../assets/light_theme/clock_SVG";
+import certificatePicture from "../../../../assets/pictures/picture_certificate.png";
+import CertModal from "./modals/certModal";
 
-export default function Certificates (props) {
+export default function Certificates(props) {
 
-  const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(5);
+  const [selectedCourse, setSelectedCourse] = useState(null);
 
-  useEffect(() => {
-    const updateItemsPerPage = () => {
-      const width = window.innerWidth;
-      if (width < 898) {
-        setItemsPerPage(1);
-      } else if (width < 1306) {
-        setItemsPerPage(2);
-      }else if (width < 1306) {
-        setItemsPerPage(3);
-      }else if (width < 1340) {
-        setItemsPerPage(4);
-      } else {
-        setItemsPerPage(5);
-      }
-    };
-
-    window.addEventListener("resize", updateItemsPerPage);
-    updateItemsPerPage();
-    return () => {
-      window.removeEventListener("resize", updateItemsPerPage);
-    };
-  }, []);
-
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = props.data.slice(indexOfFirstItem, indexOfLastItem);
-
-  const totalPages = Math.ceil(props.data.length / itemsPerPage);
-
-  function nextPage() {
-    setCurrentPage((prevPage) => {
-      if (currentPage < totalPages) {
-        return prevPage + 1;
-      } else {
-        return 1;
-      }
-    })
-  }
-
-  function prevPage() {
-    setCurrentPage((prevPage) => {
-      if (prevPage > 1) {
-        return prevPage - 1;
-      } else {
-        return totalPages; // Retorna para o último item da lista
-      }
-    });
-  }
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <div className="button-and-skills">
-      <button onClick={prevPage} className="next-and-previous-button">
-        {"<"}
-      </button>
+    <div className="container-certificates">
       <div className="allCertificates">
-        {currentItems.map((certificate) => {
+        {props.data.map((certificate, index) => {
           return (
             <div className="EAS-certificates" key={certificate.id}>
               <img
@@ -72,7 +23,19 @@ export default function Certificates (props) {
                 className="EAS-certificates-picture"
               />
               <div className="EAS-certificates-div">
-                <p className="EAS-certificates-title">{certificate.course}</p>
+                  <button
+                    className="EAS-certificates-title-link"
+                    onClick={() => {
+                      setModalOpen(true);
+                      setSelectedCourse(index);
+                    }}
+                  >
+                      <Tooltip id="my-tooltip-cert" />
+                    <p
+                      data-tooltip-id="my-tooltip-cert" 
+                      data-tooltip-content="Click to see the credential" 
+                      className="EAS-certificates-title">{certificate.course}</p>
+                  </button>
                 <div className="EAS-certificates-div-icon-text">
                   <CapCourseLightSVG />
                   <p className="EAS-certificates-div-text">
@@ -85,19 +48,14 @@ export default function Certificates (props) {
                     {certificate.time} h
                   </p>
                 </div>
-                <a href={certificate.credentialUrl}>
-                  <button className="EAS-certificates-button">
-                    Show Credential
-                  </button>
-                </a>
               </div>
+              {modalOpen && selectedCourse === index && (
+                <CertModal information={certificate} setOpenModal={setModalOpen} />
+              )}
             </div>
           );
         })}
       </div>
-      <button onClick={nextPage} className="next-and-previous-button">
-        {">"}
-      </button>
     </div>
   );
 }

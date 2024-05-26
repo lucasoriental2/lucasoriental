@@ -1,7 +1,10 @@
-import React from "react";
-import imageTemp from "../../../../assets/pictures/img_empty.png"
+import React, { useEffect } from "react";
+import imageTemp from "../../../../assets/pictures/img_empty.png";
 
 export default function JobExperiences (props) {
+
+  useEffect(() => {
+  }, []);
 
     return (
       <div className="block-of-jobs">

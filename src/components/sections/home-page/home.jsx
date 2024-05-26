@@ -1,12 +1,11 @@
-import React from 'react'
-import MouseSrollSvg from '../../../assets/light_theme/mouse_arrow_down'
-import main_picture from '../../../assets/pictures/profile_photo.png'
+import React from "react";
+import MouseSrollSvg from "../../../assets/light_theme/mouse_arrow_down";
+import main_picture from "../../../assets/pictures/profile_photo_1.jpg";
 
-import { Link, Element } from 'react-scroll';
+import { Link } from "react-scroll";
 
 const MainPage = () => {
-
-    const headerHeight = 120;
+  const headerHeight = 120;
 
   return (
     <div id="home-main-container">
@@ -32,10 +31,7 @@ const MainPage = () => {
               </p>
             </div>
             <p className="home-paragraph-3">
-              A <span>Software Developer Jr</span> (Front-End)
-            </p>
-            <p className="home-paragraph-3">
-              And <span>UX/UI Designer</span>
+              A <span>WEB Developer Jr</span> And <span>UX/UI Designer</span>
             </p>
           </div>
           <div className="home-line2">
@@ -52,11 +48,20 @@ const MainPage = () => {
           </div>
         </div>
       </div>
-      <div className="home-main-container-2">
-        <MouseSrollSvg />
-      </div>
+      <Link
+        activeClass="active"
+        to="home-my-projects-container"
+        spy={true}
+        smooth={true}
+        offset={-headerHeight}
+        duration={1000}
+      >
+        <div className="home-main-container-2">
+          <MouseSrollSvg />
+        </div>
+      </Link>
     </div>
   );
-}
+};
 
 export default MainPage;

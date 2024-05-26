@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
-import InstagramSVG from "../../../assets/light_theme/Instagram"
-import GitHubSVG from "../../../assets/light_theme/GitHub"
-import BehanceSVG from "../../../assets/light_theme/Behance"
-import LocationSVG from "../../../assets/light_theme/locate"
-import MailSVG from "../../../assets/light_theme/mail"
-import NumberSVG from "../../../assets/light_theme/wpp_or_call"
-import LinkedInSVG from "../../../assets/light_theme/LinkedIn"
+import React, { useState } from 'react';
+import BehanceSVG from "../../../assets/light_theme/Behance";
+import GitHubSVG from "../../../assets/light_theme/GitHub";
+import InstagramSVG from "../../../assets/light_theme/Instagram";
+import LinkedInSVG from "../../../assets/light_theme/LinkedIn";
+import LocationSVG from "../../../assets/light_theme/locate";
+import MailSVG from "../../../assets/light_theme/mail";
+import NumberSVG from "../../../assets/light_theme/wpp_or_call";
 
 const contactMePage = () => {
 
@@ -41,7 +41,7 @@ const contactMePage = () => {
             <div className="contact-me-left-side">
               <div>
                 <div className="left-side-title-and-canvas">
-                  <p className="left-side-form-title">Get in Touch!</p>
+                  <p className="left-side-form-title" >Get in Touch!</p>
                   <canvas className="left-side-form-above-title" />
                 </div>
                 <div className="left-side-all-items">
@@ -76,7 +76,7 @@ const contactMePage = () => {
                   <div className="left-side-item">
                     <a href="#" className="left-side-item-a">
                       <p className="social-media-name">/lucasoriental</p>
-                      <GitHubSVG />
+                      <GitHubSVG width={40} height={40} color={"#E00036"}/>
                     </a>
                   </div>
                   <div className="left-side-item">
@@ -90,13 +90,13 @@ const contactMePage = () => {
                   <div className="left-side-item">
                     <a href="#" className="left-side-item-a">
                       <p className="social-media-name">/lucasoriental</p>
-                      <BehanceSVG />
+                      <BehanceSVG width={40} height={40} color={"#E00036"}/>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="contact-me-right-side">
+            {/* <div className="contact-me-right-side">
               <p className="title-form-right-side">SEND ME A MESSAGE</p>
               <form id="form-contact-me">
                 <label>
@@ -146,7 +146,7 @@ const contactMePage = () => {
                   value="Submit"
                 />
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
