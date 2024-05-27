@@ -178,26 +178,26 @@
     {
       "id": 1,
       "image": "#",
-      "jobTitle": "Software Developer (Intern)",
+      "jobTitle": "Web Developer - Internship",
       "companyName": "IBM",
-      "time": "03.2022 - 03.2024",
-      "responsibilities": "I participated in the migration of the “System Admin” system from RPGLE Modules to the WEB using React and contributed to the improvement of the company’s payment systems (GAPTS and MISC). I contributed to the improvement of the performance of requests to the Back-end through the analysis of the CloudIBM and Cirrus platforms. I worked on the analysis and correction of vulnerabilities related to Cookies, CORS, and PseudoRandom Number using SonarQube. I used React (Hooks, Redux, NextJS, Router, Axios, Context) as the main development tool. I built unit tests using Jest and performed test automation with Selenium. I prepared reports and test results in .Docx, .pdf, and .xls formats for presentation during meetings. I modernized the design of the web application using Carbon Design components. I was recognized for my effort, dedication, and commitment to work, as I did a good teamwork and solved tasks efficiently. I worked on the analysis and approval of Pull Requests (GitHub) in DEV, UAT, and PROD environments."
+      "time": "2022 - 2024",
+      "responsibilities": "<ul class=\"list-json-experience\"><li>I participated in the <span class=\"span-json-experience\">migration</span> of the “System Admin” system from RPGLE Modules <span class=\"span-json-experience\">to the WEB using React</span> and contributed to the improvement of the company’s payment systems (GAPTS, GCMS and MISC);</li><li>Contributed to the <span class=\"span-json-experience\">improvement of the performance</span> of requests to the Back-end through the analysis of the <span class=\"span-json-experience\">CloudIBM and Cirrus platforms</span>;</li><li>Worked on analyzing and fixing of vulnerabilities related to <span class=\"span-json-experience\">Cookies, CORS, and PseudoRandom Number using SonarQube</span>;</li><li><span class=\"span-json-experience\">React</span> (Hooks, Redux, NextJS, Router, Axios, Context) as the main development tool;</li><li>Built unit tests using Jest <span class=\"span-json-experience\">ensuring more than 90% of coverage</span> in each file;</li><li>Prepared reports and test results in .Docx, .pdf, and .xls formats for presentation during meetings;</li><li>Modernized the design of the web application using <span class=\"span-json-experience\">Carbon Design components</span>;</li><li>I was recognized for my <span class=\"span-json-experience\">effort, dedication, and commitment</span> to work, as I did a good teamwork and solved tasks efficiently;</li><li>Also worked on the analysis and approval of Pull Requests (GitHub) in <span class=\"span-json-experience\">DEV, UAT, and PROD</span> environments."
     },
     {
       "id": 2,
       "image": "#",
-      "jobTitle": "IT Support (Young Apprentice)",
+      "jobTitle": "IT Support and Infraestructure - Young Apprentice",
       "companyName": "Medgrupo",
       "time": "2021 - 2022",
-      "responsibilities": "In my previous role, I handled diverse responsibilities, including manual VPN configuration for Windows, Linux, and Apple environments, remote access via RDP/VNC, and user reset/configuration in systems like Active Directory and Google Admin. I utilized Zabbix for monitoring, addressing issues like overheating and data security. This experience honed my analytical skills and adaptability. Reflecting on this experience, I am eager to bring my honed skills and insights to new projects, fostering growth and success."
+      "responsibilities": "<ul class=\"list-json-experience\"><li>I worked on the Employee Support resolving issues related to <span class=\"span-json-experience\">access and maintenance of IT equipment</span> at Medgrupo;</li><li>Carried out VPN configuration for <span class=\"span-json-experience\">Windows, Linux, and Apple</span> environments;</li><li>Resolved issues through <span class=\"span-json-experience\">remote access and configured employee access to the cloud</span>;</li><li>Worked on resetting and configuring users in systems like <span class=\"span-json-experience\">Active Directory and Google Admin</span>;</li><li>Used <span class=\"span-json-experience\">Zabbix</span> for monitoring, addressing issues such as the status of equipment and systems;</li><li>This experience enhanced my <span class=\"span-json-experience\">analytical skills and adaptability</span>."
     },
     {
       "id": 3,
       "image": "#",
-      "jobTitle": "UX/UI & Graphic Designer",
-      "companyName": "Self-Employed",
-      "time": "2019 - 2021",
-      "responsibilities": "In this role, I provided a comprehensive suite of audiovisual design and production services. This included creating logos, resumes, flyers, banners, and various other design assets. My expertise extended to video and audio editing, where I specialized in crafting engaging intros for YouTubers and web influencers, as well as producing reels, posts, and banners tailored for diverse social media platforms, notably Instagram. Furthermore, I actively contributed to UX/UI Design, offering visual services for web pages, pageland creations, and more. This experience has honed my creativity and equipped me with a versatile skill set."
+      "jobTitle": "Graphic and WEB Designer & Audivisual Editor",
+      "companyName": "Freelancer",
+      "time": "2018 - 2022",
+      "responsibilities": "<ul class=\"list-json-experience\"><li>As a freelancer, I offered a <span class=\"span-json-experience\">full range of services in design and audiovisual</span> production;</li><li>Actively participated in <span class=\"span-json-experience\">UX/UI Design, providing visual services for websites and developing landing pages</span>;</li><li>Made <span class=\"span-json-experience\">logos, resumes, brochures, banners, and other design elements</span>;</li><li>Expanded my expertise to <span class=\"span-json-experience\">video and audio editing</span>, distinguishing myself in the creation of attractive <span class=\"span-json-experience\">vignettes for YouTubers and online</span> influencers;</li><li>Produced <span class=\"span-json-experience\">Reels, posts, and banners</span> adapted for various social media platforms, with a focus on <span class=\"span-json-experience\">Instagram</span>."
     }
   ]
 }
