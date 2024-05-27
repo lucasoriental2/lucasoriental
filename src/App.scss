@@ -1333,3 +1333,25 @@ body.modal-open {
 .swiper-button-next {
   color: var(--RedLight) !important;
 }
+
+// Style for ****JOB Experiences**** from JSON File
+
+.list-json-experience{
+  margin-left: 30px;
+  cursor: default;
+}
+
+.span-json-experience{
+  color: var(--DeepGray);
+  font-weight: 700;
+  transition: 500ms;
+}
+
+.span-json-experience:hover{
+  color:var(--White);
+  font-weight: 800;
+  transition: 500ms;
+  text-decoration: underline;
+}
+
+//----------------------------------------------------

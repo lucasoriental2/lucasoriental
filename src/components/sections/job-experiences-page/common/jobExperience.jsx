@@ -16,7 +16,7 @@ export default function JobExperiences (props) {
                 <p className="job-title">{job.jobTitle}</p>
                 <p className="job-company-name">{job.companyName}</p>
                 <p className="job-time">{job.time}</p>
-                <p className="job-responsibilities">{job.responsibilities}</p>
+                <div className="job-responsibilities" dangerouslySetInnerHTML={{ __html: job.responsibilities }} />
                 <a href="#" className="job-button-link">
                   <button className="job-button">more details</button>
                 </a>
