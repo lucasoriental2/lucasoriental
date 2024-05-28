@@ -177,7 +177,7 @@
   "jobExperiences": [
     {
       "id": 1,
-      "image": "#",
+      "image": "/images/jobExperiences/ibm_logo.png",
       "jobTitle": "Web Developer - Internship",
       "companyName": "IBM",
       "time": "2022 - 2024",
@@ -185,7 +185,7 @@
     },
     {
       "id": 2,
-      "image": "#",
+      "image": "/images/jobExperiences/medgrupo_logo.png",
       "jobTitle": "IT Support and Infraestructure - Young Apprentice",
       "companyName": "Medgrupo",
       "time": "2021 - 2022",
@@ -193,7 +193,7 @@
     },
     {
       "id": 3,
-      "image": "#",
+      "image": "/images/jobExperiences/freelancer_logo.png",
       "jobTitle": "Graphic and WEB Designer & Audivisual Editor",
       "companyName": "Freelancer",
       "time": "2018 - 2022",

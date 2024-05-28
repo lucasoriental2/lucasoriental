@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import imageTemp from "../../../../assets/pictures/img_empty.png";
 
 export default function JobExperiences (props) {
 
@@ -11,7 +10,7 @@ export default function JobExperiences (props) {
         {props.data.map((job, index) => {
           return (
             <div className="job-entire-item" key={index}>
-              <img alt="img" src={imageTemp} className="job-image" />
+              <img alt="Company Logo" src={job.image} className="job-image" />
               <div className="job-entire-item-paragraph">
                 <p className="job-title">{job.jobTitle}</p>
                 <p className="job-company-name">{job.companyName}</p>
