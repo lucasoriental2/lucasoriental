@@ -820,6 +820,8 @@
 .job-image {
   width: 335px;
   height: 335px;
+  object-fit:cover;
+  border-radius: 20px;
 
   @media (max-width: 1000px) {
     width: 81px;
