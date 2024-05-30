@@ -37,13 +37,13 @@ export default function Certificates(props) {
                       className="EAS-certificates-title">{certificate.course}</p>
                   </button>
                 <div className="EAS-certificates-div-icon-text">
-                  <CapCourseLightSVG />
+                  <CapCourseLightSVG width={20} height={18} color="#444444"/>
                   <p className="EAS-certificates-div-text">
                     {certificate.platform}
                   </p>
                 </div>
                 <div className="EAS-certificates-div-icon-text">
-                  <ClockLightSVG />
+                  <ClockLightSVG width={20} height={18} color="#444444"/>
                   <p className="EAS-certificates-div-text">
                     {certificate.time} h
                   </p>
