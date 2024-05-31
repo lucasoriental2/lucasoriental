@@ -332,6 +332,24 @@
   }
 }
 
+.home-social-medias{
+  margin-top: 50px;
+  padding-left: 25px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 75px;
+
+  @media (max-width: 1000px) {
+    margin-top: 25px;
+    gap: 25px;
+    padding-left: 0px;
+  }
+}
+
+.home-social-medias-a{
+  cursor: pointer;
+}
+
 .home-main-container-2 {
   display: flex;
   justify-content: center;
