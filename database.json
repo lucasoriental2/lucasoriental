@@ -11,19 +11,19 @@
     },
     {
       "id": 2,
-      "platform": "Curso em Vídeo",
-      "course": "JavaScript",
-      "time": "40",
-      "credentialURL": "https://www.cursoemvideo.com/validacao-de-certificado/?codigo=3A615-6C61-9",
+      "platform": "Fundação Bradesco",
+      "course": "Introdução a Redes de Computadores",
+      "time": "23",
       "credentialCode": "#",
       "credentialLink": "#",
       "img": "#"
     },
     {
       "id": 3,
-      "platform": "Fundação Bradesco",
-      "course": "Introdução a Redes de Computadores",
-      "time": "23",
+      "platform": "Curso em Vídeo",
+      "course": "JavaScript",
+      "time": "40",
+      "credentialURL": "https://www.cursoemvideo.com/validacao-de-certificado/?codigo=3A615-6C61-9",
       "credentialCode": "#",
       "credentialLink": "#",
       "img": "#"
