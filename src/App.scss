@@ -996,16 +996,15 @@
   background-color: var(--White);
   width: 378px;
   height: 618px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
 
   @media (max-width: 1000px) {
     width: 361px;
-    border-radius: 0 0 10px 10px;
     height: 567px;
   }
 }
 
-.contact-me-right-side {
+/* .contact-me-right-side {
   background-color: var(--DarkGray);
   height: 618px;
   width: 500px;
@@ -1020,7 +1019,7 @@
     border-radius: 10px 10px 0 0;
     height: 551px;
   }
-}
+} */
 
 #form-contact-me {
   display: flex;
