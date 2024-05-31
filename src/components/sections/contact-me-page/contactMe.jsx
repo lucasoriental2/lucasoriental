@@ -50,7 +50,7 @@ const contactMePage = () => {
                       <p className="social-media-name">
                         Rio de Janeiro (RJ) - Brazil
                       </p>
-                      <LocationSVG />
+                      <LocationSVG width={40} height={41} color={"#E00036"}/>
                     </a>
                   </div>
                   <div className="left-side-item">
@@ -58,19 +58,19 @@ const contactMePage = () => {
                       <p className="social-media-name">
                         lucasoriental@gmail.com
                       </p>
-                      <MailSVG />
+                      <MailSVG width={40} height={37} color={"#E00036"}/>
                     </a>
                   </div>
                   <div className="left-side-item">
                     <a href="#" className="left-side-item-a">
                       <p className="social-media-name">+55 (21) 99525-3580</p>
-                      <NumberSVG />
+                      <NumberSVG width={39} height={42} color={"#E00036"}/>
                     </a>
                   </div>
                   <div className="left-side-item">
                     <a href="#" className="left-side-item-a">
                       <p className="social-media-name">@lucas_oriental</p>
-                      <InstagramSVG />
+                      <InstagramSVG width={40} height={40} color={"#E00036"}/>
                     </a>
                   </div>
                   <div className="left-side-item">
@@ -84,7 +84,7 @@ const contactMePage = () => {
                       <p className="social-media-name">
                         Lucas Oriental dos Santos
                       </p>
-                      <LinkedInSVG />
+                      <LinkedInSVG width={40} height={40} color={"#E00036"}/>
                     </a>
                   </div>
                   <div className="left-side-item">
