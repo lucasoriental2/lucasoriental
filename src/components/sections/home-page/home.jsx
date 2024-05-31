@@ -1,6 +1,12 @@
 import React from "react";
 import MouseSrollSvg from "../../../assets/light_theme/mouse_arrow_down";
 import main_picture from "../../../assets/pictures/profile_photo_1.jpg";
+import InstagramSVG from "../../../assets/light_theme/Instagram"
+import GitHubSVG from "../../../assets/light_theme/GitHub"
+import LinkedInSVG from "../../../assets/light_theme/LinkedIn"
+import BehanceSVG from "../../../assets/light_theme/Behance"
+
+import { Tooltip } from 'react-tooltip';
 
 import { Link } from "react-scroll";
 
@@ -45,21 +51,58 @@ const MainPage = () => {
             >
               <button id="home-button">Who Am I?</button>
             </Link>
+            <div className="home-social-medias">
+              <a
+                place="top"
+                data-tooltip-id="my-tooltip-instagram"
+                data-tooltip-content="My Instagram"
+                href="https://instagram.com/lucasorientaldev"
+                target="_blank"
+                className="home-social-medias-a"
+              >
+                <Tooltip id="my-tooltip-instagram" />
+                <InstagramSVG width={40} height={40} color={"#E00036"} />
+              </a>
+              <a
+                place="top"
+                data-tooltip-id="my-tooltip-GitHub"
+                data-tooltip-content="My GitHub"
+                href="https://github.com/lucasoriental"
+                target="_blank"
+                className="home-social-medias-a"
+              >
+                <Tooltip id="my-tooltip-GitHub" />
+                <GitHubSVG width={40} height={40} color={"#E00036"} />
+              </a>
+              <a
+                place="top"
+                data-tooltip-id="my-tooltip-LinkedIn"
+                data-tooltip-content="My LinkedIn"
+                href="https://linkedin.com/in/lucas-oriental-dos-santos"
+                target="_blank"
+                className="home-social-medias-a"
+              >
+                <Tooltip id="my-tooltip-LinkedIn" />
+                <LinkedInSVG width={40} height={40} color={"#E00036"} />
+              </a>
+              <a
+                place="top"
+                data-tooltip-id="my-tooltip-Behance"
+                data-tooltip-content="My Behance"
+                href="https://behance.net/lucasoriental"
+                target="_blank"
+                className="home-social-medias-a"
+              >
+                <Tooltip id="my-tooltip-Behance" />
+                <BehanceSVG width={40} height={40} color={"#E00036"} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <Link
-        activeClass="active"
-        to="home-my-projects-container"
-        spy={true}
-        smooth={true}
-        offset={-headerHeight}
-        duration={1000}
-      >
-        <div className="home-main-container-2">
-          <MouseSrollSvg />
-        </div>
-      </Link>
+      <div className="home-main-container-2">
+        <MouseSrollSvg />
+      </div>
     </div>
   );
 };
