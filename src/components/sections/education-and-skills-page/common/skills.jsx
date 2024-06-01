@@ -69,7 +69,7 @@ export default function Skills(props) {
                <div className="EAS-skills"> 
                 {skill.professional === true ? (
                      <ProfessionalStarIconSvg
-                      height={20} width={20} outColor="#E00036" inColor="white"
+                     size={window.innerWidth < 1000 ? 15 : 20} outColor="#E00036" inColor="white"
                       className="star-skill" />
                 ) : null}
                 <img
