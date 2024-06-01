@@ -625,6 +625,10 @@
   margin-left: 125px;
   position: fixed;
   z-index: 1;
+
+  @media (max-width: 1000px){
+    margin-left: 60px;
+  }
 }
 
 .EAS-college-info-div {
