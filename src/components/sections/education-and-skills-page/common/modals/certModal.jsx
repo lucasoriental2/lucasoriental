@@ -12,7 +12,7 @@ export default function CertModal({ setOpenModal, information }) {
   return (
     <div className="modal-background">
       <div className="modal-container-cert">
-        <div className="modal-header">
+        <div className="modal-header-cert">
           <button
             className="modal-close-button"
             onClick={() => {
@@ -34,11 +34,11 @@ export default function CertModal({ setOpenModal, information }) {
                 Website to validate the certification
               </p>
               <a
-                className="modal-cert-value"
                 href={information.credentialLink}
                 target="_blank"
+                className="modal-cert-value-a"
               >
-                {information.credentialLink}
+                <p className="modal-cert-value">{information.credentialLink}</p>
               </a>
             </div>
           </div>
