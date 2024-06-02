@@ -18,7 +18,6 @@
 .title-general {
   font-size: 70px;
   font-weight: 700;
-  color: var(--DeepGray);
   text-align: center;
   color: var(--White);
 
@@ -83,10 +82,9 @@
   }
 
   a:hover {
-    color: var(--HoverTextColor);
     transition: 600ms;
-    font-weight: 800;
-    font-size: 16px;
+    font-weight: 900;
+    color: var(--HoverTextColor)
   }
 }
 
@@ -167,6 +165,7 @@
     text-decoration: none;
     color: var(--White);
     font-weight: 300;
+    cursor: pointer;
   }
 
   a:hover {
@@ -221,16 +220,36 @@
 .home-profile-picture {
   width: 500px;
   height: 500px;
+  animation: homeProfile 5s ease infinite;
+  border: 6px double var(--RedLight);
+  border-radius: 50%;
 
   @media (max-width: 1000px) {
     width: 400px;
     height: 400px;
     margin-bottom: 5px;
   }
-
   @media (max-width: 430px) {
     width: 320px;
     height: 320px;
+  }
+}
+
+@keyframes homeProfile{
+  0%{
+    border-color: var(--DeepGray);
+  }
+  25%{
+    border-color: var(--RedLight);
+  }
+  50%{
+    border-color: var(--DeepGray);
+  }
+  75%{
+    border-color: var(--RedLight);
+  }
+  100%{
+    border-color: var(--DeepGray);
   }
 }
 
@@ -420,7 +439,7 @@
   }
 }
 
-.project-button:hover, .EAS-college-button:hover, #home-button:hover{
+.project-button:hover, .EAS-college-button:hover, #home-button:hover, .modal-button-project:hover{
   background-color: var(--DarkGray);
   color: var(--White);
   transition: 500ms;
@@ -598,6 +617,7 @@
   font-weight: 700;
   color: var(--RedLight);
   word-wrap: inherit;
+  cursor: alias;
 
   @media (max-width: 1000px) {
     font-size: 22px;
@@ -640,6 +660,8 @@
 .EAS-college-picture {
   width: 200px;
   height: 200px;
+  object-fit: cover;
+  border-radius: 10%;;
 
   @media (max-width: 1000px) {
     width: 100px;
@@ -667,6 +689,8 @@
   width: 125px;
   height: 125px;
   margin-top: 5px;
+  object-fit: cover;
+  border-radius: 10%;
 
   @media (max-width: 1000px) {
     width: 60px;
@@ -697,6 +721,7 @@
 .EAS-certificates-picture {
   width: 125px;
   height: 125px;
+  object-fit: cover;
 
   @media (max-width: 1000px) {
     width: 85px;
@@ -867,8 +892,8 @@
   border-radius: 20px;
 
   @media (max-width: 1000px) {
-    width: 81px;
-    height: 98px;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -877,7 +902,7 @@
   margin: 70px 0px;
 
   @media (max-width: 1000px) {
-    margin: 25px 0px;
+    margin: 0 0 50px 0;
     align-items: center;
   }
 }
@@ -886,12 +911,13 @@
   margin-left: 30px;
 
   @media (max-width: 1000px) {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 }
 
 .block-of-jobs {
-  margin: 90px auto;
+  margin: 0px auto;
+  padding-top: 20px;
   width: 90%;
 
   @media (max-width: 1000px) {
@@ -900,6 +926,7 @@
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
+    padding-top: 0px;
   }
 }
 
@@ -919,8 +946,8 @@
   cursor: pointer;
   display: none;
   margin-top: 7px;
-  width: 124px;
-  height: 23px;
+  width: 130px;
+  height: 30px;
   background-color: var(--White);
   color: var(--RedLight);
   font-weight: 700;
@@ -928,14 +955,21 @@
   border-radius: 2px;
   border: none;
   text-decoration: none;
+  transition: 600ms;
 
   @media (max-width: 1000px) {
     display: block;
   }
 }
 
+.job-button:hover{
+  background-color: var(--DarkGray);
+  color: var(--White);
+  transition: 600ms;
+}
+
 #about-me-container {
-  width: 90vw;
+  width: 85%;
   max-width: 1000px;
   margin: 0 auto;
 
@@ -948,6 +982,10 @@
 .about-me-image {
   height: 300px;
   width: 300px;
+  border-radius: 5%;
+  border: 5px double var(--DarkGray);
+  float: left;
+  margin-right: 20px;
 
   @media (max-width: 1000px) {
     width: 200px;
@@ -955,56 +993,30 @@
   }
 }
 
-.img-and-text {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-
-  @media (max-width: 1000px) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.about-me-text-aside {
-  margin-left: 30px;
-  flex: 1;
-  text-align: justify;
-
-  @media (max-width: 1000px) {
-    margin: 40px 0 0px 0px;
-  }
-}
-
-.about-me-text,
-.about-me-text-aside {
+.about-me-text {
   color: var(--RedLight);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.5;
   text-align: justify;
+  cursor: default;
 
   @media (max-width: 1000px) {
     font-size: 15px;
     font-weight: 500;
-    line-height: 1;
   }
 }
 
-.about-me-text {
-  text-align: justify;
-  margin-top: 30px;
-
-  @media (max-width: 1000px) {
-    margin-top: 15px;
-  }
+.about-me-span{
+  color: var(--DeepGray);
+  font-weight: 900;
 }
 
 .about-me-container-items {
   margin: 90px 0px;
 
   @media (max-width: 1000px) {
-    margin: 40px;
+    margin: 40px 0px;
   }
 }
 
@@ -1164,6 +1176,10 @@
   @media (max-width: 1000px) {
     margin: 0 0 0 15px;
   }
+
+  @media (max-width: 600px){
+    font-size: 18px;
+  }
 }
 
 .left-side-all-items {
@@ -1241,6 +1257,30 @@
   width: 750px;
   position: relative;
   z-index: 1001;
+  overflow-y: auto;  
+
+  @media (max-width: 750px){
+    width: 370px;
+    max-height: 600px;
+  }
+}
+
+.modal-container::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+.modal-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor do fundo da barra de rolagem */
+  border-radius: 8px;
+}
+
+.modal-container::-webkit-scrollbar-thumb {
+  background: #888; /* Cor da barra de rolagem */
+  border-radius: 8px;
+}
+
+.modal-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor da barra de rolagem ao passar o mouse */
 }
 
 .modal-container-cert {
@@ -1251,6 +1291,10 @@
   width: 550px;
   position: relative;
   z-index: 1001;
+  
+  @media (max-width: 750px) {
+    width: 370px;
+  }
 }
 
 /* Modal header */
@@ -1260,6 +1304,30 @@
   background-color: var(--RedLight);
   height: 70px;
   align-items: center;
+  position: fixed;
+  width: 751px;
+  box-shadow: 0px 0px 20px var(--DarkGray);
+
+  @media (max-width: 750px){
+    width: 370px;
+    height: 50px;
+  }
+}
+
+.modal-header-cert{
+  display: flex;
+  border-radius: 8px 8px 0 0;
+  background-color: var(--RedLight);
+  height: 70px;
+  align-items: center;
+  position: fixed;
+  width: 550px;
+  box-shadow: 0px 0px 20px var(--DarkGray);
+
+  @media (max-width: 750px){
+    width: 370px;
+    height: 50px;
+  }
 }
 
 /* Close button */
@@ -1268,6 +1336,10 @@
   border: none;
   cursor: pointer;
   margin-left: 30px;
+
+  @media (max-width: 750px){
+    width: 15px;
+  }
 }
 
 .modal-header-title {
@@ -1276,6 +1348,11 @@
   padding-right: 68px;
   font-size: 28px;
   font-weight: 700;
+
+  @media (max-width: 750px){
+    font-size: 18px;
+    padding-right: 48px;
+  }
 }
 
 .modal-img {
@@ -1283,6 +1360,13 @@
   width: 150px;
   height: 150px;
   margin-left: 20px;
+  //float: left;
+
+  @media (max-width: 750px){
+    width: 130px;
+    height: 160px;
+    margin-left: 0px;
+  }
 }
 
 .modal-body-text-area {
@@ -1292,18 +1376,32 @@
 .modal-body-title {
   font-size: 25px;
   font-weight: 700;
+
+  @media (max-width: 750px){
+    margin-top: 20px;
+    font-size: 23px;
+    text-align: center;
+  }
 }
 
 .modal-body-sub-title {
   font-size: 18px;
   font-weight: 500;
+  
+  @media (max-width: 750px){
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
 }
 
 .modal-text {
   font-size: 15px;
   text-align: justify;
-  //-margin-top: 10px;
-  //padding-right: 15px;
+
+  @media (max-width: 750px){
+    font-size: 14px;
+  }
 }
 
 .modal-button-project {
@@ -1317,12 +1415,26 @@
   background-color: var(--RedLight);
   text-decoration: none;
   cursor: pointer;
+  transition: 500ms;
+
+  @media (max-width: 750px){
+    width: 100px;
+    height: 26px;
+    margin: 0 5px;
+  }
 }
 
 /* Modal body */
 .modal-body {
   display: flex;
   margin: 20px 0px;
+  padding-top: 70px;
+
+  @media (max-width: 750px){
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .modal-footer {
@@ -1339,10 +1451,20 @@ body.modal-open {
   color: var(--White);
   margin: 0 auto;
   padding-right: 40px;
+  
+  @media (max-width: 750px){
+    font-size: 13px;
+    padding: 0px;
+  }
 }
 
 .modal-button-project-icon {
   margin: 0px 10px;
+
+  @media (max-width: 750px){
+    margin: 0px;
+    padding-left: 10px;
+  }
 }
 
 .modal-link-a {
@@ -1353,6 +1475,11 @@ body.modal-open {
   display: flex;
   flex-direction: column;
   padding: 20px 0px 0px 30px;
+
+  @media (max-width: 750px){
+    padding: 20px 0px 0px 0px;
+    margin-left: 20px;
+  }
 }
 
 .modal-block-info-cert {
@@ -1364,19 +1491,33 @@ body.modal-open {
   font-weight: bold;
   color: var(--RedLight);
   margin-bottom: 10px;
+
+  @media (max-width: 750px){
+    font-size: 16px;
+  }
 }
 
 .modal-cert-value {
   font-size: 17px;
   font-weight: 500;
   color: var(--RedLight);
-  margin-left: 10px;
+  max-width: 90%;
+
+  @media (max-width: 750px){
+    font-size: 13px;
+  }
 }
 
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--RedLight) !important;
+
 }
+
+/* .swiper-slide {
+  height: 20px !important;
+  width: 25px !important;
+} */
 
 // Style for ****JOB Experiences**** from JSON File
 
@@ -1392,10 +1533,104 @@ body.modal-open {
 }
 
 .span-json-experience:hover{
-  color:var(--White);
   font-weight: 800;
   transition: 500ms;
   text-decoration: underline;
 }
 
 //----------------------------------------------------
+
+
+//MODAL JOB EXPERIENCES
+
+
+.modal-job-img{
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid var(--DarkGray);
+  border-radius: 10%;
+
+  @media(max-width: 750px){
+    height: 100px;
+  }
+}
+
+.modal-job-body{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 70px;
+}
+
+.modal-body-img-and-info-right{
+  padding-top: 20px;
+  margin-left: 20px;
+
+  @media(max-width: 750px){
+    padding-top: 10px;
+    margin-left: 15px;
+  }
+}
+
+.modal-body-img-and-info{
+  display: flex;
+  margin: 20px 0px 30px 0px
+}
+
+.modal-job-company-name{
+  font-size: 25px;
+  font-weight: 900;
+
+  @media(max-width: 750px){
+    font-size: 23px;
+  }
+}
+
+.modal-job-time{
+  font-size: 20px;
+  font-weight: 700;
+
+  @media(max-width: 750px){
+    font-size: 18px;
+  }
+}
+
+.modal-job-title{
+  font-size: 18px;
+  font-weight: 500;
+
+  @media(max-width: 750px){
+    font-size: 16px;
+  }
+}
+
+.modal-job-title-responsibilities{
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+
+  @media(max-width: 750px){
+    font-size: 16px;
+  }
+}
+
+.modal-job-responsibilities{
+  margin-bottom: 30px;
+  text-align: justify;
+
+  @media(max-width: 750px){
+    font-size: 14px;
+  }
+}
+
+.X-icon-svg{
+  transition: 1000ms;
+  transform: rotate(270deg);
+}
+
+.X-icon-svg:hover{
+  transform: rotate(30deg);
+  transition: 1000ms;
+}
