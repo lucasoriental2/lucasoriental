@@ -19,7 +19,7 @@ export default function Certificates(props) {
             <div className="EAS-certificates" key={certificate.id}>
               <img
                 alt="credential_img"
-                src={certificatePicture}
+                src={certificate.img}
                 className="EAS-certificates-picture"
               />
               <div className="EAS-certificates-div">
