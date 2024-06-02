@@ -74,7 +74,7 @@ export default function Skills(props) {
                 ) : null}
                 <img
                   alt="skill_img"
-                  src={skillPicture}
+                  src={skill.img}
                   className="EAS-skills-picture"
                 />
                 <p className="EAS-skills-title">{skill.title}</p>
