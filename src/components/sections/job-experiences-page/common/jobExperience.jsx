@@ -1,25 +1,41 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
+import JobExperiencesModal from "./jobExperiencesModal";
 
 export default function JobExperiences (props) {
 
-  useEffect(() => {
-  }, []);
+  const [jobExperience, setJobExperience] = useState(null);
+
+  const [modalOpen, setModalOpen] = useState(false);
 
     return (
       <div className="block-of-jobs">
         {props.data.map((job, index) => {
           return (
-            <div className="job-entire-item" key={index}>
+            <div className="job-entire-item" key={job.id}>
               <img alt="Company Logo" src={job.image} className="job-image" />
               <div className="job-entire-item-paragraph">
                 <p className="job-title">{job.jobTitle}</p>
                 <p className="job-company-name">{job.companyName}</p>
                 <p className="job-time">{job.time}</p>
-                <div className="job-responsibilities" dangerouslySetInnerHTML={{ __html: job.responsibilities }} />
-                <a href="#" className="job-button-link">
-                  <button className="job-button">more details</button>
+                <div
+                  className="job-responsibilities"
+                  dangerouslySetInnerHTML={{ __html: job.responsibilities }}
+                />
+                <a className="job-button-link">
+                  <button
+                    onClick={() => {
+                      setModalOpen(true);
+                      setJobExperience(index);
+                    }}
+                    className="job-button"
+                  >
+                    more details
+                  </button>
                 </a>
               </div>
+              {modalOpen && jobExperience === index && (
+                <JobExperiencesModal information={job} setOpenModal={setModalOpen} />
+              )}
             </div>
           );
         })}
