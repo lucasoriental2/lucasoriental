@@ -18,10 +18,11 @@ const MainPage = () => {
       <div className="home-main-container-1">
         <div className="home-column1">
           <img
-            alt="home-profile-picture"
+            alt="profile-image"
             src={main_picture}
             className="home-profile-picture"
           />
+          <div class="borda-animada" />
         </div>
         <div className="home-column2">
           <div className="home-line1">
