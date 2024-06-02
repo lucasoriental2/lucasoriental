@@ -41,56 +41,84 @@ const contactMePage = () => {
             <div className="contact-me-left-side">
               <div>
                 <div className="left-side-title-and-canvas">
-                  <p className="left-side-form-title" >Get in Touch!</p>
+                  <p className="left-side-form-title">Get in Touch!</p>
                   <canvas className="left-side-form-above-title" />
                 </div>
                 <div className="left-side-all-items">
                   <div className="left-side-item">
-                    <a href="#" className="left-side-item-a">
+                    <a
+                      href="https://maps.app.goo.gl/WRGVPhNip7Dmu8Zg7"
+                      target="_blank"
+                      className="left-side-item-a"
+                    >
                       <p className="social-media-name">
                         Rio de Janeiro (RJ) - Brazil
                       </p>
-                      <LocationSVG width={40} height={41} color={"#E00036"}/>
+                      <LocationSVG width={40} height={41} color={"#E00036"} />
                     </a>
                   </div>
                   <div className="left-side-item">
-                    <a href="#" className="left-side-item-a">
+                    <a
+                      href="mailto:lucasoriental@gmail.com"
+                      target="_blank"
+                      className="left-side-item-a"
+                    >
                       <p className="social-media-name">
                         lucasoriental@gmail.com
                       </p>
-                      <MailSVG width={40} height={37} color={"#E00036"}/>
+                      <MailSVG width={40} height={37} color={"#E00036"} />
                     </a>
                   </div>
                   <div className="left-side-item">
-                    <a href="#" className="left-side-item-a">
+                    <a
+                      href="https://web.whatsapp.com/send?phone=5521995253580"
+                      target="_blank"
+                      className="left-side-item-a"
+                    >
                       <p className="social-media-name">+55 (21) 99525-3580</p>
-                      <NumberSVG width={39} height={42} color={"#E00036"}/>
+                      <NumberSVG width={39} height={42} color={"#E00036"} />
                     </a>
                   </div>
                   <div className="left-side-item">
-                    <a href="#" className="left-side-item-a">
-                      <p className="social-media-name">@lucas_oriental</p>
-                      <InstagramSVG width={40} height={40} color={"#E00036"}/>
+                    <a
+                      href="https://instagram.com/lucasorientaldev"
+                      target="_blank"
+                      className="left-side-item-a"
+                    >
+                      <p className="social-media-name">@lucasorientaldev</p>
+                      <InstagramSVG width={40} height={40} color={"#E00036"} />
                     </a>
                   </div>
                   <div className="left-side-item">
-                    <a href="#" className="left-side-item-a">
+                    <a
+                      href="https://github.com/lucasoriental"
+                      className="left-side-item-a"
+                      target="_blank"
+                    >
                       <p className="social-media-name">/lucasoriental</p>
-                      <GitHubSVG width={40} height={40} color={"#E00036"}/>
+                      <GitHubSVG width={40} height={40} color={"#E00036"} />
                     </a>
                   </div>
                   <div className="left-side-item">
-                    <a href="#" className="left-side-item-a">
+                    <a
+                      href="https://linkedin.com/in/lucas-oriental-dos-santos/"
+                      target="_blank"
+                      className="left-side-item-a"
+                    >
                       <p className="social-media-name">
                         Lucas Oriental dos Santos
                       </p>
-                      <LinkedInSVG width={40} height={40} color={"#E00036"}/>
+                      <LinkedInSVG width={40} height={40} color={"#E00036"} />
                     </a>
                   </div>
                   <div className="left-side-item">
-                    <a href="#" className="left-side-item-a">
+                    <a
+                      href="https://behance.net/lucasoriental"
+                      target="_blank"
+                      className="left-side-item-a"
+                    >
                       <p className="social-media-name">/lucasoriental</p>
-                      <BehanceSVG width={40} height={40} color={"#E00036"}/>
+                      <BehanceSVG width={40} height={40} color={"#E00036"} />
                     </a>
                   </div>
                 </div>
