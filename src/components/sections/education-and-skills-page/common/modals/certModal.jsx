@@ -9,9 +9,6 @@ export default function CertModal({ setOpenModal, information }) {
     };
   }, []);
 
-  console.log(information.credentialCode);
-  console.log(information.credentialLink);
-
   return (
     <div className="modal-background">
       <div className="modal-container-cert">
