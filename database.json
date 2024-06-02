@@ -5,28 +5,55 @@
       "platform": "Udemy - Geek University",
       "course": "JS do básico ao avançado (c/ Node e Projetos)",
       "time": "23.5",
-      "credentialCode": "#",
-      "credentialLink": "#",
-      "img": "#"
+      "credentialCode": "UC-f5755607-604d-40dc-8b90-816bc5e2183a",
+      "credentialLink": "https://www.udemy.com/certificate/UC-f5755607-604d-40dc-8b90-816bc5e2183a/",
+      "img": "/images/courses/js.webp"
     },
     {
       "id": 2,
-      "platform": "Fundação Bradesco",
-      "course": "Introdução a Redes de Computadores",
-      "time": "23",
-      "credentialCode": "#",
-      "credentialLink": "#",
-      "img": "#"
+      "platform": "Udemy - Geek University",
+      "course": "React Completo do básico ao avançado",
+      "time": "7.5",
+      "credentialCode": "UC-1282fe00-eb1d-4cb5-9a96-717c73d3377d",
+      "credentialLink": "https://www.udemy.com/certificate/UC-1282fe00-eb1d-4cb5-9a96-717c73d3377d/",
+      "img": "/images/courses/react.webp"
     },
     {
       "id": 3,
+      "platform": "Fundação Bradesco",
+      "course": "HTML Avançado",
+      "time": "6",
+      "credentialCode": "C9457CAA-586C-4F79-AEA7-06E15D06380E",
+      "credentialLink": "https://www.ev.org.br/validar-certificado",
+      "img": "/images/courses/htmlAdvanced.webp"
+    },
+    {
+      "id": 4,
+      "platform": "Udemy - Global Academy",
+      "course": "SQL Programming Basics",
+      "time": "1.5",
+      "credentialCode": "UC-82cdfd3b-37ec-46c1-a4a7-db1f1b9ca0c0",
+      "credentialLink": "https://www.udemy.com/certificate/UC-82cdfd3b-37ec-46c1-a4a7-db1f1b9ca0c0/",
+      "img": "/images/courses/sql.webp"
+    },
+    {
+      "id": 5,
+      "platform": "Fundação Bradesco",
+      "course": "Introdução a Redes de Computadores",
+      "time": "15",
+      "credentialCode": "795B2181-034F-4AEE-BCEA-128139C36A91",
+      "credentialLink": "https://www.ev.org.br/validar-certificado",
+      "img": "/images/courses/redesDeComputadores.webp"
+    },
+    {
+      "id": 6,
       "platform": "Curso em Vídeo",
       "course": "JavaScript",
       "time": "40",
       "credentialURL": "https://www.cursoemvideo.com/validacao-de-certificado/?codigo=3A615-6C61-9",
-      "credentialCode": "#",
-      "credentialLink": "#",
-      "img": "#"
+      "credentialCode": "3A615-6C61-9",
+      "credentialLink": "https://www.cursoemvideo.com/certificates/certificado/?course_id=27745&cert-nonce=6d7d9c9ca6",
+      "img": "/images/courses/jsCursoEmVideo.webp"
     }
   ],
   "certificatesDesign": [
@@ -35,23 +62,24 @@
       "platform": "Udemy",
       "course": "Curso Completo de Design de Interface",
       "time": "20.5",
-      "credentialCode": "testando curso design completo",
-      "credentialLink": "#",
-      "img": "#"
+      "credentialCode": "UC-e68e6e0a-3932-41cd-88a0-f9221bdb9be3",
+      "credentialLink": "https://www.udemy.com/certificate/UC-e68e6e0a-3932-41cd-88a0-f9221bdb9be3/",
+      "img": "/images/courses/uxUi.webp"
     },
     {
       "id": 2,
       "platform": "Fundação Bradesco",
       "course": "Design Thinking",
       "time": "15",
-      "credentialCode": "design thinking",
-      "credentialLink": "#",
-      "img": "#"
+      "credentialCode": "2A9525C7-299E-4A4D-8353-71E48FB76944",
+      "credentialLink": "https://www.ev.org.br/validar-certificado",
+      "img": "/images/courses/designThinking.webp"
     }
   ],
   "college": [
     {
       "id": 1,
+      "img": "/images/courses/unicarioca.webp",
       "universityName": "Centro Universitário Carioca",
       "courseTitle": "Bachelor's Computer Science",
       "time": "2020 - Dec/2024 (expected)",
@@ -63,63 +91,63 @@
       "id": 1,
       "title": "React",
       "level": 7,
-      "img": "#",
+      "img": "/images/skills/it/react.webp",
       "professional": true
     },
     {
       "id": 2,
       "title": "JavaScript",
       "level": 6,
-      "img": "#",
+      "img": "/images/skills/it/javascript.webp",
       "professional": true
     },
     {
       "id": 3,
       "title": "SQL",
       "level": 6,
-      "img": "#",
+      "img": "/images/skills/it/sql.webp",
       "professional": true
     },
     {
       "id": 4,
       "title": "HTML",
       "level": 8,
-      "img": "#",
+      "img": "/images/skills/it/html.webp",
       "professional": true
     },
     {
       "id": 5,
       "title": "SASS (CSS)",
       "level": 6,
-      "img": "#",
+      "img": "/images/skills/it/sass.webp",
       "professional": true
     },
     {
       "id": 6,
       "title": "Carbon Design (IBM - React)",
       "level": 5,
-      "img": "#",
+      "img": "/images/skills/it/carbonDesign.webp",
       "professional": true
     },
     {
       "id": 7,
       "title": "Jest",
       "level": 5,
-      "img": "#",
+      "img": "/images/skills/it/jest.webp",
       "professional": true
     },
     {
       "id": 8,
       "title": "Node",
       "level": 4,
-      "img": "#",
+      "img": "/images/skills/it/node.webp",
       "professional": true
     },
     {
       "id": 9,
       "title": "Selenium",
       "level": 3,
-      "img": "#",
+      "img": "/images/skills/it/selenium.webp",
       "professional": true
     }
   ],
@@ -128,49 +156,49 @@
       "id": 1,
       "title": "Figma",
       "level": 9,
-      "img": "#",
+      "img": "/images/skills/design/figma.webp",
       "professional": false
     },
     {
       "id": 2,
       "title": "Adobe XD",
       "level": 7,
-      "img": "#",
+      "img": "/images/skills/design/adobeXd.webp",
       "professional": false
     },
     {
       "id": 3,
       "title": "Photoshop",
       "level": 7,
-      "img": "#",
+      "img": "/images/skills/design/photoshop.webp",
       "professional": false
     },
     {
       "id": 4,
       "title": "Graphic Design",
       "level": 9,
-      "img": "#",
+      "img": "/images/skills/design/graphic_designer.webp",
       "professional": false
     },
     {
       "id": 5,
       "title": "UX/UI Design",
       "level": 9,
-      "img": "#",
+      "img": "/images/skills/design/uxUiDesigner.webp",
       "professional": false
     },
     {
       "id": 6,
       "title": "Icon Maker",
       "level": 6,
-      "img": "#",
+      "img": "/images/skills/design/iconMaker.webp",
       "professional": false
     },
     {
       "id": 7,
       "title": "Video/Image Editor",
       "level": 9,
-      "img": "#",
+      "img": "/images/skills/design/videoEditor.webp",
       "professional": false
     }
   ],
