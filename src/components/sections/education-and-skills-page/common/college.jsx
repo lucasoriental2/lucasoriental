@@ -25,7 +25,7 @@ export default function College() {
           <div className="EAS-college-img-and-info" key={college.id}>
             <img
               alt="College_picture"
-              src={collegePicture}
+              src={college.img}
               className="EAS-college-picture"
             />
             <div className="EAS-college-info-div">
