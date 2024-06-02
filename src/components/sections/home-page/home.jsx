@@ -22,7 +22,7 @@ const MainPage = () => {
             src={main_picture}
             className="home-profile-picture"
           />
-          <div class="borda-animada" />
+          <div className="borda-animada" />
         </div>
         <div className="home-column2">
           <div className="home-line1">
