@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import image from "../../../assets/pictures/img_about_me_section.jpeg";
 
 const aboutMePage = () => {
@@ -95,6 +95,6 @@ const aboutMePage = () => {
       </div>
     </div>
   );
-}
+};
 
 export default aboutMePage;
