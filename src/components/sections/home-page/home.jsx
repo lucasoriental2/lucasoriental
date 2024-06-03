@@ -1,10 +1,10 @@
 import React from "react";
+import BehanceSVG from "../../../assets/light_theme/Behance";
+import GitHubSVG from "../../../assets/light_theme/GitHub";
+import InstagramSVG from "../../../assets/light_theme/Instagram";
+import LinkedInSVG from "../../../assets/light_theme/LinkedIn";
 import MouseSrollSvg from "../../../assets/light_theme/mouse_arrow_down";
 import main_picture from "../../../assets/pictures/profile_photo_1.jpg";
-import InstagramSVG from "../../../assets/light_theme/Instagram"
-import GitHubSVG from "../../../assets/light_theme/GitHub"
-import LinkedInSVG from "../../../assets/light_theme/LinkedIn"
-import BehanceSVG from "../../../assets/light_theme/Behance"
 
 import { Tooltip } from 'react-tooltip';
 
