@@ -1,12 +1,5 @@
 import { useEffect, useState } from "react";
-import MyProjectModal from "./each-project/myProjectModal";
-/* import dataBaseIcon from "../../../assets/common_elements/technologies/database_icon.png";
-import figmaIcon from "../../../assets/common_elements/technologies/figma_icon.png";
-import reactIcon from "../../../assets/common_elements/technologies/react_icon.png";
-import sassIcon from "../../../assets/common_elements/technologies/sass_icon.png";
-import projectImage from "../../../assets/pictures/project_img.png";
-import ClinicaDoPaiao from "./each-project/clinicaDoPaiao.jsx";
-import MyPortfolio from "./each-project/myPortfolio.jsx"; */
+import MyProjectModal from "./common/myProjectModal";
 
 const MyProjectsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
