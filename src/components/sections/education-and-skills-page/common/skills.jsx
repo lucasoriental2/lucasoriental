@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ProfessionalStarIconSvg from "../../../../assets/common_elements/professional_star";
-import skillPicture from "../../../../assets/pictures/picture_skill.png";
 
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";

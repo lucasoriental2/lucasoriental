@@ -2,7 +2,6 @@ import { useState, /* useEffect */ } from "react";
 import { Tooltip } from 'react-tooltip';
 import CapCourseLightSVG from "../../../../assets/light_theme/cap_course_SVG";
 import ClockLightSVG from "../../../../assets/light_theme/clock_SVG";
-import certificatePicture from "../../../../assets/pictures/picture_certificate.png";
 import CertModal from "./modals/certModal";
 
 export default function Certificates(props) {

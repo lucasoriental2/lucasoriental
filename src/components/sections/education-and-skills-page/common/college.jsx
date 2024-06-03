@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import collegePicture from "../../../../assets/pictures/picture_college.png";
 
 export default function College() {
   const [college, setCollege] = useState([]);
