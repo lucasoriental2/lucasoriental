@@ -227,5 +227,37 @@
       "time": "2018 - 2022",
       "responsibilities": "<ul class=\"list-json-experience\"><li>As a freelancer, I offered a <span class=\"span-json-experience\">full range of services in design and audiovisual</span> production;</li><li>Actively participated in <span class=\"span-json-experience\">UX/UI Design, providing visual services for websites and developing landing pages</span>;</li><li>Made <span class=\"span-json-experience\">logos, resumes, brochures, banners, and other design elements</span>;</li><li>Expanded my expertise to <span class=\"span-json-experience\">video and audio editing</span>, distinguishing myself in the creation of attractive <span class=\"span-json-experience\">vignettes for YouTubers and online</span> influencers;</li><li>Produced <span class=\"span-json-experience\">Reels, posts, and banners</span> adapted for various social media platforms, with a focus on <span class=\"span-json-experience\">Instagram</span>."
     }
-  ]
+  ],
+  "projects":[
+    {
+      "id": "1",
+      "img": "/images/myProjects/clinicaDoPaiao.png",
+      "projectName": "Clínica do Paião",
+      "projectArea": "Web Development and Design UX/UI",
+      "iconTechs": [
+        "images/technologies/sass_icon.png",
+        "images/technologies/react_icon.png"
+      ],
+      "projectDescription": "This is the first professional project I have worked as afreelancer! React/Vite and SCSS are the main technologies ofthis project! Clinica Do Paião is a medical clinic situated onPaião in Portugal, that offers medical services! Like GeneralClinic, Psycology, Physioterapy, acupunture and other ones!",
+      "website": "https://clinicadopaiao.com/",
+      "gitHubRepo": "https://github.com/lucasoriental/clinicadopaiao",
+      "behanceRepo": "https://behance.net/lucasoriental"
+    },
+    {
+      "id": "2",
+      "img": "/images/myProjects/myPortfolio.png",
+      "projectName": "My Professional Portfolio",
+      "projectArea": "Web Development, Design UX/UI and Data Base",
+      "iconTechs": [
+        "images/technologies/database_icon.png",
+        "images/technologies/figma_icon.png",
+        "images/technologies/react_icon.png",
+        "images/technologies/sass_icon.png"
+      ],
+      "projectDescription": "Description of my Portfolio here",
+      "website": "",
+      "gitHubRepo": "https://github.com/lucasoriental/lucasoriental",
+      "behanceRepo": ""
+    }
+]
 }
