@@ -1,4 +1,4 @@
-export default function LinkedInLightSvg({width, height, color}) {
+export default function LinkedInLightSvg({ width, height, color }) {
   return (
     <svg
       width={width}
