@@ -38,7 +38,7 @@ export default function CertModal({ setOpenModal, information }) {
                 target="_blank"
                 className="modal-cert-value-a"
               >
-                <p className="modal-cert-value">{information.credentialLink}</p>
+                <p className="modal-cert-value">Click here to validate</p>
               </a>
             </div>
           </div>

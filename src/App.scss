@@ -229,26 +229,31 @@
     height: 400px;
     margin-bottom: 5px;
   }
+
   @media (max-width: 430px) {
     width: 320px;
     height: 320px;
   }
 }
 
-@keyframes homeProfile{
-  0%{
+@keyframes homeProfile {
+  0% {
     border-color: var(--DeepGray);
   }
-  25%{
+
+  25% {
     border-color: var(--RedLight);
   }
-  50%{
+
+  50% {
     border-color: var(--DeepGray);
   }
-  75%{
+
+  75% {
     border-color: var(--RedLight);
   }
-  100%{
+
+  100% {
     border-color: var(--DeepGray);
   }
 }
@@ -351,7 +356,7 @@
   }
 }
 
-.home-social-medias{
+.home-social-medias {
   margin-top: 50px;
   padding-left: 25px;
   display: flex;
@@ -365,7 +370,7 @@
   }
 }
 
-.home-social-medias-a{
+.home-social-medias-a {
   cursor: pointer;
 }
 
@@ -439,10 +444,18 @@
   }
 }
 
-.project-button:hover, .EAS-college-button:hover, #home-button:hover, .modal-button-project:hover{
+.project-button:hover,
+.EAS-college-button:hover,
+#home-button:hover,
+.modal-button-project:hover {
   background-color: var(--DarkGray);
   color: var(--White);
   transition: 500ms;
+}
+
+.div-each-project {
+  max-width: 550px;
+  width: 90%;
 }
 
 .div-project-image {
@@ -451,11 +464,15 @@
 }
 
 .project-image {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
   margin: 0px auto 17px;
+  border: 1px solid var(--DarkGray);
 
   @media (max-width: 1000px) {
-    width: 300px;
-    height: 320px;
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -560,12 +577,12 @@
     margin: 40px auto 15px auto;
   }
 }
-
 .column-1-teste {
+
   flex-grow: 0;
 }
-
 .column-2-teste {
+
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -595,7 +612,7 @@
 // College Section (Education And Skills)
 // ------------------------------------
 
-.allColeges{
+.allColeges {
   display: flex;
   justify-content: center;
 }
@@ -646,7 +663,7 @@
   position: fixed;
   z-index: 1;
 
-  @media (max-width: 1000px){
+  @media (max-width: 1000px) {
     margin-left: 60px;
   }
 }
@@ -661,7 +678,8 @@
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-radius: 10%;;
+  border-radius: 10%;
+  ;
 
   @media (max-width: 1000px) {
     width: 100px;
@@ -728,8 +746,8 @@
     height: 85px;
   }
 }
-
 .canvas-teste {
+
   margin: 0 2px;
   background-color: var(--RedLight);
   height: 20px;
@@ -743,8 +761,8 @@
     margin: 0 1px;
   }
 }
-
 .canvas-teste2 {
+
   margin: 0 2px;
   background-color: var(--LightGray);
   height: 20px;
@@ -888,7 +906,7 @@
 .job-image {
   width: 335px;
   height: 335px;
-  object-fit:cover;
+  object-fit: cover;
   border-radius: 20px;
 
   @media (max-width: 1000px) {
@@ -962,7 +980,7 @@
   }
 }
 
-.job-button:hover{
+.job-button:hover {
   background-color: var(--DarkGray);
   color: var(--White);
   transition: 600ms;
@@ -1007,7 +1025,7 @@
   }
 }
 
-.about-me-span{
+.about-me-span {
   color: var(--DeepGray);
   font-weight: 900;
 }
@@ -1177,7 +1195,7 @@
     margin: 0 0 0 15px;
   }
 
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 18px;
   }
 }
@@ -1257,30 +1275,34 @@
   width: 750px;
   position: relative;
   z-index: 1001;
-  overflow-y: auto;  
+  overflow-y: auto;
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     width: 370px;
     max-height: 600px;
   }
 }
 
 .modal-container::-webkit-scrollbar {
-  width: 12px; /* Largura da barra de rolagem */
+  width: 12px;
+  /* Largura da barra de rolagem */
 }
 
 .modal-container::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Cor do fundo da barra de rolagem */
+  background: #f1f1f1;
+  /* Cor do fundo da barra de rolagem */
   border-radius: 8px;
 }
 
 .modal-container::-webkit-scrollbar-thumb {
-  background: #888; /* Cor da barra de rolagem */
+  background: #888;
+  /* Cor da barra de rolagem */
   border-radius: 8px;
 }
 
 .modal-container::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Cor da barra de rolagem ao passar o mouse */
+  background: #555;
+  /* Cor da barra de rolagem ao passar o mouse */
 }
 
 .modal-container-cert {
@@ -1291,7 +1313,7 @@
   width: 550px;
   position: relative;
   z-index: 1001;
-  
+
   @media (max-width: 750px) {
     width: 370px;
   }
@@ -1308,13 +1330,13 @@
   width: 751px;
   box-shadow: 0px 0px 20px var(--DarkGray);
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     width: 370px;
     height: 50px;
   }
 }
 
-.modal-header-cert{
+.modal-header-cert {
   display: flex;
   border-radius: 8px 8px 0 0;
   background-color: var(--RedLight);
@@ -1324,7 +1346,7 @@
   width: 550px;
   box-shadow: 0px 0px 20px var(--DarkGray);
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     width: 370px;
     height: 50px;
   }
@@ -1337,7 +1359,7 @@
   cursor: pointer;
   margin-left: 30px;
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     width: 15px;
   }
 }
@@ -1349,7 +1371,7 @@
   font-size: 28px;
   font-weight: 700;
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     font-size: 18px;
     padding-right: 48px;
   }
@@ -1360,9 +1382,10 @@
   width: 150px;
   height: 150px;
   margin-left: 20px;
-  //float: left;
+  border: 1px solid var(--DarkGray);
+  object-fit: cover;
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     width: 130px;
     height: 160px;
     margin-left: 0px;
@@ -1377,7 +1400,7 @@
   font-size: 25px;
   font-weight: 700;
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     margin-top: 20px;
     font-size: 23px;
     text-align: center;
@@ -1387,8 +1410,8 @@
 .modal-body-sub-title {
   font-size: 18px;
   font-weight: 500;
-  
-  @media (max-width: 750px){
+
+  @media (max-width: 750px) {
     font-size: 17px;
     text-align: center;
     margin-bottom: 5px;
@@ -1399,7 +1422,7 @@
   font-size: 15px;
   text-align: justify;
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     font-size: 14px;
   }
 }
@@ -1417,7 +1440,7 @@
   cursor: pointer;
   transition: 500ms;
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     width: 100px;
     height: 26px;
     margin: 0 5px;
@@ -1430,7 +1453,7 @@
   margin: 20px 0px;
   padding-top: 70px;
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     padding-top: 40px;
     flex-direction: column;
     align-items: center;
@@ -1451,8 +1474,8 @@ body.modal-open {
   color: var(--White);
   margin: 0 auto;
   padding-right: 40px;
-  
-  @media (max-width: 750px){
+
+  @media (max-width: 750px) {
     font-size: 13px;
     padding: 0px;
   }
@@ -1461,7 +1484,7 @@ body.modal-open {
 .modal-button-project-icon {
   margin: 0px 10px;
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     margin: 0px;
     padding-left: 10px;
   }
@@ -1476,9 +1499,9 @@ body.modal-open {
   flex-direction: column;
   padding: 20px 0px 0px 30px;
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     padding: 20px 0px 0px 0px;
-    margin-left: 20px;
+    //margin-left: 20px;
   }
 }
 
@@ -1488,11 +1511,11 @@ body.modal-open {
 
 .modal-cert-title {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--RedLight);
   margin-bottom: 10px;
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     font-size: 16px;
   }
 }
@@ -1500,12 +1523,19 @@ body.modal-open {
 .modal-cert-value {
   font-size: 17px;
   font-weight: 500;
-  color: var(--RedLight);
-  max-width: 90%;
+  color: var(--DarkGray);
+  width: 90%;
+  max-width: 320px;
+  text-wrap: wrap;
 
-  @media (max-width: 750px){
+  @media (max-width: 750px) {
     font-size: 13px;
   }
+}
+
+.modal-cert-value-a{
+  text-decoration: underline;
+  color: var(--RedLight);
 }
 
 .swiper-button-prev,
@@ -1514,25 +1544,20 @@ body.modal-open {
 
 }
 
-/* .swiper-slide {
-  height: 20px !important;
-  width: 25px !important;
-} */
-
 // Style for ****JOB Experiences**** from JSON File
 
-.list-json-experience{
+.list-json-experience {
   margin-left: 30px;
   cursor: default;
 }
 
-.span-json-experience{
+.span-json-experience {
   color: var(--DeepGray);
   font-weight: 700;
   transition: 500ms;
 }
 
-.span-json-experience:hover{
+.span-json-experience:hover {
   font-weight: 800;
   transition: 500ms;
   text-decoration: underline;
@@ -1544,19 +1569,19 @@ body.modal-open {
 //MODAL JOB EXPERIENCES
 
 
-.modal-job-img{
+.modal-job-img {
   width: 100px;
   height: 100%;
   object-fit: cover;
   border: 2px solid var(--DarkGray);
   border-radius: 10%;
 
-  @media(max-width: 750px){
+  @media(max-width: 750px) {
     height: 100px;
   }
 }
 
-.modal-job-body{
+.modal-job-body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -1564,73 +1589,73 @@ body.modal-open {
   padding-top: 70px;
 }
 
-.modal-body-img-and-info-right{
+.modal-body-img-and-info-right {
   padding-top: 20px;
   margin-left: 20px;
 
-  @media(max-width: 750px){
+  @media(max-width: 750px) {
     padding-top: 10px;
     margin-left: 15px;
   }
 }
 
-.modal-body-img-and-info{
+.modal-body-img-and-info {
   display: flex;
   margin: 20px 0px 30px 0px
 }
 
-.modal-job-company-name{
+.modal-job-company-name {
   font-size: 25px;
   font-weight: 900;
 
-  @media(max-width: 750px){
+  @media(max-width: 750px) {
     font-size: 23px;
   }
 }
 
-.modal-job-time{
+.modal-job-time {
   font-size: 20px;
   font-weight: 700;
 
-  @media(max-width: 750px){
+  @media(max-width: 750px) {
     font-size: 18px;
   }
 }
 
-.modal-job-title{
+.modal-job-title {
   font-size: 18px;
   font-weight: 500;
 
-  @media(max-width: 750px){
+  @media(max-width: 750px) {
     font-size: 16px;
   }
 }
 
-.modal-job-title-responsibilities{
+.modal-job-title-responsibilities {
   padding-bottom: 10px;
   font-weight: bold;
   font-size: 18px;
 
-  @media(max-width: 750px){
+  @media(max-width: 750px) {
     font-size: 16px;
   }
 }
 
-.modal-job-responsibilities{
+.modal-job-responsibilities {
   margin-bottom: 30px;
   text-align: justify;
 
-  @media(max-width: 750px){
+  @media(max-width: 750px) {
     font-size: 14px;
   }
 }
 
-.X-icon-svg{
+.X-icon-svg {
   transition: 1000ms;
   transform: rotate(270deg);
 }
 
-.X-icon-svg:hover{
+.X-icon-svg:hover {
   transform: rotate(30deg);
   transition: 1000ms;
 }
