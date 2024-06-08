@@ -1,4 +1,4 @@
-export default function CapCourseLightSVG({width, height, color}) {
+export default function CapCourseLightSVG({ width, height, color }) {
   return (
     <svg
       width={width}

@@ -1,8 +1,8 @@
-export default function clockLightSVG({width, height, color}) {
+export default function clockLightSVG({ width, height, color }) {
   return (
     <svg
-    width={width}
-    height={height}
+      width={width}
+      height={height}
       viewBox="0 0 10 11"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

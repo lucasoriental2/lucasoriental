@@ -1,4 +1,4 @@
-export default function MailLightSvg({width, height, color}) {
+export default function MailLightSvg({ width, height, color }) {
   return (
     <svg
       width={width}

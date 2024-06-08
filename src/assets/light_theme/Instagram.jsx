@@ -1,4 +1,4 @@
-export default function InstagramLightSvg({width, height, color}) {
+export default function InstagramLightSvg({ width, height, color }) {
   return (
     <svg
       width={width}

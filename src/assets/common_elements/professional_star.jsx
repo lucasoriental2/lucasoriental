@@ -1,13 +1,13 @@
-import { Tooltip } from 'react-tooltip';
+import { Tooltip } from "react-tooltip";
 
-export default function ProfessionalStarIconSvg({size, outColor, inColor}) {
+export default function ProfessionalStarIconSvg({ size, outColor, inColor }) {
   return (
     <>
-      <Tooltip id="my-tooltip-skill"/>
+      <Tooltip id="my-tooltip-skill" />
       <svg
         place="top"
-        data-tooltip-id="my-tooltip-skill" 
-        data-tooltip-content="Obtained by through professional experience" 
+        data-tooltip-id="my-tooltip-skill"
+        data-tooltip-content="Obtained by through professional experience"
         className="professional-Skill-star"
         width={size}
         height={size}
@@ -21,6 +21,6 @@ export default function ProfessionalStarIconSvg({size, outColor, inColor}) {
           fill={inColor}
         />
       </svg>
-    </>  
+    </>
   );
 }

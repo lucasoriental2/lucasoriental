@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import collegePicture from "../../../../assets/pictures/picture_college.png";
 
 export default function College() {
   const [college, setCollege] = useState([]);
@@ -25,7 +24,7 @@ export default function College() {
           <div className="EAS-college-img-and-info" key={college.id}>
             <img
               alt="College_picture"
-              src={collegePicture}
+              src={college.img}
               className="EAS-college-picture"
             />
             <div className="EAS-college-info-div">

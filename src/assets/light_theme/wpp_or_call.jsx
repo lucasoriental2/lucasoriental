@@ -1,4 +1,4 @@
-export default function WppOrCallLightSvg({width, height, color}) {
+export default function WppOrCallLightSvg({ width, height, color }) {
   return (
     <svg
       width={width}

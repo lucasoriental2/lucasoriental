@@ -1,4 +1,4 @@
-export default function LocateLightSvg({width, height, color}) {
+export default function LocateLightSvg({ width, height, color }) {
   return (
     <svg
       width={width}
