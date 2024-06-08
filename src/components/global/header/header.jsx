@@ -42,7 +42,7 @@ const Header = () => {
           </Link>
           <Link
             activeClass="active"
-            to="home-my-projects-container"
+            to="my-projects-container"
             spy={true}
             smooth={true}
             offset={-headerHeight}
@@ -110,7 +110,12 @@ const Header = () => {
       <div id="header-mobile">
         <div className="header-mobile-bar">
           <button className="hamburguer" onClick={handleClick}>
-            <MenuHamburguer />
+            <MenuHamburguer
+              width={41}
+              height={26}
+              strokeWidth={3}
+              strokeColor="white"
+            />
           </button>
           <img alt="logo" src="" />
         </div>
@@ -120,7 +125,12 @@ const Header = () => {
           <div className="header-mobile-side-bar-top">
             <div className="header-mobile-side-bar-top-XIcon">
               <button className="hamburguer" onClick={handleClick}>
-                <XIconSvg />
+                <XIconSvg
+                  width={35}
+                  height={35}
+                  strokeWidth={3}
+                  color="white"
+                />
               </button>
             </div>
             {/* <div className="header-mobile-side-bar-top-Icons">

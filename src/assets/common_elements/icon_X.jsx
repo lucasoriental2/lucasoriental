@@ -1,6 +1,7 @@
 const XIconSvg = ({ width, height, strokeWidth, color }) => {
   return (
     <svg
+      className="X-icon-svg"
       width={width}
       height={height}
       viewBox="0 0 38 38"

@@ -2,7 +2,6 @@ import { useState, /* useEffect */ } from "react";
 import { Tooltip } from 'react-tooltip';
 import CapCourseLightSVG from "../../../../assets/light_theme/cap_course_SVG";
 import ClockLightSVG from "../../../../assets/light_theme/clock_SVG";
-import certificatePicture from "../../../../assets/pictures/picture_certificate.png";
 import CertModal from "./modals/certModal";
 
 export default function Certificates(props) {
@@ -19,7 +18,7 @@ export default function Certificates(props) {
             <div className="EAS-certificates" key={certificate.id}>
               <img
                 alt="credential_img"
-                src={certificatePicture}
+                src={certificate.img}
                 className="EAS-certificates-picture"
               />
               <div className="EAS-certificates-div">
@@ -37,13 +36,13 @@ export default function Certificates(props) {
                       className="EAS-certificates-title">{certificate.course}</p>
                   </button>
                 <div className="EAS-certificates-div-icon-text">
-                  <CapCourseLightSVG />
+                  <CapCourseLightSVG width={20} height={18} color="#444444"/>
                   <p className="EAS-certificates-div-text">
                     {certificate.platform}
                   </p>
                 </div>
                 <div className="EAS-certificates-div-icon-text">
-                  <ClockLightSVG />
+                  <ClockLightSVG width={20} height={18} color="#444444"/>
                   <p className="EAS-certificates-div-text">
                     {certificate.time} h
                   </p>

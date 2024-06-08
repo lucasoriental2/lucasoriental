@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ProfessionalStarIconSvg from "../../../../assets/common_elements/professional_star";
-import skillPicture from "../../../../assets/pictures/picture_skill.png";
 
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -69,12 +68,12 @@ export default function Skills(props) {
                <div className="EAS-skills"> 
                 {skill.professional === true ? (
                      <ProfessionalStarIconSvg
-                      height={20} width={20} outColor="#E00036" inColor="white"
+                     size={window.innerWidth < 1000 ? 15 : 20} outColor="#E00036" inColor="white"
                       className="star-skill" />
                 ) : null}
                 <img
                   alt="skill_img"
-                  src={skillPicture}
+                  src={skill.img}
                   className="EAS-skills-picture"
                 />
                 <p className="EAS-skills-title">{skill.title}</p>
