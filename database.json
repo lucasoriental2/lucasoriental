@@ -209,7 +209,7 @@
       "jobTitle": "Web Developer - Internship",
       "companyName": "IBM",
       "time": "2022 - 2024",
-      "responsibilities": "<ul class=\"list-json-experience\"><li>I participated in the <span class=\"span-json-experience\">migration</span> of the “System Admin” system from RPGLE Modules <span class=\"span-json-experience\">to the WEB using React</span> and contributed to the improvement of the company’s payment systems (GAPTS, GCMS and MISC);</li><li>Contributed to the <span class=\"span-json-experience\">improvement of the performance</span> of requests to the Back-end through the analysis of the <span class=\"span-json-experience\">CloudIBM and Cirrus platforms</span>;</li><li>Worked on analyzing and fixing of vulnerabilities related to <span class=\"span-json-experience\">Cookies, CORS, and PseudoRandom Number using SonarQube</span>;</li><li><span class=\"span-json-experience\">React</span> (Hooks, Redux, NextJS, Router, Axios, Context) as the main development tool;</li><li>Built unit tests using Jest <span class=\"span-json-experience\">ensuring more than 90% of coverage</span> in each file;</li><li>Prepared reports and test results in .Docx, .pdf, and .xls formats for presentation during meetings;</li><li>Modernized the design of the web application using <span class=\"span-json-experience\">Carbon Design components</span>;</li><li>I was recognized for my <span class=\"span-json-experience\">effort, dedication, and commitment</span> to work, as I did a good teamwork and solved tasks efficiently;</li><li>Also worked on the analysis and approval of Pull Requests (GitHub) in <span class=\"span-json-experience\">DEV, UAT, and PROD</span> environments."
+      "responsibilities": "<ul class=\"list-json-experience\"><li>I participated in the <span >migration</span> of the “System Admin” system from RPGLE Modules <span >to the WEB using React</span> and contributed to the improvement of the company’s payment systems (GAPTS, GCMS and MISC);</li><li>Contributed to the <span >improvement of the performance</span> of requests to the Back-end through the analysis of the <span >CloudIBM and Cirrus platforms</span>;</li><li>Worked on analyzing and fixing of vulnerabilities related to <span >Cookies, CORS, and PseudoRandom Number using SonarQube</span>;</li><li><span >React</span> (Hooks, Redux, NextJS, Router, Axios, Context) as the main development tool;</li><li>Built unit tests using Jest <span >ensuring more than 90% of coverage</span> in each file;</li><li>Prepared reports and test results in .Docx, .pdf, and .xls formats for presentation during meetings;</li><li>Modernized the design of the web application using <span >Carbon Design components</span>;</li><li>I was recognized for my <span >effort, dedication, and commitment</span> to work, as I did a good teamwork and solved tasks efficiently;</li><li>Also worked on the analysis and approval of Pull Requests (GitHub) in <span >DEV, UAT, and PROD</span> environments."
     },
     {
       "id": 2,
@@ -217,7 +217,7 @@
       "jobTitle": "IT Support and Infraestructure - Young Apprentice",
       "companyName": "Medgrupo",
       "time": "2021 - 2022",
-      "responsibilities": "<ul class=\"list-json-experience\"><li>I worked on the Employee Support resolving issues related to <span class=\"span-json-experience\">access and maintenance of IT equipment</span> at Medgrupo;</li><li>Carried out VPN configuration for <span class=\"span-json-experience\">Windows, Linux, and Apple</span> environments;</li><li>Resolved issues through <span class=\"span-json-experience\">remote access and configured employee access to the cloud</span>;</li><li>Worked on resetting and configuring users in systems like <span class=\"span-json-experience\">Active Directory and Google Admin</span>;</li><li>Used <span class=\"span-json-experience\">Zabbix</span> for monitoring, addressing issues such as the status of equipment and systems;</li><li>This experience enhanced my <span class=\"span-json-experience\">analytical skills and adaptability</span>."
+      "responsibilities": "<ul class=\"list-json-experience\"><li>I worked on the Employee Support resolving issues related to <span >access and maintenance of IT equipment</span> at Medgrupo;</li><li>Carried out VPN configuration for <span >Windows, Linux, and Apple</span> environments;</li><li>Resolved issues through <span >remote access and configured employee access to the cloud</span>;</li><li>Worked on resetting and configuring users in systems like <span >Active Directory and Google Admin</span>;</li><li>Used <span >Zabbix</span> for monitoring, addressing issues such as the status of equipment and systems;</li><li>This experience enhanced my <span >analytical skills and adaptability</span>."
     },
     {
       "id": 3,
@@ -225,7 +225,7 @@
       "jobTitle": "Graphic and WEB Designer & Audivisual Editor",
       "companyName": "Freelancer",
       "time": "2018 - 2022",
-      "responsibilities": "<ul class=\"list-json-experience\"><li>As a freelancer, I offered a <span class=\"span-json-experience\">full range of services in design and audiovisual</span> production;</li><li>Actively participated in <span class=\"span-json-experience\">UX/UI Design, providing visual services for websites and developing landing pages</span>;</li><li>Made <span class=\"span-json-experience\">logos, resumes, brochures, banners, and other design elements</span>;</li><li>Expanded my expertise to <span class=\"span-json-experience\">video and audio editing</span>, distinguishing myself in the creation of attractive <span class=\"span-json-experience\">vignettes for YouTubers and online</span> influencers;</li><li>Produced <span class=\"span-json-experience\">Reels, posts, and banners</span> adapted for various social media platforms, with a focus on <span class=\"span-json-experience\">Instagram</span>."
+      "responsibilities": "<ul class=\"list-json-experience\"><li>As a freelancer, I offered a <span>full range of services in design and audiovisual</span> production;</li><li>Actively participated in <span >UX/UI Design, providing visual services for websites and developing landing pages</span>;</li><li>Made <span >logos, resumes, brochures, banners, and other design elements</span>;</li><li>Expanded my expertise to <span >video and audio editing</span>, distinguishing myself in the creation of attractive <span >vignettes for YouTubers and online</span> influencers;</li><li>Produced <span >Reels, posts, and banners</span> adapted for various social media platforms, with a focus on <span >Instagram</span>."
     }
   ],
   "projects":[
@@ -258,6 +258,62 @@
       "website": "",
       "gitHubRepo": "https://github.com/lucasoriental/lucasoriental",
       "behanceRepo": ""
+    },
+    {
+      "id": "3",
+      "img": "/images/myProjects/wantEat.png",
+      "projectName": "Want Eat?",
+      "projectArea": "Design UX/UI",
+      "iconTechs": [
+        "images/technologies/adobeXd_icon.png",
+        "images/technologies/photoshop_icon.png"
+      ],
+      "projectDescription": "",
+      "website": "",
+      "gitHubRepo": "",
+      "behanceRepo": "https://www.behance.net/gallery/109101351/UXUI-Design-Aplicativo-de-Comida"
+    },
+    {
+      "id": "4",
+      "img": "/images/myProjects/laChicaStore.png",
+      "projectName": "La Chica Store",
+      "projectArea": "Design UX/UI",
+      "iconTechs": [
+        "images/technologies/adobeXd_icon.png",
+        "images/technologies/photoshop_icon.png"
+      ],
+      "projectDescription": "<span class=\"span-title\">Project Overview</span>: <br/>La Chica Store is a fictional online fashion retail platform crea as a training project to hone my design skills. The goal was develop an engaging and visually appealing home page that provide seamless shopping experience. <br/><br/><span class=\"span-title\">Responsibilities</span>: <br/><ul class=\"modal-project-list\"><li><span class=\"span-emphasis\">Logo Design:</span> Designed a unique and memorable logo that reflects tthe brand’s identity and appeals to fashion enthusiasts.</li><li><span class=\"span-emphasis\">Layout Design:</span> Developed a modern, clean, and responsive layout fthe homepage, ensuring an intuitive and enjoyable user experienacross all devices.</li><li><span class=\"span-emphasis\">Component Creation:</span> Designed various UI components such navigation menus,product showcases, and call-to-action buttons create a cohesive andintuitive interface.</li><li><span class=\"span-emphasis\">Visual Design:</span> Utilized Adobe XD and Photoshop to craft visual compelling graphics and elements that align with the brandaesthetic and enhance the overall user experience.</li></ul><br/><span class=\"span-title\">Tools Used</span>:<br/><ul class=\"modal-project-list\"><li><span class=\"span-emphasis\">Adobe XD:</span> Used for wireframing, prototyping, and creatinteractive design elements.</li><li><span class=\"span-emphasis\">Photoshop:</span> Employed for detailed graphic design work, including creation and image editing.</li></ul><br/><span class=\"span-title\">Outcome</span>:<br/>The fictional home page of La Chica Store effectively combines functionality with a stylish design, resulting in an engaging user-friendly prototype that showcases my design capabilities creativity.",
+      "website": "",
+      "gitHubRepo": "",
+      "behanceRepo": "https://www.behance.net/gallery/109328081/UX-UI-design-fictional-homepage"
+    },
+    {
+      "id": "5",
+      "img": "/images/myProjects/appChat.png",
+      "projectName": "App Chat",
+      "projectArea": "Design UX/UI",
+      "iconTechs": [
+        "images/technologies/adobeXd_icon.png",
+        "images/technologies/photoshop_icon.png"
+      ],
+      "projectDescription": "",
+      "website": "",
+      "gitHubRepo": "",
+      "behanceRepo": "https://www.behance.net/gallery/109555439/App-Chat-UI-Design"
+    },
+    {
+      "id": "5",
+      "img": "/images/myProjects/appMusicML.png",
+      "projectName": "App Music (ML)",
+      "projectArea": "Design UX/UI",
+      "iconTechs": [
+        "images/technologies/adobeXd_icon.png",
+        "images/technologies/photoshop_icon.png"
+      ],
+      "projectDescription": "<span class=\"span-title\">Project Overview:</span> <br/> App Music (ML) is a fictional music streaming application designed to enhance user interaction with navigable and intuitive layout. This project served as a platform to practice and refine my design skills, focusing on creating an engaging and seamless user experience. <br/><br/><span class=\"span-title\">Responsibilities:</span><br/><ul class=\"modal-project-list\"><li><span class=\"span-emphasis\">Logo Design:</span> Created a distinctive and modern logo that captures the essence of the music stream service and resonates with the target audience.</li><li><span class=\"span-emphasis\">Layout Design:</span> Developed a navigable and user-friendly layout, ensuring that users can easily browse discover music. The design emphasizes smooth navigation and accessibility.</li><li><span class=\"span-emphasis\">Component Creation:</span> Designed various UI components including menus, playlists, music player controls, search functions to ensure a cohesive and intuitive interface.</li><li><span class=\"span-emphasis\">Visual Design:</span> Leveraged Adobe XD and Photoshop to produce visually appealing graphics and design elemethat align with the app's modern and vibrant aesthetic.</li></ul><br/><span class=\"span-title\">Tools Used:</span><ul class=\"modal-project-list\"><li><span class=\"span-emphasis\">Adobe XD:</span> Utilized for wireframing, prototyping, and creating interactive design elements.</li><li><span class=\"span-emphasis\">Photoshop:</span> Used for detailed graphic design work, including logo creation and image editing.</li></ul><br/><span class=\"span-title\">Outcome:</span><br/>The fictional App Music (ML) features a navigable and visually engaging layout that provides users witseamless music discovery and listening experience. This project demonstrates my ability to desigfunctional and aesthetically pleasing user interface for a music application.",
+      "website": "",
+      "gitHubRepo": "",
+      "behanceRepo": "https://www.behance.net/gallery/109813189/App-Music-(ML)-UI-Design"
     }
 ]
 }

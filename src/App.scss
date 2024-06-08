@@ -469,6 +469,7 @@
   object-fit: cover;
   margin: 0px auto 17px;
   border: 1px solid var(--DarkGray);
+  box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.4);
 
   @media (max-width: 1000px) {
     width: 350px;
@@ -497,7 +498,7 @@
 }
 
 .project-view {
-  gap: 20px;
+  gap: 60px 30px;
   display: flex;
   justify-content: center;
   max-width: 1440px;
@@ -812,26 +813,6 @@
   background: none;
 }
 
-/* .EAS-certificates-button {
-  margin-top: 15px;
-  width: 175px;
-  height: 30px;
-  background-color: var(--RedLight);
-  color: var(--White);
-  font-size: 12px;
-  font-weight: 700;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-
-  @media (max-width: 1000px) {
-    width: 115px;
-    height: 20px;
-    font-size: 10px;
-    margin-top: 4px;
-  }
-} */
-
 .EAS-certificates-div {
   margin-left: 15px;
 }
@@ -901,6 +882,19 @@
   @media (max-width: 1000px) {
     display: none;
   }
+}
+
+.job-responsibilities span {
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-weight: 800;
+  text-decoration: underline;
+  transition: 500ms;
+}
+
+.job-responsibilities span:hover {
+  letter-spacing: 1.5px;
+  transition: 500ms;
 }
 
 .job-image {
@@ -1026,8 +1020,14 @@
 }
 
 .about-me-span {
-  color: var(--DeepGray);
-  font-weight: 900;
+  color: var(--DarkGray);
+  font-weight: 800;
+  transition: 500ms;
+}
+
+.about-me-span:hover {
+  letter-spacing: 1px;
+  transition: 500ms;
 }
 
 .about-me-container-items {
@@ -1065,23 +1065,6 @@
     height: 567px;
   }
 }
-
-/* .contact-me-right-side {
-  background-color: var(--DarkGray);
-  height: 618px;
-  width: 500px;
-  display: flex;
-  border-radius: 0 10px 10px 0;
-  flex-direction: column;
-  align-items: center;
-  z-index: 0;
-
-  @media (max-width: 1000px) {
-    width: 361px;
-    border-radius: 10px 10px 0 0;
-    height: 551px;
-  }
-} */
 
 #form-contact-me {
   display: flex;
@@ -1276,10 +1259,11 @@
   position: relative;
   z-index: 1001;
   overflow-y: auto;
+  max-height: 70vh;
 
   @media (max-width: 750px) {
     width: 370px;
-    max-height: 600px;
+    //max-height: 600px;
   }
 }
 
@@ -1384,6 +1368,8 @@
   margin-left: 20px;
   border: 1px solid var(--DarkGray);
   object-fit: cover;
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.4);
+  float: left;
 
   @media (max-width: 750px) {
     width: 130px;
@@ -1397,7 +1383,7 @@
 }
 
 .modal-body-title {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 700;
 
   @media (max-width: 750px) {
@@ -1408,8 +1394,9 @@
 }
 
 .modal-body-sub-title {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 500;
+  margin-bottom: 10px;
 
   @media (max-width: 750px) {
     font-size: 17px;
@@ -1419,11 +1406,12 @@
 }
 
 .modal-text {
-  font-size: 15px;
+  font-size: 20px;
   text-align: justify;
+  color: var(--DarkGray);
 
   @media (max-width: 750px) {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -1439,6 +1427,7 @@
   text-decoration: none;
   cursor: pointer;
   transition: 500ms;
+  box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.4);
 
   @media (max-width: 750px) {
     width: 100px;
@@ -1544,27 +1533,10 @@ body.modal-open {
 
 }
 
-// Style for ****JOB Experiences**** from JSON File
-
 .list-json-experience {
   margin-left: 30px;
   cursor: default;
 }
-
-.span-json-experience {
-  color: var(--DeepGray);
-  font-weight: 700;
-  transition: 500ms;
-}
-
-.span-json-experience:hover {
-  font-weight: 800;
-  transition: 500ms;
-  text-decoration: underline;
-}
-
-//----------------------------------------------------
-
 
 //MODAL JOB EXPERIENCES
 
@@ -1644,11 +1616,26 @@ body.modal-open {
 .modal-job-responsibilities {
   margin-bottom: 30px;
   text-align: justify;
+  color: var(--DarkGray);
 
   @media(max-width: 750px) {
     font-size: 14px;
   }
 }
+
+.modal-job-responsibilities span {
+  letter-spacing: 1px;
+  color: var(--DeepGray);
+  text-decoration: underline;
+  font-weight: 700;
+  transition: 500ms
+}
+
+.modal-job-responsibilities span:hover {
+  letter-spacing: 2px;
+  transition: 500ms;
+}
+
 
 .X-icon-svg {
   transition: 1000ms;
@@ -1658,4 +1645,19 @@ body.modal-open {
 .X-icon-svg:hover {
   transform: rotate(30deg);
   transition: 1000ms;
+}
+
+.span-title{
+  font-weight: 800;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.span-emphasis{
+  font-weight: 700;
+  color: black;
+}
+
+.modal-project-list{
+  margin-left: 25px;
 }

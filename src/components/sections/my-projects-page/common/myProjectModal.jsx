@@ -40,7 +40,12 @@ export default function MyProjectModal({ information, setOpenModal }) {
           <div className="modal-body-text-area">
             <p className="modal-body-title">{information.projectName}</p>
             <p className="modal-body-sub-title">{information.projectArea}</p>
-            <p className="modal-text">{information.projectDescription}</p>
+            <div
+              className="modal-text"
+              dangerouslySetInnerHTML={{
+                __html: information.projectDescription,
+              }}
+            />
           </div>
         </div>
         <div className="modal-footer">
