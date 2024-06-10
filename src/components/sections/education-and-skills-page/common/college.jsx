@@ -7,11 +7,13 @@ export default function College(props) {
         return (
           <div className="EAS-college-img-and-info" key={college.id}>
             <img
+              data-aos="fade-left"
+              data-aos-anchor-placement="bottom-bottom"
               alt="College_picture"
               src={college.img}
               className="EAS-college-picture"
             />
-            <div className="EAS-college-info-div">
+            <div className="EAS-college-info-div" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
               <a
                 href={college.websiteLink}
                 target="_blank"

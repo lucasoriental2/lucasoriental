@@ -42,19 +42,17 @@ export default function Skills(props) {
   }, []);
 
   return (
-    <div className="allSkills">
+    <div className="allSkills" data-aos="fade-right"
+    data-aos-anchor-placement="bottom-bottom">
       <Swiper
         slidesPerView={itemsPerPage}
         spaceBetween={-100}
         loop={true}
-        /* pagination={{
-          clickable: true,
-        }} */
         navigation={true}
         modules={[Pagination, Navigation]}
         className="swipe-view-skills"
       >
-        {props.data.map((skill, index) => {
+        {props.data.map((skill) => {
           const levelElements = [];
           for (let i = 0; i < 10; i++) {
             if (i < skill.level) {
@@ -64,12 +62,15 @@ export default function Skills(props) {
             }
           }
           return (
-            <SwiperSlide key={index}>
-               <div className="EAS-skills"> 
+            <SwiperSlide key={skill.id}>
+              <div className="EAS-skills">
                 {skill.professional === true ? (
-                     <ProfessionalStarIconSvg
-                     size={window.innerWidth < 1000 ? 15 : 20} outColor="#E00036" inColor="white"
-                      className="star-skill" />
+                  <ProfessionalStarIconSvg
+                    size={window.innerWidth < 1000 ? 15 : 20}
+                    outColor="#E00036"
+                    inColor="white"
+                    className="star-skill"
+                  />
                 ) : null}
                 <img
                   alt="skill_img"

@@ -5,13 +5,13 @@ const aboutMePage = () => {
   return (
     <div id="about-me-container">
       <div className="container-general">
-        <p className="title-general" style={{ color: "#444444" }}>
+        <p className="title-general" style={{ color: "#444444" }} data-aos="fade-up" data-aos-anchor-placement="top-center">
           About Me
         </p>
         <div className="about-me-container-items">
           {/* <div className="img-and-text"> */}
-          <img alt="imagem" src={image} className="about-me-image" />
-          <p className="about-me-text">
+          <img alt="imagem" src={image} className="about-me-image" data-aos="fade-right" data-aos-anchor-placement="top-center"/>
+          <p className="about-me-text" data-aos="fade-left" data-aos-anchor-placement="top-center">
             Hey there, this is Lucas, a{" "}
             <span className="about-me-span">
               WEB Developer and UX/UI Designer

@@ -5,13 +5,13 @@ import GitHubIcon from "../../../../assets/light_theme/GitHub";
 import BrowserIcon from "../../../../assets/light_theme/browser";
 
 export default function MyProjectModal({ information, setOpenModal }) {
-  const [iconSize, setIconSize] = useState(window.innerWidth <= 750 ? 15 : 30);
+  const [iconSize, setIconSize] = useState(window.innerWidth <= 800 ? 15 : 30);
 
   useEffect(() => {
     document.body.classList.add("modal-open");
 
     const handleResize = () => {
-      setIconSize(window.innerWidth <= 750 ? 15 : 30);
+      setIconSize(window.innerWidth <= 800 ? 15 : 30);
     };
 
     window.addEventListener("resize", handleResize);

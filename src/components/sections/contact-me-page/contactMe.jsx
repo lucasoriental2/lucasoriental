@@ -11,15 +11,35 @@ const contactMePage = () => {
   return (
     <div id="contact-me-container">
       <div className="container-general">
-        <p className="title-general">CONTACT ME</p>
+        <p
+          className="title-general"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          CONTACT ME
+        </p>
         <div className="contact-me-form-social">
           <div className="contact-me-left-side">
             <div>
               <div className="left-side-title-and-canvas">
-                <p className="left-side-form-title">Get in Touch!</p>
-                <canvas className="left-side-form-above-title" />
+                <p
+                  className="left-side-form-title"
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="bottom-bottom"
+                >
+                  Get in Touch!
+                </p>
+                <canvas
+                  className="left-side-form-above-title"
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="bottom-bottom"
+                />
               </div>
-              <div className="left-side-all-items">
+              <div
+                className="left-side-all-items"
+                data-aos="fade-left"
+                data-aos-anchor-placement="bottom-bottom"
+              >
                 <div className="left-side-item">
                   <a
                     href="https://maps.app.goo.gl/WRGVPhNip7Dmu8Zg7"

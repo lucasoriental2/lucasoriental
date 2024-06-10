@@ -1,13 +1,11 @@
-import { useState, /* useEffect */ } from "react";
+import { useState } from "react";
 import { Tooltip } from 'react-tooltip';
 import CapCourseLightSVG from "../../../../assets/light_theme/cap_course_SVG";
 import ClockLightSVG from "../../../../assets/light_theme/clock_SVG";
 import CertModal from "./modals/certModal";
 
 export default function Certificates(props) {
-
   const [selectedCourse, setSelectedCourse] = useState(null);
-
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
@@ -17,39 +15,51 @@ export default function Certificates(props) {
           return (
             <div className="EAS-certificates" key={certificate.id}>
               <img
+                data-aos="fade-right"
+                data-aos-anchor-placement="bottom-bottom"
                 alt="credential_img"
                 src={certificate.img}
                 className="EAS-certificates-picture"
               />
-              <div className="EAS-certificates-div">
-                  <button
-                    className="EAS-certificates-title-link"
-                    onClick={() => {
-                      setModalOpen(true);
-                      setSelectedCourse(index);
-                    }}
+              <div
+                className="EAS-certificates-div"
+                data-aos="fade-left"
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                <button
+                  className="EAS-certificates-title-link"
+                  onClick={() => {
+                    setModalOpen(true);
+                    setSelectedCourse(index);
+                  }}
+                >
+                  <Tooltip id="my-tooltip-cert" />
+                  <p
+                    data-tooltip-id="my-tooltip-cert"
+                    data-tooltip-content="Click to see the credential"
+                    className="EAS-certificates-title"
                   >
-                      <Tooltip id="my-tooltip-cert" />
-                    <p
-                      data-tooltip-id="my-tooltip-cert" 
-                      data-tooltip-content="Click to see the credential" 
-                      className="EAS-certificates-title">{certificate.course}</p>
-                  </button>
+                    {certificate.course}
+                  </p>
+                </button>
                 <div className="EAS-certificates-div-icon-text">
-                  <CapCourseLightSVG width={20} height={18} color="#444444"/>
+                  <CapCourseLightSVG width={20} height={18} color="#444444" />
                   <p className="EAS-certificates-div-text">
                     {certificate.platform}
                   </p>
                 </div>
                 <div className="EAS-certificates-div-icon-text">
-                  <ClockLightSVG width={20} height={18} color="#444444"/>
+                  <ClockLightSVG width={20} height={18} color="#444444" />
                   <p className="EAS-certificates-div-text">
                     {certificate.time} h
                   </p>
                 </div>
               </div>
               {modalOpen && selectedCourse === index && (
-                <CertModal information={certificate} setOpenModal={setModalOpen} />
+                <CertModal
+                  information={certificate}
+                  setOpenModal={setModalOpen}
+                />
               )}
             </div>
           );
