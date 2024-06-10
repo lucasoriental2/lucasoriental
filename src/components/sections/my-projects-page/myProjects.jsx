@@ -13,7 +13,7 @@ const MyProjectsPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/projects");
+        const response = await fetch("https://lucasoriental.github.io/lucasorientalapi/database.json");
         setProject(await response.json());
         setIsLoading(false);
       } catch (err) {
@@ -45,7 +45,7 @@ const MyProjectsPage = () => {
           </p>
         ) : (
           <div className="project-view">
-            {project.map((project, index) => {
+            {project.projects.map((project, index) => {
               let tecs = [];
               for (let i = 0; i < project.iconTechs.length; i++) {
                 tecs.push(

@@ -6,32 +6,13 @@ import Skills from "./common/skills";
 const EducationAndSkillsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-  const [skillIT, setSkillIT] = useState(null);
-  const [skillDesign, setSkillDesign] = useState(null);
-  const [certificateIT, setCertificateIT] = useState(null);
-  const [certificateDesign, setCertificateDesign] = useState(null);
-  const [college, setCollege] = useState(null);
+  const [educationAndSkillsInformation, setEducationAndSkillsInformation] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response1 = await fetch("http://localhost:5000/certificatesIT");
-        setCertificateIT(await response1.json());
-
-        const response2 = await fetch(
-          "http://localhost:5000/certificatesDesign"
-        );
-        setCertificateDesign(await response2.json());
-
-        const response3 = await fetch("http://localhost:5000/college");
-        setCollege(await response3.json());
-
-        const response4 = await fetch("http://localhost:5000/skillsIT");
-        setSkillIT(await response4.json());
-
-        const response5 = await fetch("http://localhost:5000/skillsDesign");
-        setSkillDesign(await response5.json());
-
+        const response = await fetch("https://lucasoriental.github.io/lucasorientalapi/database.json");
+        setEducationAndSkillsInformation(await response.json());
         setIsLoading(false);
       } catch (err) {
         console.error(
@@ -72,7 +53,7 @@ const EducationAndSkillsPage = () => {
                   <canvas className="bar-2" />
                 </div>
               </div>
-              <College />
+              <College data={educationAndSkillsInformation.college}/>
             </div>
             <div>
               <div className="title-and-canvas">
@@ -89,13 +70,13 @@ const EducationAndSkillsPage = () => {
                 <p className="EAS-title-section">INFORMATION TECHNOLOGY (IT)</p>
                 <canvas className="bar-after" />
               </div>
-              <Skills data={skillIT} />
+              <Skills data={educationAndSkillsInformation.skillsIT} />
               <div className="subtitle-and-canvas">
                 <canvas className="bar-before" />
                 <p className="EAS-title-section">DESIGN</p>
                 <canvas className="bar-after" />
               </div>
-              <Skills data={skillDesign} />
+              <Skills data={educationAndSkillsInformation.skillsDesign} />
             </div>
             <div>
               <div className="title-and-canvas">
@@ -112,13 +93,13 @@ const EducationAndSkillsPage = () => {
                 <p className="EAS-title-section">INFORMATION TECHNOLOGY (IT)</p>
                 <canvas className="bar-after" />
               </div>
-              <Certificates data={certificateIT} />
+              <Certificates data={educationAndSkillsInformation.certificatesIT} />
               <div className="subtitle-and-canvas">
                 <canvas className="bar-before" />
                 <p className="EAS-title-section">DESIGN</p>
                 <canvas className="bar-after" />
               </div>
-              <Certificates data={certificateDesign} />
+              <Certificates data={educationAndSkillsInformation.certificatesDesign} />
             </div>
           </div>
         )}

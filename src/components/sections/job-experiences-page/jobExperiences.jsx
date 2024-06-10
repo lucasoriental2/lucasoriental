@@ -8,7 +8,7 @@ const JobExperiencesPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/jobExperiences");
+        const response = await fetch("https://lucasoriental.github.io/lucasorientalapi/database.json");
         setJobExperiences(await response.json());
         setIsLoading(false);
       } catch (err) {
@@ -39,7 +39,7 @@ const JobExperiencesPage = () => {
             The data is loading, please wait a moment....
           </p>
         ) : (
-          <JobExperience data={jobExperiences} />
+          <JobExperience data={jobExperiences.jobExperiences} />
         )}
       </div>
     </div>

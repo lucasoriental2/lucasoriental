@@ -1,25 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-export default function College() {
-  const [college, setCollege] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:5000/college", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((resp) => resp.json())
-      .then((data) => {
-        setCollege(data);
-      })
-      .catch((err) => console.error(err));
-  }, []);
-
+export default function College(props) {
   return (
     <div className="allColeges">
-      {college.map((college) => {
+      {props.data.map((college) => {
         return (
           <div className="EAS-college-img-and-info" key={college.id}>
             <img
