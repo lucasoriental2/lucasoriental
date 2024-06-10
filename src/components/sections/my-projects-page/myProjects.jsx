@@ -83,7 +83,7 @@ const MyProjectsPage = () => {
                   {modalOpen && selectedProject === index && (
                     <MyProjectModal
                       information={project}
-                      secenterenModal={setModalOpen}
+                      setOpenModal={setModalOpen}
                     />
                   )}
                 </div>

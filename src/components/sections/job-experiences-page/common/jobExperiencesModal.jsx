@@ -1,22 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import XIconSvg from "../../../../assets/common_elements/icon_X";
 
 export default function JobExperiencesModal({ setOpenModal, information }) {
-  const [iconSize, setIconSize] = useState(window.innerWidth <= 750 ? 15 : 30);
-
-  console.log(information, "JobExperienceModal");
 
   useEffect(() => {
     document.body.classList.add("modal-open");
-
-    const handleResize = () => {
-      setIconSize(window.innerWidth <= 750 ? 15 : 30);
-    };
-
-    window.addEventListener("resize", handleResize);
+    
     return () => {
       document.body.classList.remove("modal-open");
-      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
