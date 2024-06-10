@@ -24,7 +24,7 @@ const JobExperiencesPage = () => {
     <div id="job-experiences-container">
       <div className="container-general">
         <div>
-          <p className="title-general">JOB EXPERIENCES</p>
+          <p className="title-general">Job Experiences</p>
         </div>
         {isLoading === true ? (
           <p

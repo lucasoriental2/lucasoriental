@@ -29,7 +29,7 @@ const MyProjectsPage = () => {
     <div id="my-projects-container">
       <div className="container-general">
         <div>
-          <p className="title-general">MY PROJECTS</p>
+          <p className="title-general">My Projects</p>
         </div>
         {isLoading === true ? (
           <p

@@ -2,7 +2,6 @@
 import 'react-tooltip/dist/react-tooltip.css';
 import Header from "../src/components/global/header/header";
 import "./App.scss";
-import Footer from './components/global/footer/footer';
 import AboutMe from "./components/sections/about-me-page/aboutMe";
 import ContactMe from "./components/sections/contact-me-page/contactMe";
 import EducationAndSkills from "./components/sections/education-and-skills-page/educationAndSkills";
@@ -11,6 +10,8 @@ import JobExperiences from "./components/sections/job-experiences-page/jobExperi
 import MyProjects from "./components/sections/my-projects-page/myProjects";
 
 function App() {
+
+  alert("en/us -> This project is still in progress! Updates/Improvements will be made over time, thank you for your understanding!; pt/br -> Este projeto ainda está em andamento! Atualizações/Melhorias serão feitas ao longo do tempo, obrigado pela compreensão!")
   return (
     <>
       <Header />
@@ -20,7 +21,6 @@ function App() {
       <JobExperiences />
       <AboutMe />
       <ContactMe />
-      <Footer />
     </>
   );
 }

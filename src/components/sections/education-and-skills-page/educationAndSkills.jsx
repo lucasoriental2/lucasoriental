@@ -26,8 +26,8 @@ const EducationAndSkillsPage = () => {
   return (
     <div id="education-and-skills-page">
       <div className="container-general">
-        <p className="title-general" style={{ color: "#E00036" }}>
-          EDUCATION & SKILLS
+        <p className="title-general" style={{ color: "#444444" }}>
+          Education & Skills
         </p>
         {isLoading === true ? (
           <p
@@ -46,7 +46,7 @@ const EducationAndSkillsPage = () => {
             <div>
               <div className="title-and-canvas">
                 <div className="column-1-teste">
-                  <p className="EAS-title-general">COLLEGE</p>
+                  <p className="EAS-title-general" style={{ color: "#444444" }}>College</p>
                 </div>
                 <div className="column-2-teste">
                   <canvas className="bar-1" />
@@ -58,7 +58,7 @@ const EducationAndSkillsPage = () => {
             <div>
               <div className="title-and-canvas">
                 <div className="column-1-teste">
-                  <p className="EAS-title-general">SKILLS</p>
+                  <p className="EAS-title-general" style={{ color: "#444444" }}>Skills</p>
                 </div>
                 <div className="column-2-teste">
                   <canvas className="bar-1" />
@@ -67,13 +67,13 @@ const EducationAndSkillsPage = () => {
               </div>
               <div className="subtitle-and-canvas">
                 <canvas className="bar-before" />
-                <p className="EAS-title-section">INFORMATION TECHNOLOGY (IT)</p>
+                <p className="EAS-title-section" style={{ color: "#444444" }}>Information Technology (IT)</p>
                 <canvas className="bar-after" />
               </div>
               <Skills data={educationAndSkillsInformation.skillsIT} />
               <div className="subtitle-and-canvas">
                 <canvas className="bar-before" />
-                <p className="EAS-title-section">DESIGN</p>
+                <p className="EAS-title-section" style={{ color: "#444444" }}>Design</p>
                 <canvas className="bar-after" />
               </div>
               <Skills data={educationAndSkillsInformation.skillsDesign} />
@@ -81,7 +81,7 @@ const EducationAndSkillsPage = () => {
             <div>
               <div className="title-and-canvas">
                 <div className="column-1-teste">
-                  <p className="EAS-title-general">CERTIFICATES</p>
+                  <p className="EAS-title-general" style={{ color: "#444444" }}>Certificates</p>
                 </div>
                 <div className="column-2-teste">
                   <canvas className="bar-1" />
@@ -90,13 +90,13 @@ const EducationAndSkillsPage = () => {
               </div>
               <div className="subtitle-and-canvas">
                 <canvas className="bar-before" />
-                <p className="EAS-title-section">INFORMATION TECHNOLOGY (IT)</p>
+                <p className="EAS-title-section" style={{ color: "#444444" }}>Information Technology (IT)</p>
                 <canvas className="bar-after" />
               </div>
               <Certificates data={educationAndSkillsInformation.certificatesIT} />
               <div className="subtitle-and-canvas">
                 <canvas className="bar-before" />
-                <p className="EAS-title-section">DESIGN</p>
+                <p className="EAS-title-section" style={{ color: "#444444" }}>Design</p>
                 <canvas className="bar-after" />
               </div>
               <Certificates data={educationAndSkillsInformation.certificatesDesign} />

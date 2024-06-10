@@ -227,34 +227,61 @@
   @media (max-width: 1000px) {
     width: 400px;
     height: 400px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
+    box-shadow: none;
   }
 
   @media (max-width: 430px) {
     width: 320px;
     height: 320px;
+    box-shadow: none;
   }
 }
 
 @keyframes homeProfile {
   0% {
     border-color: var(--DeepGray);
+    box-shadow: 0px 5px 40px 0px #4444447e;
+
+    @media (max-width: 1000px) {
+      box-shadow: none;
+    }
   }
 
   25% {
     border-color: var(--RedLight);
+    box-shadow: 0px 5px 40px 0px #e000346e;
+
+    @media (max-width: 1000px) {
+      box-shadow: none;
+    }
   }
 
   50% {
     border-color: var(--DeepGray);
+    box-shadow: 0px 5px 40px 0px #4444447e;
+
+    @media (max-width: 1000px) {
+      box-shadow: none;
+    }
   }
 
   75% {
     border-color: var(--RedLight);
+    box-shadow: 0px 5px 40px 0px #e000346e;
+
+    @media (max-width: 1000px) {
+      box-shadow: none;
+    }
   }
 
   100% {
     border-color: var(--DeepGray);
+    box-shadow: 0px 5px 40px 0px #4444447e;
+
+    @media (max-width: 1000px) {
+      box-shadow: none;
+    }
   }
 }
 
@@ -324,6 +351,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 500ms;
+  box-shadow: 0px 5px 20px 0px #e000347c;
 
   @media (max-width: 1000px) {
     margin-top: 15px;
@@ -470,6 +498,7 @@
   margin: 0px auto 17px;
   border: 1px solid var(--DarkGray);
   box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.4);
+  overflow-x: hidden;
 
   @media (max-width: 1000px) {
     width: 350px;
@@ -515,10 +544,14 @@
 // ------------------------------------
 
 #education-and-skills-page {
-  margin-top: 120px;
+  margin: 120px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media(max-width: 1000px){
+    margin: 60px 0px;
+  }
 }
 
 .EAS-title-general {
@@ -680,7 +713,6 @@
   height: 200px;
   object-fit: cover;
   border-radius: 10%;
-  ;
 
   @media (max-width: 1000px) {
     width: 100px;
@@ -874,7 +906,7 @@
 
 .job-responsibilities {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--White);
   text-align: justify;
   line-height: 27px;
@@ -886,14 +918,14 @@
 
 .job-responsibilities span {
   color: rgb(255, 255, 255);
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-weight: 800;
   text-decoration: underline;
   transition: 500ms;
 }
 
 .job-responsibilities span:hover {
-  letter-spacing: 1.5px;
+  letter-spacing: 0.75px;
   transition: 500ms;
 }
 
@@ -1006,8 +1038,8 @@
 }
 
 .about-me-text {
-  color: var(--RedLight);
-  font-weight: 500;
+  color: var(--DarkGray);
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
   text-align: justify;
@@ -1021,12 +1053,12 @@
 
 .about-me-span {
   color: var(--DarkGray);
-  font-weight: 800;
+  font-weight: 700;
   transition: 500ms;
 }
 
 .about-me-span:hover {
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   transition: 500ms;
 }
 
