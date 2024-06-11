@@ -10,9 +10,9 @@ export default function JobExperiences(props) {
     <div className="block-of-jobs">
       {props.data.map((job, index) => {
         return (
-          <div className="job-entire-item" key={job.id}>
-            <img alt="Company Logo" src={job.image} className="job-image" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
-            <div className="job-entire-item-paragraph" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+          <div className="job-entire-item" key={job.id} data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
+            <img alt="Company Logo" src={job.image} className="job-image" />
+            <div className="job-entire-item-paragraph">
               <p className="job-title">{job.jobTitle}</p>
               <p className="job-company-name">{job.companyName}</p>
               <p className="job-time">{job.time}</p>

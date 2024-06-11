@@ -50,7 +50,7 @@ const EducationAndSkillsPage = () => {
                 </div>
                 <div className="column-2-teste">
                   <canvas className="bar-1" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
-                  <canvas className="bar-2" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
+                  <canvas className="bar-2" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"/>
                 </div>
               </div>
               <College data={educationAndSkillsInformation.college}/>
@@ -62,19 +62,19 @@ const EducationAndSkillsPage = () => {
                 </div>
                 <div className="column-2-teste">
                   <canvas className="bar-1" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
-                  <canvas className="bar-2" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
+                  <canvas className="bar-2" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"/>
                 </div>
               </div>
               <div className="subtitle-and-canvas">
-                <canvas className="bar-before" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"/>
+                <canvas className="bar-before" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
                 <p className="EAS-title-section" style={{ color: "#444444" }} data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">Information Technology (IT)</p>
-                <canvas className="bar-after" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
+                <canvas className="bar-after" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"/>
               </div>
               <Skills data={educationAndSkillsInformation.skillsIT} />
               <div className="subtitle-and-canvas">
-                <canvas className="bar-before" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"/>
+                <canvas className="bar-before" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
                 <p className="EAS-title-section" style={{ color: "#444444" }} data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">Design</p>
-                <canvas className="bar-after" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
+                <canvas className="bar-after" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"/>
               </div>
               <Skills data={educationAndSkillsInformation.skillsDesign} />
             </div>
@@ -85,19 +85,19 @@ const EducationAndSkillsPage = () => {
                 </div>
                 <div className="column-2-teste">
                   <canvas className="bar-1" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
-                  <canvas className="bar-2" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
+                  <canvas className="bar-2" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"/>
                 </div>
               </div>
               <div className="subtitle-and-canvas">
-                <canvas className="bar-before" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"/>
+                <canvas className="bar-before" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
                 <p className="EAS-title-section" style={{ color: "#444444" }} data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">Information Technology (IT)</p>
-                <canvas className="bar-after" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
+                <canvas className="bar-after" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"/>
               </div>
               <Certificates data={educationAndSkillsInformation.certificatesIT} />
               <div className="subtitle-and-canvas">
-                <canvas className="bar-before" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"/>
+                <canvas className="bar-before" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
                 <p className="EAS-title-section" style={{ color: "#444444" }} data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">Design</p>
-                <canvas className="bar-after" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"/>
+                <canvas className="bar-after" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"/>
               </div>
               <Certificates data={educationAndSkillsInformation.certificatesDesign} />
             </div>
