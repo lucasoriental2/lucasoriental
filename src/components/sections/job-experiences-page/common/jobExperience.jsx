@@ -13,7 +13,6 @@ export default function JobExperiences(props) {
           <div key={index.id}>
             <div
               className="job-entire-item"
-              key={job.id}
               data-aos="fade-right"
               data-aos-anchor-placement="bottom-bottom"
             >
