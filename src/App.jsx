@@ -18,7 +18,7 @@ function App() {
     AOS.init({duration: 1000});
   }, []);
 
-  alert("en/us -> This project is still in progress! Updates/Improvements will be made over time, thank you for your understanding!; pt/br -> Este projeto ainda está em andamento! Atualizações/Melhorias serão feitas ao longo do tempo, obrigado pela compreensão!")
+  //alert("en/us -> This project is still in progress! Updates/Improvements will be made over time, thank you for your understanding!; pt/br -> Este projeto ainda está em andamento! Atualizações/Melhorias serão feitas ao longo do tempo, obrigado pela compreensão!")
   return (
     <>
       <Header />
